@@ -1,0 +1,105 @@
+/*
+
+    Generic Styling
+
+*/
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  font-size: 15px;
+}
+
+/* Media queries for generic styling and navigation bar */
+@media only screen and (min-width: 768px) {
+  p {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  p {
+    font-size: 18px;
+  }
+}
+
+/*
+
+    Navigation Bar
+
+*/
+
+#nav {
+  line-height: 30px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.navbar-brand {
+  padding-left: 10px;
+}
+
+#nav-logo {
+  width: 150px;
+  height: 70px;
+}
+
+.navbar-nav > li {
+  padding: 5px;
+}
+
+#nav li > a {
+  color: white;
+}
+
+#nav li > a:hover {
+  border-bottom: 2px solid white;
+}
+
+#nav-dropdown {
+  min-width: 250px;
+  padding: 10px 14px;
+  overflow: hidden;
+  font-size: 13px;
+}
+
+.close {
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.close :hover,
+.close :focus {
+  color: red;
+}
+
+@media only screen and (min-width: 992px) {
+  .navbar-brand {
+    padding-left: 50px;
+  }
+
+  #nav-logo {
+    width: 250px;
+    height: 100px;
+  }
+
+  .navbar-nav > li {
+    padding: 15px;
+  }
+
+  .navbar-nav > li:not(:last-child) {
+    border-right: 1px solid black;
+  }
+}
+
+#test {
+  padding: 800px;
+  background-color: grey;
+}
