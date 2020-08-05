@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg fixed-top" id="nav">
   <a class="navbar-brand" href="index.php">
-    <img src="images/logo.png" />
+    <img src="images/logo.png" id="nav-logo" />
   </a>
 
   <button
@@ -20,14 +20,14 @@
       <li class="nav-item">
         <a class="nav-link" href="exercise.php">
           <i class="fas fa-dumbbell"></i>
-          Exercise
+          <span class="nav-link-title">Exercise</span>
         </a>
       </li>
 
       <li class="nav-item">
         <a class="nav-link" href="motivation.php">
           <i class="fas fa-fist-raised"></i>
-          Motivation
+          <span class="nav-link-title">Motivation</span>
         </a>
       </li>
 
@@ -41,6 +41,7 @@
       <li class="nav-item dropdown">
         <a
           class="nav-link dropdown-toggle"
+          href="#"
           role="button"
           data-toggle="dropdown"
         >
@@ -48,7 +49,7 @@
           Account
         </a>
 
-        <ul class="dropdown-menu dropdown-menu-right">
+        <ul class="dropdown-menu dropdown-menu-right" id="nav-dropdown">
           <div class="row">
             <div class="col-md-12">
               <button
