@@ -58,9 +58,15 @@ p {
   color: white;
 }
 
+#nav li > a > .nav-link-title:hover {
+  border-bottom: 2px solid white;
+}
+
+/*
 #nav li > a:hover {
   border-bottom: 2px solid white;
 }
+*/
 
 #nav-dropdown {
   min-width: 250px;
