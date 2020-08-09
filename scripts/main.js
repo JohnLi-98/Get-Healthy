@@ -4,38 +4,19 @@ $(document).ready(function () {
 
 /**
  *
- *    FUNCTIONS FOR THE NAVBAR COLLAPSE - MOBILE/SMALL SCREENS
- *
- */
-
-/*
-// Funtion to change navbar styling when the collapser for small devices is triggered to show.
-$(".collapse").on("show.bs.collapse", function () {
-  $("#nav").toggleClass("nav-show");
-  $("#nav-toggler-icon").toggleClass("fa-times");
-  $("a").each(function () {
-    $(this).toggleClass("nav-link-change");
-  });
-});
-
-// Function to change navbar styling when the collapser for small devices is triggered to hide.
-$(".collapse").on("hide.bs.collapse", function () {
-  $("#nav").toggleClass("nav-show");
-  $("#nav-toggler-icon").toggleClass("fa-times");
-  $("a").each(function () {
-    $(this).toggleClass("nav-link-change");
-  });
-});
-
-*/
-
-/**
- *
  *    FUNCTIONS FOR GENERAL NAVBAR
  *
  */
-let navCollapsed;
 
+// Global variables used for navbar functions
+let navCollapsed;
+let lastScrollTop = 0;
+let navChange;
+
+/**
+ * Function to change navbar styling when the collapser for small devices is triggered to show. Calls the
+ * changeNav() function passing in a boolean value to be used for jQuery toggleClass() method.
+ */
 $(".collapse").on("show.bs.collapse", function () {
   navCollapsed = true;
   changeNav(navCollapsed);
@@ -43,6 +24,10 @@ $(".collapse").on("show.bs.collapse", function () {
   $("body").toggleClass("body-scroll");
 });
 
+/**
+ * Function to change navbar styling when the collapser for small devices is triggered to hide. Calls the
+ * changeNav() function passing in a boolean value to be used for jQuery toggleClass() method.
+ */
 $(".collapse").on("hide.bs.collapse", function () {
   navCollapsed = false;
   changeNav(navCollapsed);
@@ -50,9 +35,19 @@ $(".collapse").on("hide.bs.collapse", function () {
   $("body").toggleClass("body-scroll");
 });
 
+/**
+ * Function to change navbar styling when the scroll event is triggered.
+ */
 $(window).scroll(function () {
-  let navChange;
   let scrollTop = $(this).scrollTop();
+  if (scrollTop > 150) {
+    $("#nav").addClass("nav-hide");
+  }
+
+  if (scrollTop < lastScrollTop) {
+    $("#nav").removeClass("nav-hide");
+  }
+
   if (scrollTop > 0) {
     navChange = true;
     changeNav(navChange);
@@ -60,8 +55,13 @@ $(window).scroll(function () {
     navChange = false;
     changeNav(navChange);
   }
+  lastScrollTop = scrollTop;
+  console.log(lastScrollTop);
 });
 
+/**
+ * Function to change navbar styling when the window is resized. To stop a minor UI flaw.
+ */
 $(window).resize(function () {
   if ($("#nav-collapser").hasClass("show")) {
     $("#nav-collapser").removeClass("show");
@@ -70,6 +70,10 @@ $(window).resize(function () {
   }
 });
 
+/**
+ * Function to change navbar styling by toggling between classes using a boolean value that is passed in
+ * as a parameter.
+ */
 function changeNav(navChange) {
   console.log(navChange);
   $("#nav").toggleClass("nav-show", navChange);
@@ -82,23 +86,3 @@ function changeNav(navChange) {
     $(this).toggleClass("nav-link-title-black", navChange);
   });
 }
-/*
-function changeNav(collapseChange) {
-  let scrollTop = $(this).scrollTop();
-  if (scrollTop > 0 || collapseChange) {
-    $("#nav").addClass("nav-show");
-    $("#nav-toggler-icon").addClass("toggler-icon-change");
-    $("a").each(function () {
-      $(this).removeClass("default");
-      $(this).addClass("nav-link-change");
-    });
-  } else {
-    $("#nav").removeClass("nav-show");
-    $("#nav-toggler-icon").removeClass("toggler-icon-change");
-    $("a").each(function () {
-      $(this).removeClass("nav-link-change");
-      $(this).addClass("default");
-    });
-  }
-}
-*/
