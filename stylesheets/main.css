@@ -39,10 +39,15 @@ p {
 */
 
 #nav {
-  transition: 0.5s;
   line-height: 30px;
   font-size: 18px;
   letter-spacing: 1px;
+  opacity: 1;
+  transition: top 1s, background-color 0.5s, color 0.5s;
+}
+
+.nav-hide {
+  top: -100%;
 }
 
 .nav-show {
