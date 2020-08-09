@@ -35,9 +35,14 @@ p {
 */
 
 #nav {
+  transition: 0.5s;
   line-height: 30px;
   font-size: 18px;
   letter-spacing: 1px;
+}
+
+.nav-show {
+  background-color: white;
 }
 
 .navbar-brand {
@@ -45,13 +50,20 @@ p {
 }
 
 #nav-logo {
-  width: 180px;
+  width: 150px;
   height: 70px;
 }
 
 .fa-bars {
   color: white;
-  font-size: 40px;
+}
+
+.fa-times {
+  color: black;
+}
+
+#nav-toggler-icon {
+  font-size: 30px;
 }
 
 #nav-seperator {
@@ -67,11 +79,17 @@ p {
   padding-top: 20px;
 }
 
-#nav li > a {
+.default,
+.default:hover {
   color: white;
 }
 
-#nav li > a > .nav-link-title:hover {
+.nav-link-change,
+.nav-link-change:hover {
+  color: black;
+}
+
+.nav-link-title:hover {
   border-bottom: 2px solid white;
   padding-bottom: 5px;
 }
@@ -106,10 +124,12 @@ p {
     padding-left: 50px;
   }
 
+  /*
   #nav-logo {
     width: 250px;
     height: 90px;
   }
+  */
 
   #nav-seperator {
     display: none;
@@ -136,7 +156,7 @@ p {
 
 .jumbotron {
   height: 100vh;
-  widows: 100%;
+  width: 100%;
   margin: 0 !important;
   color: white;
 }
@@ -144,11 +164,11 @@ p {
 /* top, transparent black, faked with gradient on background image */
 #indexJumbotron {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(../images/Home-Image.jpg);
+    url(../images/Home-Image.jpg) no-repeat 50% 50%;
   background-size: cover;
 }
 
 #test {
-  padding: 800px;
+  padding: 800px 0;
   background-color: grey;
 }

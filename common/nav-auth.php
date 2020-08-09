@@ -8,13 +8,13 @@ $username = "John";
         <img src="images/logo.png" />
     </a>
 
-    <button class="navbar-toggler" id="nav-toggler" type="button" data-toggle="collapse" data-target="#nav-content">
-        <span class="navbar-toogler-icon">
+    <button class="navbar-toggler" id="nav-toggler" type="button" data-toggle="collapse" data-target="#nav-collapser">
+        <span class="navbar-toggler-icon">
             <i class="fas fa-bars"></i>
         </span>
     </button>
 
-    <div class="collapse navbar-collapse" id="nav-content">
+    <div class="collapse navbar-collapse" id="nav-collapser">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
                 <a class="nav-link" href="exercise.php">
