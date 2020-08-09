@@ -35,7 +35,8 @@ session_start();
         </div>
     </div>
 
-    <div id="test">
+
+    <div class="container-fluid" id="test">
 
     </div>
 
@@ -44,7 +45,7 @@ session_start();
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/6cc49d804e.js" crossorigin="anonymous"></script>
-    <script src="assets/scripts/scripts.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 
 </html>
