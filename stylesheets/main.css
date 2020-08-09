@@ -11,6 +11,10 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.body-scroll {
+  overflow: hidden;
+}
+
 p {
   font-size: 15px;
 }
@@ -42,7 +46,7 @@ p {
 }
 
 .nav-show {
-  background-color: white;
+  background-color: #fffafa;
 }
 
 .navbar-brand {
@@ -64,6 +68,11 @@ p {
 
 #nav-toggler-icon {
   font-size: 30px;
+  transition: 0.5s;
+}
+
+.toggler-icon-change {
+  color: black;
 }
 
 #nav-seperator {
@@ -89,9 +98,16 @@ p {
   color: black;
 }
 
-.nav-link-title:hover {
-  border-bottom: 2px solid white;
+.nav-link-title {
   padding-bottom: 5px;
+}
+
+.nav-link-title-white:hover {
+  border-bottom: 2px solid white;
+}
+
+.nav-link-title-black:hover {
+  border-bottom: 2px solid black;
 }
 
 #nav-dropdown {
@@ -123,13 +139,6 @@ p {
   .navbar-brand {
     padding-left: 50px;
   }
-
-  /*
-  #nav-logo {
-    width: 250px;
-    height: 90px;
-  }
-  */
 
   #nav-seperator {
     display: none;
