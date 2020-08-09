@@ -8,16 +8,12 @@ $(document).ready(function () {
  *
  */
 
+/*
 // Funtion to change navbar styling when the collapser for small devices is triggered to show.
 $(".collapse").on("show.bs.collapse", function () {
   $("#nav").toggleClass("nav-show");
   $("#nav-toggler-icon").toggleClass("fa-times");
-  /*
-  $("#nav-toggler-icon").removeClass("fa-bars");
-  $("#nav-toggler-icon").addClass("fa-times");
-  */
   $("a").each(function () {
-    //$(this).removeClass("default");
     $(this).toggleClass("nav-link-change");
   });
 });
@@ -26,37 +22,83 @@ $(".collapse").on("show.bs.collapse", function () {
 $(".collapse").on("hide.bs.collapse", function () {
   $("#nav").toggleClass("nav-show");
   $("#nav-toggler-icon").toggleClass("fa-times");
-  /*
-  $("#nav-toggler-icon").removeClass("fa-times");
-  $("#nav-toggler-icon").addClass("fa-bars");
-  */
   $("a").each(function () {
     $(this).toggleClass("nav-link-change");
-    //$(this).addClass("default");
   });
 });
+
+*/
 
 /**
  *
  *    FUNCTIONS FOR GENERAL NAVBAR
  *
  */
+let navCollapsed;
 
-let lastScrollTop = 0;
+$(".collapse").on("show.bs.collapse", function () {
+  navCollapsed = true;
+  changeNav(navCollapsed);
+  $("#nav-toggler-icon").toggleClass("fa-bars fa-times");
+  $("body").toggleClass("body-scroll");
+});
+
+$(".collapse").on("hide.bs.collapse", function () {
+  navCollapsed = false;
+  changeNav(navCollapsed);
+  $("#nav-toggler-icon").toggleClass("fa-bars fa-times");
+  $("body").toggleClass("body-scroll");
+});
+
 $(window).scroll(function () {
+  let navChange;
   let scrollTop = $(this).scrollTop();
-  if (scrollTop > lastScrollTop) {
+  if (scrollTop > 0) {
+    navChange = true;
+    changeNav(navChange);
+  } else {
+    navChange = false;
+    changeNav(navChange);
+  }
+});
+
+$(window).resize(function () {
+  if ($("#nav-collapser").hasClass("show")) {
+    $("#nav-collapser").removeClass("show");
+    $("#nav-toggler-icon").toggleClass("fa-bars fa-times");
+    $("body").removeClass("body-scroll");
+  }
+});
+
+function changeNav(navChange) {
+  console.log(navChange);
+  $("#nav").toggleClass("nav-show", navChange);
+  $("#nav-toggler-icon").toggleClass("toggler-icon-change", navChange);
+  $("a").each(function () {
+    $(this).toggleClass("nav-link-change", navChange);
+  });
+
+  $(".nav-link-title").each(function () {
+    $(this).toggleClass("nav-link-title-black", navChange);
+  });
+}
+/*
+function changeNav(collapseChange) {
+  let scrollTop = $(this).scrollTop();
+  if (scrollTop > 0 || collapseChange) {
     $("#nav").addClass("nav-show");
+    $("#nav-toggler-icon").addClass("toggler-icon-change");
     $("a").each(function () {
       $(this).removeClass("default");
       $(this).addClass("nav-link-change");
     });
   } else {
     $("#nav").removeClass("nav-show");
+    $("#nav-toggler-icon").removeClass("toggler-icon-change");
     $("a").each(function () {
       $(this).removeClass("nav-link-change");
       $(this).addClass("default");
     });
   }
-  lastScrollTop = scrollTop;
-});
+}
+*/
