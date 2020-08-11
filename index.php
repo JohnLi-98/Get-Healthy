@@ -21,8 +21,9 @@ session_start();
 
 <body>
     <?php
-    //include "common/nav-unauth.html";
-    include "common/nav-auth.php";
+    // add if else statement for user login check
+    include "common/nav-unauth.html";
+    //include "common/nav-auth.php";
     ?>
 
     <!-- Jumbotron that fills the height of the screen -->
