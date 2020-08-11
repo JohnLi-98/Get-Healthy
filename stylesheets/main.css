@@ -1,7 +1,9 @@
-/*
+/* 
+    ---------------
 
     Generic Styling
 
+    ---------------
 */
 
 html,
@@ -33,9 +35,11 @@ p {
 }
 
 /*
+    -----------------------
 
-    Navigation Bar
+    Navigation Bar (Common)
 
+    -----------------------
 */
 
 #nav {
@@ -163,9 +167,105 @@ p {
 }
 
 /*
+    ---------------
+
+    Footer (Common)
+
+    ---------------
+*/
+#footer * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#footer {
+  background-color: #ECEFF1;
+  display: flex;
+}
+
+#footer-social-media {
+  background-color: #21D192;
+  color: white;
+  padding: 0 50px;
+}
+
+#social-links {
+  box-sizing: border-box;
+  display: flex;
+}
+
+#social-links ul {
+  position: relative;
+  display: flex;
+}
+
+#social-links ul li {
+  position: relative;
+  list-style: none;
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+#social-links ul li a {
+  text-decoration: none;
+}
+
+#social-links ul li a .fab {
+  font-size: 2em;
+  color: white;
+}
+
+#social-links ul li::before {
+  font-family: "FontAwesome";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 2em;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+}
+
+/* Facebook */
+#social-links ul li:nth-child(1)::before {
+  content: '\f39e';
+  color: #3b5998;
+  border-bottom: 4px solid #3b5998;
+}
+
+/* Twitter */
+#social-links ul li:nth-child(2)::before {
+  content: '\f099';
+  color: #00acee;
+  border-bottom: 4px solid #00acee;
+}
+
+/* YouTube */
+#social-links ul li:nth-child(3)::before {
+  content: '\f167';
+  color: #FF0000;
+  border-bottom: 4px solid #FF0000;
+}
+
+/* Linkedin */
+#social-links ul li:nth-child(4)::before {
+  content: '\f08c';
+  color: #0e76a8;
+  border-bottom: 4px solid #0e76a8;
+}
+#social-links ul li:hover::before {
+  height: 100%;
+}
+
+
+
+/*
+    -----------------
 
     Index Page (Home)
 
+    -----------------
 */
 
 .jumbotron {
@@ -177,6 +277,7 @@ p {
 
 /* top, transparent black, faked with gradient on background image */
 #indexJumbotron {
+  position: relative;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(../images/Home-Image.jpg) no-repeat 50% 50%;
   background-size: cover;

@@ -78,7 +78,7 @@ function changeNav(navChange) {
   console.log(navChange);
   $("#nav").toggleClass("nav-show", navChange);
   $("#nav-toggler-icon").toggleClass("toggler-icon-change", navChange);
-  $("a").each(function () {
+  $("#nav a").each(function () {
     $(this).toggleClass("nav-link-change", navChange);
   });
 
