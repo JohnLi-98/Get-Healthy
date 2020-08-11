@@ -14,6 +14,7 @@ session_start();
     <!-- Stylesheets files (Latest compiled and minified Bootstrap 4 CSS, Google Fonts CSS, Index CSS) -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="stylesheets/main.css">
 
     <title>Home</title>
@@ -34,12 +35,19 @@ session_start();
                 <h1>GET HEALTHY</h1>
             </div>
         </div>
+        <div class="clouds">
+            <img src="images/cloud1.png" style="--i:1">
+        </div>
     </div>
 
 
     <div class="container-fluid" id="test">
 
     </div>
+
+    <?php 
+    include "common/footer.html";
+    ?>
 
     <!-- Script files(jQuery library, Popper JS, Latest Compiled Bootstrap JS, FontAwesome JS)-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
