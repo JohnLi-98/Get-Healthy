@@ -21,21 +21,12 @@ session_start();
 
 <body>
     <?php
+    // add if else statement for user login check
     include "common/nav-unauth.html";
     //include "common/nav-auth.php";
     ?>
 
-    <!-- Jumbotron that fills the height of the screen -->
-    <div class="jumbotron jumbotron-fluid" id="indexJumbotron">
-        <div class="row align-items-center mx-auto h-75 w-100">
-            <div class="col text-center">
-                <p>Welcome to</p>
-                <h1>GET HEALTHY</h1>
-            </div>
-        </div>
-    </div>
-
-    <div id="test">
+    <div class="container-fluid" id="test">
 
     </div>
 
