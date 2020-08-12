@@ -36,7 +36,11 @@ session_start();
             </div>
         </div>
         <div class="clouds">
-            <img src="images/cloud1.png" style="--i:1">
+            <img src="images/cloud1.png" style="--i:1.5">
+            <img src="images/cloud2.png" style="--i:2">
+            <img src="images/cloud3.png" style="--i:2.5">
+            <img src="images/cloud4.png" style="--i:3">
+            <img src="images/cloud5.png" style="--i:3.5">
         </div>
     </div>
 

@@ -137,9 +137,6 @@ p {
   color: red;
 }
 
-@media only screen and (max-width: 768px) {
-}
-
 @media only screen and (min-width: 992px) {
   #nav {
     border-bottom: 2px solid rgba(255, 255, 255, 0.1);
@@ -176,18 +173,16 @@ p {
 #footer * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 #footer {
   background-color: #ECEFF1;
-  display: flex;
+  color: black;
 }
 
 #footer-social-media {
   background-color: #21D192;
   color: white;
-  padding: 0 50px;
 }
 
 #social-links {
@@ -258,7 +253,13 @@ p {
   height: 100%;
 }
 
+#footer-copyright {
+  background-color: #BDBFC1;
+}
 
+#footer-copyright p {
+  font-size: 12px;
+}
 
 /*
     -----------------
@@ -281,6 +282,33 @@ p {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(../images/Home-Image.jpg) no-repeat 50% 50%;
   background-size: cover;
+}
+
+#indexJumbotron .clouds {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+#indexJumbotron .clouds img {
+  position: absolute;
+  bottom: 0;
+  max-width: 100%;
+  height: 60%;
+  animation: cloud-animation calc(10s * var(--i)) linear infinite;
+}
+
+@keyframes cloud-animation {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(120%);
+  }
 }
 
 #test {
