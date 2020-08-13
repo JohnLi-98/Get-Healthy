@@ -32,7 +32,7 @@ session_start();
         <div class="row align-items-center mx-auto h-75 w-100">
             <div class="col text-center">
                 <p>Welcome to</p>
-                <h1>GET HEALTHY</h1>
+                <h1><strong>GET HEALTHY</strong></h1>
             </div>
         </div>
         <div class="clouds">
@@ -49,7 +49,7 @@ session_start();
 
     </div>
 
-    <?php 
+    <?php
     include "common/footer.html";
     ?>
 
