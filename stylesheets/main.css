@@ -21,16 +21,28 @@ p {
   font-size: 15px;
 }
 
+.page-content {
+  padding: 40px 15px;
+}
+
 /* Media queries for generic styling and navigation bar */
 @media only screen and (min-width: 768px) {
   p {
     font-size: 16px;
+  }
+
+  .page-content {
+    padding: 40px 30px;
   }
 }
 
 @media only screen and (min-width: 992px) {
   p {
     font-size: 18px;
+  }
+
+  .page-content {
+    padding: 50px 90px;
   }
 }
 
@@ -333,6 +345,36 @@ p {
   100% {
     transform: translateX(120%);
   }
+}
+
+.parallax {
+  min-height: 250px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+#explore {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/Explore-Parallax.jpg);
+}
+
+.line-divider {
+  border-top: 1px solid #bbb;
+}
+
+.info-btn {
+  border: 1px solid #21d192;
+  background-color: white;
+  color: #21d192;
+}
+
+.info-btn:hover {
+  background-color: #21d192;
+  color: white;
 }
 
 #test {
