@@ -36,16 +36,60 @@ session_start();
             </div>
         </div>
         <div class="clouds">
-            <img src="images/cloud1.png" style="--i:1.5">
+            <img src="images/cloud1.png" style="--i:1">
             <img src="images/cloud2.png" style="--i:2">
-            <img src="images/cloud3.png" style="--i:2.5">
-            <img src="images/cloud4.png" style="--i:3">
-            <img src="images/cloud5.png" style="--i:3.5">
+            <img src="images/cloud3.png" style="--i:3">
+            <img src="images/cloud4.png" style="--i:4">
+            <img src="images/cloud5.png" style="--i:5">
         </div>
     </div>
 
     <div class="container-fluid page-content">
+        <div class="row pt-5 pb-2 px-md-5">
+            <div class="col-12 text-center px-md-5">
+                <h2 class="font-weight-bold pb-2">Transform your lifestyle</h2>
+                <p>
+                    Personal health and wellbeing is a topic that is very relevant in today's society. With access to
+                    health information being so convenient for individuals, this site aims to provide ways in
+                    living a healthier lifestyle and unlocking your potential.
+                </p>
+            </div>
+        </div>
 
+        <div class="row pb-3">
+            <div class="col">
+                <img src="images/Healthy-Banner.jpg" class="img-fluid" alt="Responsive Healthy Banner" style="width:100%;" />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4 text-center px-4 py-3">
+                <img src="images/Exercise-Icon-Index.png" class="img-fluid pb-3" />
+                <h5 class="font-weight-bold pb-2">Train Smarter!</h5>
+                <p class="text-muted">
+                    Find out how you can efficiently train your body to maximise it's potential, without overexerting
+                    and risking injury.
+                </p>
+            </div>
+
+            <div class="col-sm-4 text-center px-4 py-3">
+                <img src="images/Motivation-Icon-Index.png" class="img-fluid pb-3" />
+                <h5 class="font-weight-bold pb-2">Be Inspired!</h5>
+                <p class="text-muted">
+                    Discover your inner beast by being inspired to go out and giving your all to achieving the goals
+                    you previously set.
+                </p>
+            </div>
+
+            <div class="col-sm-4 text-center px-4 py-3">
+                <img src="images/Nutrition-Icon-Index.png" class="img-fluid pb-3" />
+                <h5 class="font-weight-bold pb-2">Eat Nutritiously!</h5>
+                <p class="text-muted">
+                    Recover and fuel your body with the right foods to keep you energised for your next session, without
+                    sacrificing flavour.
+                </p>
+            </div>
+        </div>
     </div>
 
     <div class="container-fluid parallax" id="explore"></div>
@@ -106,7 +150,7 @@ session_start();
                 <h3 class="card-title"><u>Nutrition</u></h3>
                 <p class="card-text">
                     Many people often underestimate the importance of the right food and nutrition has on
-                    our health. There are multiple multiple benefits that eating an abundance of different
+                    our health. There are multiple benefits that eating an abundance of different
                     nutrients has on your body. Swapping high carbohydrates, sugars and fatty foods for whole
                     nutritious foods will have a significant effect on your body, health and mood. A lot of
                     people plan and start their healthy eating journey, but are unable to sustain these
@@ -126,9 +170,43 @@ session_start();
         </div>
     </div>
 
+    <div class="container-fluid pr-5 py-4" id="author">
+        <div class="row">
+            <div class="col-12 col-md-3 text-center">
+                <img src="images/Profile-Pic.JPG" class="rounded-circle">
+                <h5 class="pt-3">John Li</h5>
+                <h6>Aspiring Developer</h6>
+            </div>
 
-    <div class="container-fluid" id="test">
+            <div class="col-12 col-md-9 pt-2 pt-md-0 pr-md-5 my-auto text-center">
+                <p>
+                    "I believe that health and wellness is an important aspect of an individual's life; by looking after our health will not
+                    only benefit us in the short term but also in the long term. It allows us to keep both the mind and body working positively,
+                    while setting a clear path of what we want to achieve. Your life only gets better when you do. Embrace and work on your body
+                    and mind, these are the greatest things you'll ever own."
+                </p>
+            </div>
+        </div>
+    </div>
 
+    <div class="container-fluid d-flex parallax" id="technologies">
+        <div class="row w-100 align-items-center text-center px-5">
+            <div class="col-6 col-md-3">
+                <i class="fab fa-html5 fa-3x"></i>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <i class="fab fa-css3-alt fa-3x"></i>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <i class="fab fa-js-square fa-3x"></i>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <i class="fab fa-php fa-3x"></i>
+            </div>
+        </div>
     </div>
 
     <?php
