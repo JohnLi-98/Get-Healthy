@@ -138,6 +138,11 @@ p {
   font-size: 13px;
 }
 
+#nav-dropdown a,
+#nav-dropdown a:hover {
+  color: black;
+}
+
 .close {
   color: black;
   font-size: 30px;
