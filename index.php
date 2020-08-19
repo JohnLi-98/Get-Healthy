@@ -105,7 +105,7 @@ session_start();
                     is better than doing none. By becoming more active throuhout the day in
                     relatively simple ways, people can easily achieve the recommended activity levels.
                 </p>
-                <button type="button" class="btn info-btn" style="border-radius:40px">
+                <button type="button" class="btn info-btn">
                     <span>
                         Find out more
                         <i class="fas fa-angle-double-right"></i>
@@ -130,7 +130,7 @@ session_start();
                     factor that turns a good thought into immediate action. It turns a good idea into a
                     business and can positively impact the world around you.
                 </p>
-                <button type="button" class="btn info-btn" style="border-radius:40px">
+                <button type="button" class="btn info-btn">
                     <span>
                         Find out more
                         <i class="fas fa-angle-double-right"></i>
@@ -156,7 +156,7 @@ session_start();
                     people plan and start their healthy eating journey, but are unable to sustain these
                     changes.
                 </p>
-                <button type="button" class="btn info-btn" style="border-radius:40px">
+                <button type="button" class="btn info-btn">
                     <span>
                         Find out more
                         <i class="fas fa-angle-double-right"></i>
