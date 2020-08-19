@@ -1,9 +1,11 @@
 /* 
+
     ---------------
 
     Generic Styling
 
     ---------------
+
 */
 
 html,
@@ -47,11 +49,13 @@ p {
 }
 
 /*
+
     -----------------------
 
     Navigation Bar (Common)
 
     -----------------------
+
 */
 
 #nav {
@@ -181,11 +185,13 @@ p {
 }
 
 /*
+
     ---------------
 
     Footer (Common)
 
     ---------------
+
 */
 #footer * {
   margin: 0;
@@ -303,11 +309,13 @@ p {
 }
 
 /*
+
     -----------------
 
     Index Page (Home)
 
     -----------------
+    
 */
 
 .jumbotron {
@@ -374,6 +382,7 @@ p {
   border: 1px solid #21d192;
   background-color: white;
   color: #21d192;
+  border-radius: 40px;
 }
 
 .info-btn:hover {
@@ -394,4 +403,128 @@ p {
 #author img {
   height: 200px;
   width: 150px;
+}
+
+/*
+
+    ---------------------
+
+    Login Page (Identity)
+
+    ---------------------
+
+*/
+
+#login-panel-left {
+  background-color: #21d192;
+  /*height: 35vh;*/
+  border-bottom-left-radius: 80% 100px;
+  border-bottom-right-radius: 80% 100px;
+  color: white;
+}
+
+.identity-btn {
+  border: 1px solid white;
+  color: white;
+  border-radius: 40px;
+}
+
+.identity-btn:hover {
+  border-color: #21d192;
+  color: #21d192;
+  background-color: white;
+}
+
+#login-panel-right {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+#login-panel-right img {
+  width: 120px;
+  height: 120px;
+}
+
+#login-form {
+  padding: 0 30px;
+}
+
+#login-form .form-control {
+  border: none;
+  box-shadow: none;
+  padding: 8px 35px;
+  border-bottom: 2px solid #d9d9d9;
+  transition: ease-in 0.5s;
+}
+
+#login-form .form-control:focus,
+#login-form .form-control:valid {
+  border-color: #21d192;
+}
+
+.form-ph {
+  position: absolute;
+  padding: 7px 0 0 35px;
+  transition: all 200ms;
+  opacity: 0.5;
+  cursor: text;
+}
+
+.form-control:focus + .form-ph,
+.form-control:valid + .form-ph {
+  font-size: 90%;
+  transform: translate3d(0, -100%, 0);
+  opacity: 1;
+}
+
+#login-form .fas {
+  color: #d9d9d9;
+  margin-top: -28px;
+  margin-left: 6px;
+  transition: ease-in 0.5s;
+}
+
+#login-form .form-control:focus ~ .fas,
+#login-form .form-control:valid ~ .fas {
+  color: #21d192;
+}
+
+#login-form a {
+  color: #999;
+}
+
+#login-form a:hover {
+  color: #21d192;
+}
+
+#login-button {
+  background-color: #21d192;
+  color: white;
+  border-radius: 40px;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  #login-panel-left {
+    border-bottom-left-radius: 80% 100px;
+    border-bottom-right-radius: 3000%;
+    border-bottom-width: thick;
+  }
+
+  #login-form {
+    padding: 0 150px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #login-form {
+    padding: 0 60px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #login-form {
+    padding: 0 120px;
+  }
 }
