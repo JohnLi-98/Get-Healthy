@@ -5,3 +5,5 @@ navbar.windowScroll();
 navbar.navCollapseShow();
 navbar.navCollapseHide();
 navbar.windowResize();
+
+console.log("This is a test for renaming branches in git and github");
