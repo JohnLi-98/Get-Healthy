@@ -22,20 +22,23 @@
                 <div class="row">
                     <div class="col-md-6 col-lg-12 text-center px-3 px-md-0">
                         <h3>New Here?</h3>
+
                         <p class="pt-2 pb-1">
-                            Not a member yet? You can easily sign up and enjoy the benefits of being a part of Get
-                            Healthy by clicking the 'Sign Up' button below.
+                            Not a member yet? Simply sign up and enjoy the benefits of being a part of Get Healthy
+                            by clicking the 'Sign Up' button below.
                         </p>
-                        <a href="#" class="btn identity-btn mr-2" role="button">
+
+                        <a href="../index.php" class="btn identity-btn mr-2" role="button">
                             Home
                         </a>
-                        <a href="#" class="btn identity-btn ml-2" role="button">
+
+                        <a href="register.php" class="btn identity-btn ml-2" role="button">
                             Sign Up
                         </a>
                     </div>
 
-                    <div class="col-md-6 col-lg-12 text-center px-lg-5 pt-lg-5 d-none d-md-block">
-                        <img src="../images/Sign-In.svg" class="img-fluid px-5" />
+                    <div class="col-md-6 col-lg-12 my-auto px-lg-5 pt-lg-5 d-none d-md-block">
+                        <img src="../images/Sign-In.svg" class="img-fluid px-lg-5" />
                     </div>
                 </div>
             </div>

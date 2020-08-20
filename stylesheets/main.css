@@ -417,7 +417,6 @@ p {
 
 #login-panel-left {
   background-color: #21d192;
-  /*height: 35vh;*/
   border-bottom-left-radius: 80% 100px;
   border-bottom-right-radius: 80% 100px;
   color: white;
@@ -518,6 +517,10 @@ p {
 }
 
 @media only screen and (min-width: 992px) {
+  #login-panel-left {
+    min-height: 100vh;
+  }
+
   #login-form {
     padding: 0 60px;
   }
@@ -538,3 +541,82 @@ p {
     ----------------------------
 
 */
+
+#register-panel-right {
+  background-color: #21d192;
+  border-bottom-left-radius: 80% 100px;
+  border-bottom-right-radius: 80% 100px;
+  color: white;
+}
+
+#register-form {
+  padding: 0 30px;
+}
+
+#register-form .form-control {
+  border: none;
+  box-shadow: none;
+  padding: 8px 35px;
+  border-bottom: 2px solid #d9d9d9;
+  transition: ease-in 0.5s;
+}
+
+#register-form .form-control:focus,
+#register-form .form-control:valid {
+  border-color: #21d192;
+}
+
+#register-form .fas {
+  color: #d9d9d9;
+  margin-top: -28px;
+  margin-left: 6px;
+  transition: ease-in 0.5s;
+}
+
+#register-form .form-control:focus ~ .fas,
+#register-form .form-control:valid ~ .fas {
+  color: #21d192;
+}
+
+#register-form a {
+  color: #999;
+}
+
+#register-form a:hover {
+  color: #21d192;
+}
+
+#register-button {
+  background-color: #21d192;
+  color: white;
+  border-radius: 40px;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  #register-panel-right {
+    border-bottom-left-radius: 3000%;
+    border-bottom-right-radius: 80% 100px;
+    border-bottom-width: thick;
+  }
+
+  #register-form {
+    padding: 0 150px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #register-panel-right {
+    min-height: 100vh;
+  }
+
+  #register-form {
+    padding: 0 60px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #register-form {
+    padding: 0 120px;
+  }
+}
