@@ -18,16 +18,21 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-6 text-center p-5 order-2 order-lg-1" id="register-panel-left">
+            <div class="col-lg-6 text-center px-5 py-4 order-2 order-lg-1" id="register-panel-left">
                 <h2><strong>SIGN UP</strong></h2>
                 <p class="pt-1">Fill in all fields below to create an account with us.</p>
 
-                <form method="post" id="register-form">
+                <form method="post" id="register-form" action="create-account.php" novalidate>
                     <div class="form-row mx-1 pt-4">
                         <input type="text" class="form-control" id="register-email" name="register-email" required />
                         <label class="form-ph" for="register-email" id="register-email-ph">Email Address</label>
                         <i class="fas fa-envelope"></i>
                     </div>
+
+                    <small class="form-text text-muted text-left px-2">
+                        <small class="invisible">hidden</small>
+                        <span id="email-check" class="float-right"></span>
+                    </small>
 
                     <div class="form-row mx-1 pt-5">
                         <input type="text" class="form-control" id="register-username" name="register-username" required />
@@ -35,32 +40,33 @@
                         <i class="fas fa-user"></i>
                     </div>
 
-                    <small class="form-text text-muted text-left pl-2">
-                        Must be 6-32 characters
-                        <span id="usernameCheck" class="float-right"></span>
+                    <small class="form-text text-muted text-left px-2">
+                        6-32 characters
+                        <span id="username-check" class="float-right"></span>
                     </small>
 
                     <div class="form-row mx-1 pt-5">
-                        <input type="text" class="form-control" id="register-pwd" name="register-pwd" required />
+                        <input type="password" class="form-control" id="register-pwd" name="register-pwd" required />
                         <label class="form-ph" for="register-pwd" id="register-pwd-ph">Password</label>
                         <i class="fas fa-lock"></i>
                     </div>
 
-                    <small class="form-text text-muted text-left pl-2">
-                        Must be 8 or more characters
+                    <small class="form-text text-muted text-left px-2">
+                        8 or more characters
                     </small>
 
                     <div class="form-row mx-1 pt-5">
-                        <input type="text" class="form-control" id="register-pwdC" name="register-pwdC" required />
+                        <input type="password" class="form-control" id="register-pwdC" name="register-pwdC" required />
                         <label class="form-ph" for="register-pwdC" id="register-pwdC-ph">Confirm Password</label>
                         <i class="fas fa-lock"></i>
                     </div>
 
-                    <small>
-                        <span id="passwordCheck" class="float-right"></span>
+                    <small class="form-text text-muted text-left px-2">
+                        8 or more characters
+                        <span id="password-check" class="float-right"></span>
                     </small>
 
-                    <button type="submit" class="btn mt-5" id="register-button">
+                    <button type="submit" class="btn mt-4" id="register-button">
                         SIGN UP
                     </button>
                 </form>
@@ -98,7 +104,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/6cc49d804e.js" crossorigin="anonymous"></script>
-    <script type="module" src="scripts/main.js"></script>
+    <script type="module" src="../scripts/main.js"></script>
 </body>
 
 </html>
