@@ -542,11 +542,10 @@ p {
 
 */
 
-#register-panel-right {
-  background-color: #21d192;
-  border-bottom-left-radius: 80% 100px;
-  border-bottom-right-radius: 80% 100px;
-  color: white;
+#register-panel-left {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
 }
 
 #register-form {
@@ -558,7 +557,7 @@ p {
   box-shadow: none;
   padding: 8px 35px;
   border-bottom: 2px solid #d9d9d9;
-  transition: ease-in 0.5s;
+  transition: 0.5s;
 }
 
 #register-form .form-control:focus,
@@ -570,7 +569,7 @@ p {
   color: #d9d9d9;
   margin-top: -28px;
   margin-left: 6px;
-  transition: ease-in 0.5s;
+  transition: 0.5s;
 }
 
 #register-form .form-control:focus ~ .fas,
@@ -591,6 +590,13 @@ p {
   color: white;
   border-radius: 40px;
   width: 100%;
+}
+
+#register-panel-right {
+  background-color: #21d192;
+  border-bottom-left-radius: 80% 100px;
+  border-bottom-right-radius: 80% 100px;
+  color: white;
 }
 
 @media only screen and (min-width: 768px) {
