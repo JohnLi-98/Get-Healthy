@@ -1,3 +1,13 @@
+<?php
+ini_set("session.save_path", "/home/unn_w16010421/sessionData");
+session_start();
+
+if (isset($_SESSION['logged-in']) == true) {
+    header("Location: ../index.php");
+    exit;
+}
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -22,7 +32,7 @@
                 <h2><strong>SIGN UP</strong></h2>
                 <p class="pt-1">Fill in all fields below to create an account with us.</p>
 
-                <form method="post" id="register-form" action="create-account.php" novalidate>
+                <form method="post" id="register-form" novalidate>
                     <div class="form-row mx-1 pt-4">
                         <input type="text" class="form-control" id="register-email" name="register-email" required />
                         <label class="form-ph" for="register-email" id="register-email-ph">Email Address</label>

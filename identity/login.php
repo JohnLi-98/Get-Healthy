@@ -1,3 +1,13 @@
+<?php
+ini_set("session.save_path", "/home/unn_w16010421/sessionData");
+session_start();
+
+if (isset($_SESSION['logged-in']) == true) {
+    header("Location: ../index.php");
+    exit;
+}
+?>
+
 <!doctype html>
 <html lang="en">
 

@@ -21,12 +21,25 @@ function checkEmailValid() {
   const fieldId = $("#register-email").attr("id");
 
   if (validateEmail(emailVal)) {
-    fieldInputValid(fieldId);
-    return true;
+    $.ajax({
+      type: "post",
+      url: "../ajax/register/email-check.php",
+      data: {
+        email: emailVal,
+      },
+      success: function (data) {
+        if (data == "1") {
+          fieldInputInvalid(fieldId);
+          $("#email-check").html("Email already exists").css("color", "red");
+        } else {
+          fieldInputValid(fieldId);
+          $("#email-check").empty();
+        }
+      },
+    });
   } else {
     fieldInputInvalid(fieldId);
     $("#email-check").html("Please Enter a Valid Email").css("color", "red");
-    return false;
   }
 }
 
@@ -42,17 +55,29 @@ function checkUsernameValid() {
   if (usernameVal === "") {
     fieldInputInvalid(fieldId);
     $("#username-check").html("Enter a Username").css("color", "red");
-    return false;
   } else if (usernameVal.length > 32) {
     fieldInputInvalid(fieldId);
     $("#username-check").html("Too Long").css("color", "red");
-    return false;
   } else if (usernameVal.length < 6) {
     fieldInputInvalid(fieldId);
     $("#username-check").html("Too Short").css("color", "red");
-    return false;
   } else {
-    // Do ajax check
+    $.ajax({
+      type: "post",
+      url: "../ajax/register/username-check.php",
+      data: {
+        username: usernameVal,
+      },
+      success: function (data) {
+        if (data == "1") {
+          fieldInputInvalid(fieldId);
+          $("#username-check").html("Username taken").css("color", "red");
+        } else {
+          fieldInputValid(fieldId);
+          $("#username-check").empty();
+        }
+      },
+    });
   }
 }
 
@@ -69,18 +94,19 @@ function checkPwdMatch() {
   ) {
     $("#register-pwd, #register-pwdC").removeClass("is-valid is-invalid");
     $("#register-pwd, #register-pwdC").removeAttr("style");
+    $("#register-pwd, #register-pwdC").siblings(".fas").removeAttr("style");
     $("#password-check").empty();
-    return false;
-  } else if (pwdVal === pwdCVal && pwdVal.length >= 8 && pwdCVal.length >= 8) {
+  } else if (
+    pwdVal === pwdCVal &&
+    (pwdVal.length >= 8 || pwdCVal.length >= 8)
+  ) {
     fieldInputValid(pwdId);
     fieldInputValid(pwdCId);
     $("#password-check").html("Matching").css("color", "green");
-    return true;
   } else {
     fieldInputInvalid(pwdId);
     fieldInputInvalid(pwdCId);
     $("#password-check").html("Not Matching").css("color", "red");
-    return false;
   }
 }
 
@@ -101,3 +127,29 @@ function fieldInputInvalid(inputField) {
     .siblings(".fas")
     .attr("style", "color: #ff0000");
 }
+
+$("#register-form").on("submit", function (event) {
+  console.log("checking form");
+  let formValid;
+  checkEmailValid();
+  checkUsernameValid();
+  if (
+    !$("#register-pwd").hasClass("is-valid") ||
+    !$("#register-pwdC").hasClass("is-valid")
+  ) {
+    fieldInputInvalid($("#register-pwd").attr("id"));
+    fieldInputInvalid($("#register-pwdC").attr("id"));
+    $("#password-check").html("Not Matching").css("color", "red");
+  }
+
+  $("#register-form input").each(function () {
+    if ($(this).hasClass("is-invalid")) {
+      formValid = false;
+    }
+  });
+  if (formValid === false) {
+    return false;
+  } else {
+    return true;
+  }
+});
