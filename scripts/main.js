@@ -41,7 +41,7 @@ function checkUsernameValid() {
 
   if (usernameVal === "") {
     fieldInputInvalid(fieldId);
-    $("#username-check").html("Choose a Username").css("color", "red");
+    $("#username-check").html("Enter a Username").css("color", "red");
     return false;
   } else if (usernameVal.length > 32) {
     fieldInputInvalid(fieldId);
