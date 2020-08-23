@@ -1,5 +1,4 @@
 <?php
-
 // Check to see if dbConn file exists. If not, throw 503 status code and response text with die(). Otherwise, store
 // getConnection() into $dbConn variable.
 if (!file_exists("../../config/config.php")) {
@@ -14,7 +13,7 @@ $dbConn = getConnection();
 // query to the ajax caller.
 try {
     $userEmail = $_POST['email'];
-    $sqlQuery = "SELECT email FROM GH_users WHERE email = :email";
+    $sqlQuery = "SELECT email FROM GH_accounts WHERE email = :email";
     $stmt = $dbConn->prepare($sqlQuery);
     $stmt->bindParam(':email', $userEmail, PDO::PARAM_STR, 255);
     $stmt->execute();

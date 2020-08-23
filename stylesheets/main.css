@@ -599,6 +599,108 @@ p {
   color: white;
 }
 
+.form-submit {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.response {
+  width: 100%;
+}
+
+.success {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: block;
+  stroke-width: 2;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+  margin: auto;
+  box-shadow: inset 0px 0px 0px #21d192;
+  animation: successFill 0.4s ease-in-out 0.4s forwards,
+    scale 0.3s ease-in-out 0.9s both;
+}
+
+.success-circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke: #21d192;
+  fill: none;
+  animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.success-tick {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+.error {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: block;
+  stroke-width: 2;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+  margin: auto;
+  box-shadow: inset 0px 0px 0px #ff4136;
+  animation: errorFill 0.4s ease-in-out 0.4s forwards,
+    scale 0.3s ease-in-out 0.9s both;
+}
+
+.error-circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke: #ff4136;
+  fill: none;
+  animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.error-cross {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes scale {
+  0%,
+  100% {
+    transform: none;
+  }
+  50% {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+}
+@keyframes successFill {
+  100% {
+    box-shadow: inset 0px 0px 0px 50px #21d192;
+  }
+}
+
+@keyframes errorFill {
+  100% {
+    box-shadow: inset 0px 0px 0px 50px #ff4136;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   #register-panel-right {
     border-bottom-left-radius: 3000%;
@@ -608,6 +710,10 @@ p {
 
   #register-form {
     padding: 0 150px;
+  }
+
+  .response {
+    width: 75%;
   }
 }
 

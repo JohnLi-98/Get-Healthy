@@ -129,7 +129,8 @@ function fieldInputInvalid(inputField) {
 }
 
 $("#register-form").on("submit", function (event) {
-  console.log("checking form");
+  event.preventDefault();
+  event.stopPropagation();
   let formValid;
   checkEmailValid();
   checkUsernameValid();
@@ -147,9 +148,64 @@ $("#register-form").on("submit", function (event) {
       formValid = false;
     }
   });
-  if (formValid === false) {
-    return false;
-  } else {
-    return true;
+  if (formValid !== false) {
+    /*
+    $("#loader").removeClass("d-none");
+    $(document.body).addClass("body-scroll");
+    */
+    $("#loader").toggleClass("d-none");
+    $(document.body).toggleClass("body-scroll");
+    setTimeout(function () {
+      createAccount();
+    }, 2000);
   }
+});
+
+function createAccount() {
+  console.log("creating the account");
+  const emailVal = $("#register-email").val();
+  const usernameVal = $("#register-username").val();
+  const pwdVal = $("#register-pwd").val();
+  const pwdCVal = $("#register-pwdC").val();
+
+  $.ajax({
+    type: "post",
+    url: "../ajax/register/create-account.php",
+    data: {
+      email: emailVal,
+      username: usernameVal,
+      password: pwdVal,
+      passwordConfirm: pwdCVal,
+    },
+    success: function () {
+      /*
+      $("#loading-icon").addClass("d-none");
+      $("#success-response").removeClass("d-none");
+      */
+
+      $("#loading-icon, #success-response").toggleClass("d-none");
+
+      setTimeout(function () {
+        window.location.replace(
+          "http://unn-w16010421.newnumyspace.co.uk/Projects/Get-Healthy/index.php"
+        );
+      }, 8000);
+    },
+    error: function (res) {
+      $("#loading-icon").addClass("d-none");
+      $("#error-response").removeClass("d-none");
+      /*
+      $("#loading-icon, #success-response").toggleClass("d-none");
+      */
+      $("#error-message").html("An error occured: " + res.responseText);
+    },
+  });
+}
+
+$(".close-loader").click(function () {
+  console.log("Close button was clicked test");
+  $("#loader").addClass("d-none");
+  $("#errorResponse").addClass("d-none");
+  $("#loadingIcon").removeClass("d-none");
+  $(document.body).removeClass("body-scroll");
 });
