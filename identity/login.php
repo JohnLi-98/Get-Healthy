@@ -57,16 +57,16 @@ if (isset($_SESSION['logged-in']) == true) {
                 <img src="../images/avatar.svg" class="mx-auto" />
                 <h2 class="pt-4"><strong>SIGN IN</strong></h2>
 
-                <form method="post" id="login-form">
+                <form method="post" id="login-form" autocomplete="off" novalidate>
                     <div class="form-row mx-1 pt-5">
                         <input type="text" class="form-control" id="login-username" name="login-username" required />
-                        <label class="form-ph" for="login-username" id="login-username-ph">Username</label>
+                        <label class="form-ph" for="login-username">Username</label>
                         <i class="fas fa-user"></i>
                     </div>
 
                     <div class="form-row mx-1 pt-5">
-                        <input type="password" class="form-control" id="login-password" name="login-password" required />
-                        <label class="form-ph" for="login-password" id="login-password-ph">Password</label>
+                        <input type="password" class="form-control" id="login-pwd" name="login-pwd" required />
+                        <label class="form-ph" for="login-pwd">Password</label>
                         <span class="fas fa-lock"></span>
                     </div>
 
@@ -78,6 +78,40 @@ if (isset($_SESSION['logged-in']) == true) {
                         SIGN IN
                     </button>
                 </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid h-100 w-100 form-submit d-none" id="loader">
+        <div class="row h-100">
+            <div class="m-auto col-9 col-md-7 col-lg-5 justify-content-center align-items-center h-75 text-dark d-flex flex-column">
+                <div class="response text-center text-white" id="loading-icon">
+                    <i class="fas fa-spinner fa-pulse fa-4x"></i>
+                    <h2 class="pt-4">Loading</h2>
+                </div>
+
+                <div class="response alert-danger text-center d-none" id="error-response">
+                    <div class="mr-2 mt-1">
+                        <button type="button" class="close close-loader" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <svg class="error mt-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                        <circle class="error-circle" cx="26" cy="26" r="25" fill="none" />
+                        <line class="error-cross" x1="15" y1="15" x2="37" y2="37" stroke="white" stroke-width="2" />
+                        <line class="error-cross" x1="37" y1="15" x2="15" y2="37" stroke="white" stroke-width="2" />
+                    </svg>
+
+                    <div class="mt-4 mx-4">
+                        <h2>Error</h2>
+                        <p id="error-message"></p>
+                    </div>
+
+                    <div class="mb-3">
+                        <button type="button" class="btn btn-danger close-loader" aria-label="Close">Close</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

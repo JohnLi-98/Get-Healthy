@@ -22,9 +22,12 @@ session_start();
 
 <body>
     <?php
-    // add if else statement for user login check
-    include "common/nav-unauth.html";
-    //include "common/nav-auth.php";
+    // If else statement to select the correct navbar depending on whether a session variable exists for 'logged-in'
+    if (isset($_SESSION['logged-in']) == true) {
+        include "common/nav-auth.php";
+    } else {
+        include "common/nav-unauth.html";
+    }
     ?>
 
     <!-- Jumbotron that fills the height of the screen -->

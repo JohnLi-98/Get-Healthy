@@ -142,9 +142,8 @@ p {
   font-size: 13px;
 }
 
-#nav-dropdown a,
-#nav-dropdown a:hover {
-  color: black;
+#dropdown-username {
+  font-size: 13px;
 }
 
 .close {
@@ -156,6 +155,11 @@ p {
 .close :hover,
 .close :focus {
   color: red;
+}
+
+#nav-dropdown a,
+#nav-dropdown a:hover {
+  color: black;
 }
 
 @media only screen and (min-width: 992px) {
