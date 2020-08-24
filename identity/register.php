@@ -35,7 +35,7 @@ if (isset($_SESSION['logged-in']) == true) {
                 <form method="post" id="register-form" autocomplete="off" novalidate>
                     <div class="form-row mx-1 pt-4">
                         <input type="text" class="form-control" id="register-email" name="register-email" required />
-                        <label class="form-ph" for="register-email" id="register-email-ph">Email Address</label>
+                        <label class="form-ph" for="register-email">Email Address</label>
                         <i class="fas fa-envelope"></i>
                     </div>
 
@@ -46,7 +46,7 @@ if (isset($_SESSION['logged-in']) == true) {
 
                     <div class="form-row mx-1 pt-5">
                         <input type="text" class="form-control" id="register-username" name="register-username" required />
-                        <label class="form-ph" for="register-username" id="register-username-ph">Username</label>
+                        <label class="form-ph" for="register-username">Username</label>
                         <i class="fas fa-user"></i>
                     </div>
 
@@ -57,7 +57,7 @@ if (isset($_SESSION['logged-in']) == true) {
 
                     <div class="form-row mx-1 pt-5">
                         <input type="password" class="form-control" id="register-pwd" name="register-pwd" required />
-                        <label class="form-ph" for="register-pwd" id="register-pwd-ph">Password</label>
+                        <label class="form-ph" for="register-pwd">Password</label>
                         <i class="fas fa-lock"></i>
                     </div>
 
@@ -67,7 +67,7 @@ if (isset($_SESSION['logged-in']) == true) {
 
                     <div class="form-row mx-1 pt-5">
                         <input type="password" class="form-control" id="register-pwdC" name="register-pwdC" required />
-                        <label class="form-ph" for="register-pwdC" id="register-pwdC-ph">Confirm Password</label>
+                        <label class="form-ph" for="register-pwdC">Confirm Password</label>
                         <i class="fas fa-lock"></i>
                     </div>
 

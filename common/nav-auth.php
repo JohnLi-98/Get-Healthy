@@ -1,8 +1,3 @@
-<?php
-//$username = $_SESSION['username'];
-$username = "John";
-?>
-
 <nav class="navbar navbar-expand-lg fixed-top" id="nav">
     <a class="navbar-brand" href="index.php">
         <img src="images/logo.png" id="nav-logo" />
@@ -53,13 +48,13 @@ $username = "John";
                             </button>
 
                             <div class="row">
-                                <p class="pr-2">
+                                <p class="pr-2" id="dropdown-username">
                                     <strong>
-                                        Hi <?php echo $username; ?>
+                                        Hi <?php echo $_SESSION['username']; ?>
                                     </strong>
                                 </p>
                                 <p>|</p>
-                                <a href="#" class="pl-2">Log Out</a>
+                                <a href="identity/logout.php" class="pl-2" id="logout-link">Log Out</a>
                             </div>
                         </div>
                     </div>
