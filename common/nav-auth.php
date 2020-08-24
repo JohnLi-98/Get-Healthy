@@ -54,7 +54,7 @@
                                     </strong>
                                 </p>
                                 <p>|</p>
-                                <a href="identity/logout.php" class="pl-2" id="logout-link">Log Out</a>
+                                <a href="javascript:void(0);" class="pl-2" id="logout-button">Log Out</a>
                             </div>
                         </div>
                     </div>
