@@ -309,6 +309,19 @@ function authenticateAccount() {
 
 $("#logout-button").click(function () {
   createLogoutMessage();
+  setTimeout(function () {
+    $.ajax({
+      url: "ajax/logout.php",
+      success: function () {
+        $("#loading-icon, #success-response").toggleClass("d-none");
+        setTimeout(function () {
+          window.location.replace(
+            "http://unn-w16010421.newnumyspace.co.uk/Projects/Get-Healthy/index.php"
+          );
+        }, 3000);
+      },
+    });
+  }, 2000);
 });
 
 function createLogoutMessage() {
@@ -335,54 +348,21 @@ function createLogoutMessage() {
   });
   h2.append("Logging Out");
   const responseDiv = createElement("div", {
-    class: "response alert-success text-center py-5",
+    class: "response alert-success text-center py-5 d-none",
     id: "success-response",
-  });
-  const svg = createElement("svg", {
-    class: "success",
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 0 52 52",
-  });
-  const circle = createElement("circle", {
-    class: "success-circle",
-    cx: "26",
-    cy: "26",
-    r: "25",
-    fill: "none",
-  });
-  const path = createElement("path", {
-    class: "success-tick",
-    fill: "none",
-    d: "M14.1 27.2l7.1 7.2 16.7-16.8",
-    "stroke-width": "2",
   });
   const responseText = createElement("div", {
     class: "mt-4 mx-4",
   });
   const h2Response = createElement("h2", {});
   h2Response.append("Logged Out");
+  const pResponse = createElement("p", {});
+  pResponse.append("You have successfully logged out of your account.");
   document.body
     .appendChild(div)
     .appendChild(row)
     .appendChild(col)
     .append(iconDiv, responseDiv);
   iconDiv.append(icon, h2);
-  responseDiv.appendChild(svg).append(circle, path);
-  responseDiv.appendChild(responseText).append(h2Response);
+  responseDiv.appendChild(responseText).append(h2Response, pResponse);
 }
-/*
-<div class="response alert-success text-center py-5 d-none" id="success-response">
-  <svg class="success" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
-    <circle class="success-circle" cx="26" cy="26" r="25" fill="none" />
-    <path class="success-tick" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" stroke-width="2" />
-  </svg>
-
-  <div class="mt-4 mx-4">
-    <h2>Account Created</h2>
-    <p>
-      You can now enjoy the benefits of being a GET Healthy member. Please wait while we
-      redirect you back to our home page where you can sign in.
-                        </p>
-  </div>
-</div>
-*/
