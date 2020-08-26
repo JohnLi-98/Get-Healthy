@@ -31,7 +31,7 @@ session_start();
     ?>
 
     <!-- Jumbotron that fills the height of the screen -->
-    <div class="jumbotron jumbotron-fluid" id="indexJumbotron">
+    <div class="jumbotron jumbotron-fluid" id="index-jumbotron">
         <div class="row align-items-center mx-auto h-75 w-100">
             <div class="col text-center">
                 <p>Welcome to</p>
