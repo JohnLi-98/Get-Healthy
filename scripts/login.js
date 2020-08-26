@@ -1,3 +1,6 @@
+// import fieldInputInvalid function from general.js file
+import { fieldInputInvalid } from "../scripts/general.js";
+
 /**
  * Function to change login-username styling when the input loses focus. Invalidates the field if it is left empty
  * when out of focus, otherwise if a value is entered, the invalid styling is removedd.
@@ -22,7 +25,7 @@ export function usernameFocusout() {
  * when out of focus, otherwise if a value is entered, the invalid styling is removedd.
  */
 export function passwordFocusout() {
-  $("login-pwd").on("focusout", function () {
+  $("#login-pwd").on("focusout", function () {
     const pwdVal = $("#login-pwd").val();
     const fieldId = $("#login-pwd").attr("id");
 
@@ -31,7 +34,7 @@ export function passwordFocusout() {
     } else {
       $("#login-pwd").removeClass("is-invalid");
       $("#login-pwd").removeAttr("style");
-      $("'login-pwd").siblings(".fas").removeAttr("style");
+      $("#login-pwd").siblings(".fas").removeAttr("style");
     }
   });
 }
@@ -50,7 +53,7 @@ export function loginSubmit() {
 
     $("#login-form input").each(function () {
       if ($(this).val() === "") {
-        fieldInputInvalid($(this));
+        fieldInputInvalid($(this).attr("id"));
         formValid = false;
       }
     });

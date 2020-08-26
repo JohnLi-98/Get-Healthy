@@ -1,3 +1,4 @@
+import { createElement } from "../scripts/general.js";
 /**
  * Function to run when the logout button is clicked. Runs createLogoutMessage() to display a div before running
  * logout.php through ajax. Upon success, show response then redirect to home page after 3 secs.
@@ -65,20 +66,4 @@ export function createLogoutMessage() {
     .append(iconDiv, responseDiv);
   iconDiv.append(icon, h2);
   responseDiv.appendChild(responseText).append(h2Response, pResponse);
-}
-
-// Function to create an element and setting the attributes for it
-export function createElement(elemName, elemAttributes) {
-  // Create document element
-  var elem = document.createElement(elemName);
-  // Check if element attirbutes were passed
-  if (elemAttributes !== "undefined") {
-    // Loop through each argument
-    $.each(elemAttributes, function (key, value) {
-      // and assign it to the document element
-      elem.setAttribute(key, value);
-    });
-  }
-  // Return document element
-  return elem;
 }

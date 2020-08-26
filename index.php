@@ -108,12 +108,12 @@ session_start();
                     is better than doing none. By becoming more active throuhout the day in
                     relatively simple ways, people can easily achieve the recommended activity levels.
                 </p>
-                <button type="button" class="btn info-btn">
+                <a href="exercise.php" role="button" class="btn info-btn">
                     <span>
                         Find out more
                         <i class="fas fa-angle-double-right"></i>
                     </span>
-                </button>
+                </a>
             </div>
 
             <div class="col-12 col-md-6">
@@ -133,12 +133,12 @@ session_start();
                     factor that turns a good thought into immediate action. It turns a good idea into a
                     business and can positively impact the world around you.
                 </p>
-                <button type="button" class="btn info-btn">
+                <a href="motivation.php" role="button" class="btn info-btn">
                     <span>
                         Find out more
                         <i class="fas fa-angle-double-right"></i>
                     </span>
-                </button>
+                </a>
             </div>
 
             <div class="col-12 col-md-6 order-md-1">
@@ -159,12 +159,12 @@ session_start();
                     people plan and start their healthy eating journey, but are unable to sustain these
                     changes.
                 </p>
-                <button type="button" class="btn info-btn">
+                <a href="nutrition.php" role="button" class="btn info-btn">
                     <span>
                         Find out more
                         <i class="fas fa-angle-double-right"></i>
                     </span>
-                </button>
+                </a>
             </div>
 
             <div class="col-12 col-md-6">
