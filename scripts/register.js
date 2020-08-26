@@ -1,3 +1,6 @@
+// import fieldInputInvalid and fieldInputValid function from general.js file
+import { fieldInputInvalid, fieldInputValid } from "../scripts/general.js";
+
 /**
  * Function to check that the email entered is valid. First checks whether the value entered returns true from
  * validateEmail(), which is then passed as a post type for email-check.php through ajax to query the database to
@@ -107,30 +110,6 @@ export function checkPwdMatch() {
     fieldInputInvalid(pwdCId);
     $("#password-check").html("Not Matching").css("color", "red");
   }
-}
-
-/**
- * Function that changes the styling of the input field passed in as a parameter to a valid one.
- */
-export function fieldInputValid(inputField) {
-  $("#" + inputField).removeClass("is-invalid");
-  $("#" + inputField).addClass("is-valid");
-  $("#" + inputField).attr("style", "border-color: #21d192");
-  $("#" + inputField)
-    .siblings(".fas")
-    .attr("style", "color: #21d192");
-}
-
-/**
- * Function that changes the styling of the input field passed in as a parameter to a invalid one.
- */
-export function fieldInputInvalid(inputField) {
-  $("#" + inputField).removeClass("is-valid");
-  $("#" + inputField).addClass("is-invalid");
-  $("#" + inputField).attr("style", "border-color: #ff0000");
-  $("#" + inputField)
-    .siblings(".fas")
-    .attr("style", "color: #ff0000");
 }
 
 /**

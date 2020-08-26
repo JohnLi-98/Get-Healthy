@@ -4,24 +4,6 @@
 
 */
 
-/*
-// Function to create an element and setting the attributes for it
-function createElement(elemName, elemAttributes) {
-  // Create document element
-  var elem = document.createElement(elemName);
-  // Check if element attirbutes were passed
-  if (elemAttributes !== "undefined") {
-    // Loop through each argument
-    $.each(elemAttributes, function (key, value) {
-      // and assign it to the document element
-      elem.setAttribute(key, value);
-    });
-  }
-  // Return document element
-  return elem;
-}
-*/
-
 // Navbar JS functions imported calls the functions that use jQuery's event listeners.
 import * as navbar from "../scripts/navbar.js";
 window.lastScrollTop = 0;
