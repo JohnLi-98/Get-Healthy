@@ -1,9 +1,3 @@
-/*
-
-          GENERAL FUNCTIONS
-
-*/
-
 // Navbar JS functions imported calls the functions that use jQuery's event listeners.
 import * as navbar from "../scripts/navbar.js";
 window.lastScrollTop = 0;

@@ -1,5 +1,5 @@
 <?php
-ini_set("session.save_path", "/home/unn_w16010421/sessionData");
+//ini_set("session.save_path", "/home/unn_w16010421/sessionData");
 session_start();
 ?>
 
@@ -20,14 +20,27 @@ session_start();
 </head>
 
 <body>
-<?php 
+    <?php
     // add if else statement for user login check
     include "common/nav-unauth.html";
     //include "common/nav-auth.php";
     ?>
 
-    <div class="container-fluid" id="test">
-
+    <!-- Jumbotron that fills the height of the screen -->
+    <div class="jumbotron jumbotron-fluid" id="nutrition-jumbotron">
+        <div class="row align-items-center mx-auto h-75 w-100">
+            <div class="col text-center">
+                <p>Welcome to</p>
+                <h1><strong>GET HEALTHY</strong></h1>
+            </div>
+        </div>
+        <div class="clouds">
+            <img src="images/cloud1.png" style="--i:1">
+            <img src="images/cloud2.png" style="--i:2">
+            <img src="images/cloud3.png" style="--i:3">
+            <img src="images/cloud4.png" style="--i:4">
+            <img src="images/cloud5.png" style="--i:5">
+        </div>
     </div>
 
     <!-- Script files(jQuery library, Popper JS, Latest Compiled Bootstrap JS, FontAwesome JS)-->

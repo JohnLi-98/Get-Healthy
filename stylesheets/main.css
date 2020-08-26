@@ -330,14 +330,14 @@ p {
 }
 
 /* top, transparent black, faked with gradient on background image */
-#indexJumbotron {
+#index-jumbotron {
   position: relative;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(../images/Home-Image.jpg) no-repeat 50% 50%;
   background-size: cover;
 }
 
-#indexJumbotron .clouds {
+#index-jumbotron .clouds {
   position: absolute;
   top: 0;
   left: 0;
@@ -347,7 +347,7 @@ p {
   pointer-events: none;
 }
 
-#indexJumbotron .clouds img {
+#index-jumbotron .clouds img {
   position: absolute;
   bottom: 0;
   max-width: 100%;
