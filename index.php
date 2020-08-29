@@ -1,5 +1,5 @@
 <?php
-ini_set("session.save_path", "/home/unn_w16010421/sessionData");
+//ini_set("session.save_path", "/home/unn_w16010421/sessionData");
 session_start();
 ?>
 
@@ -32,7 +32,7 @@ session_start();
 
     <!-- Jumbotron that fills the height of the screen -->
     <div class="jumbotron jumbotron-fluid" id="index-jumbotron">
-        <div class="row align-items-center mx-auto h-75 w-100">
+        <div class="row align-items-center mx-auto h-100 w-100">
             <div class="col text-center">
                 <p>Welcome to</p>
                 <h1><strong>GET HEALTHY</strong></h1>

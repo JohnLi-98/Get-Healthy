@@ -27,6 +27,22 @@ p {
   padding: 40px 15px;
 }
 
+.jumbotron {
+  height: 100%;
+  width: 100%;
+  margin: 0 !important;
+  color: white;
+}
+
+.jumbotron h1 {
+  font-size: 3em;
+}
+
+.jumbotron a,
+.jumbotron a:hover {
+  color: white;
+}
+
 /* Media queries for generic styling and navigation bar */
 @media only screen and (min-width: 768px) {
   p {
@@ -35,6 +51,10 @@ p {
 
   .page-content {
     padding: 40px 30px;
+  }
+
+  .jumbotron h1 {
+    font-size: 4em;
   }
 }
 
@@ -45,6 +65,10 @@ p {
 
   .page-content {
     padding: 50px 90px;
+  }
+
+  .jumbotron h1 {
+    font-size: 5em;
   }
 }
 
@@ -321,13 +345,6 @@ p {
     -----------------
     
 */
-
-.jumbotron {
-  height: 100vh;
-  width: 100%;
-  margin: 0 !important;
-  color: white;
-}
 
 /* top, transparent black, faked with gradient on background image */
 #index-jumbotron {
@@ -735,4 +752,54 @@ p {
   #register-form {
     padding: 0 120px;
   }
+}
+
+/*
+
+    --------------
+
+    Nutrition Page
+
+    --------------
+
+*/
+
+/* top, transparent black, faked with gradient on background image */
+#nutrition-jumbotron {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(33, 209, 146, 0.8)),
+    url(../images/Nutrition-Image.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.line-divider {
+  border: 1px solid black;
+}
+
+#meal-letters a {
+  cursor: pointer;
+}
+
+#meal-letters a:hover {
+  text-decoration: underline;
+}
+
+#search-meal-submit {
+  background-color: #21d192;
+  color: white;
+}
+
+#meal-results a {
+  color: black;
+  cursor: pointer;
+}
+
+#meal-results a:hover {
+  text-decoration: underline;
+}
+
+#test {
+  padding: 800px 0;
+  background-color: grey;
 }
