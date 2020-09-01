@@ -756,6 +756,42 @@ p {
 
 /*
 
+    -------------
+
+    Exercise Page
+
+    -------------
+
+*/
+
+#exercise-jumbotron {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(33, 209, 146, 0.8)),
+    url(../images/Exercise-Image.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  overflow: hidden;
+}
+
+/*
+
+    ---------------
+
+    Motivation Page
+
+    ---------------
+
+*/
+
+#motivation-jumbotron {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(33, 209, 146, 0.8)),
+    url(../images/Motivation-Image.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  overflow: hidden;
+}
+
+/*
+
     --------------
 
     Nutrition Page
