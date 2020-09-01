@@ -117,7 +117,7 @@ session_start();
                 </h5>
             </div>
 
-            <div class="col-10 col-md-7 col-lg-5 pb-5">
+            <div class="col-10 col-md-7 col-lg-5">
                 <form id="search-meal-form">
                     <div class="input-group">
                         <input type="text" class="form-control" id="search-meal" placeholder="Search Meals..." />
@@ -133,7 +133,7 @@ session_start();
 
         <div class="row justify-content-left" id="meal-results"></div>
 
-        <hr class="line-divider mx-md-2 mx-lg-5">
+        <hr class="line-divider mx-md-2 mx-lg-5 mt-5">
 
 
     </div>
@@ -142,14 +142,35 @@ session_start();
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title" id="modal-title">
-
+                    <h4 class="modal-title" id="recipe-modal-title">
                     </h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
 
-                <div class="modal-body" id="modal-body">
+                <div class="modal-body" id="recipe-modal-body">
+                    <div class="container-fluid">
+                        <div class="row" id="recipe-modal-row1">
+                            <div class="col-12 col-lg-6 mx-auto">
+                                <img class="img-fluid" alt="Meal-Image" id="recipe-modal-image" />
+                            </div>
 
+                            <div class="col-12 col-lg-6 pt-4 pt-lg-0">
+                                <h5><u>Ingredients</u></h5>
+                                <ul id="recipe-modal-ingredients">
+
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="row" id="recipe-modal-row2">
+                            <div class="col-12 pt-3 pt-lg-4">
+                                <h5 class="text-center"><u>Instructions</u></h5>
+                                <p id="recipe-modal-instructions">
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
