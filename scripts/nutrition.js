@@ -46,12 +46,14 @@ export function getMeals(getURL, searchVal) {
     }
 
     if (!result) {
-      const noResults = createElement("h4", {});
+      const noResults = createElement("h4", {
+        class: "col-12 text-center pt-5",
+      });
       $(noResults).text(resultText);
       $("#meal-results").append(noResults);
     } else {
       const numberOfResults = createElement("h4", {
-        class: "col-12 text-center",
+        class: "col-12 text-center pt-5",
       });
       $(numberOfResults).text(resultText);
       $("#meal-results").append(numberOfResults);
@@ -126,10 +128,29 @@ export function createMealHTML(
 export function replaceMealRecipe(
   name,
   imageURL,
-  ingreidents,
+  ingredients,
   measurements,
   instructions
 ) {
-  console.log("Clicked to change");
-  $("#modal-title").text(name + " - Recipe");
+  $("#recipe-modal-title").text(name + " - Recipe");
+  $("#recipe-modal-image").attr("src", imageURL);
+
+  $("#recipe-modal-ingredients").empty();
+  for (let i = 0; i < ingredients.length; i++) {
+    let ingredientListItem = document.createElement("li");
+    let ingredientListValue = document.createTextNode(
+      measurements[i] + " " + ingredients[i]
+    );
+    ingredientListItem.appendChild(ingredientListValue);
+    $("#recipe-modal-ingredients").append(ingredientListItem);
+  }
+
+  $("#recipe-modal-instructions").empty();
+  const sentences = instructions.match(/[^\.!\?]+[\.!\?]+/g);
+  for (let i = 0; i < sentences.length; i++) {
+    //let instructionListItem = document.createElement("li");
+    //let instructionListValue = document.createTextNode("- " + sentences[i]);
+    //instructionListItem.appendChild(instructionListValue);
+    $("#recipe-modal-instructions").append(sentences[i] + "<br /> <br/>");
+  }
 }

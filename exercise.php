@@ -26,8 +26,8 @@ session_start();
     //include "common/nav-auth.php";
     ?>
 
-    <div class="container-fluid" id="test">
-
+    <div class="container-fluid text-center align-items-center" id="test">
+        <h1>If you're reading this, you're gay</h1>
     </div>
 
     <!-- Script files(jQuery library, Popper JS, Latest Compiled Bootstrap JS, FontAwesome JS)-->
