@@ -20,7 +20,7 @@ session_start();
 </head>
 
 <body>
-    <?php 
+    <?php
     // add if else statement for user login check
     include "common/nav-unauth.html";
     //include "common/nav-auth.php";
