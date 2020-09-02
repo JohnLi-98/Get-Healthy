@@ -1,5 +1,5 @@
 <?php
-//ini_set("session.save_path", "/home/unn_w16010421/sessionData");
+ini_set("session.save_path", "/home/htdocs/sessionData");
 session_start();
 
 if (isset($_SESSION['logged-in']) == true) {

@@ -1,6 +1,6 @@
 <?php
 // Initialise the session.
-ini_set("session.save_path", "/home/unn_w16010421/sessionData");
+ini_set("session.save_path", "/home/htdocs/sessionData");
 session_start();
 
 // Unset all of the session variables.
