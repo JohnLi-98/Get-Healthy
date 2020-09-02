@@ -1,6 +1,6 @@
 <?php
 // Initialise the session.
-ini_set("session.save_path", "/home/htdocs/sessionData");
+ini_set("session.save_path", "/home/vol10_2/epizy.com/epiz_26587846/htdocs/sessionData");
 session_start();
 
 // Check to see if dbConn file exists. If not, throw 503 status code and response text with die(). Otherwise, store

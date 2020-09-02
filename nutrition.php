@@ -1,5 +1,5 @@
 <?php
-ini_set("session.save_path", "/home/htdocs/sessionData");
+ini_set("session.save_path", "/home/vol10_2/epizy.com/epiz_26587846/htdocs/sessionData");
 session_start();
 ?>
 
