@@ -87,9 +87,7 @@ export function authenticateAccount() {
       if (res.redirect) {
         window.location.replace(res.redirect);
       } else {
-        window.location.replace(
-          "http://unn-w16010421.newnumyspace.co.uk/Projects/Get-Healthy/index.php"
-        );
+        window.location.replace("http://gethealthy.infinityfreeapp.com");
       }
     },
     error: function (res) {

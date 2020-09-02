@@ -136,9 +136,7 @@ export function createAccount() {
     success: function () {
       $("#loading-icon, #success-response").toggleClass("d-none");
       setTimeout(function () {
-        window.location.replace(
-          "http://unn-w16010421.newnumyspace.co.uk/Projects/Get-Healthy/index.php"
-        );
+        window.location.replace("http://gethealthy.infinityfreeapp.com");
       }, 8000);
     },
     error: function (res) {
