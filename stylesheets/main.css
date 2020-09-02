@@ -449,11 +449,11 @@ p {
   height: 120px;
 }
 
-#login-form {
+.form {
   padding: 0 30px;
 }
 
-#login-form .form-control {
+.form .form-control {
   border: none;
   box-shadow: none;
   padding: 8px 35px;
@@ -461,8 +461,8 @@ p {
   transition: ease-in 0.5s;
 }
 
-#login-form .form-control:focus,
-#login-form .form-control:valid {
+.form .form-control:focus,
+.form .form-control:valid {
   border-color: #21d192;
 }
 
@@ -481,23 +481,23 @@ p {
   opacity: 1;
 }
 
-#login-form .fas {
+.form .fas {
   color: #d9d9d9;
   margin-top: -28px;
   margin-left: 6px;
   transition: ease-in 0.5s;
 }
 
-#login-form .form-control:focus ~ .fas,
-#login-form .form-control:valid ~ .fas {
+.form .form-control:focus ~ .fas,
+.form .form-control:valid ~ .fas {
   color: #21d192;
 }
 
-#login-form a {
+.form a {
   color: #999;
 }
 
-#login-form a:hover {
+.form a:hover {
   color: #21d192;
 }
 
@@ -515,7 +515,7 @@ p {
     border-bottom-width: thick;
   }
 
-  #login-form {
+  .form {
     padding: 0 150px;
   }
 }
@@ -525,13 +525,13 @@ p {
     min-height: 100vh;
   }
 
-  #login-form {
+  .form {
     padding: 0 60px;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  #login-form {
+  .form {
     padding: 0 120px;
   }
 }

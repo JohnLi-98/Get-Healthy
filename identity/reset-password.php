@@ -22,7 +22,7 @@ if (isset($_SESSION['logged-in']) == true) {
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="../stylesheets/main.css">
 
-    <title>Sign In</title>
+    <title>Reset Password</title>
 </head>
 
 <body>
@@ -48,73 +48,33 @@ if (isset($_SESSION['logged-in']) == true) {
                     </div>
 
                     <div class="col-md-6 col-lg-12 my-auto px-lg-5 pt-lg-4 d-none d-md-block">
-                        <img src="../images/Sign-In.svg" class="img-fluid px-lg-5" />
+                        <img src="../images/Reset-Password.svg" class="img-fluid px-lg-5" />
                     </div>
                 </div>
             </div>
 
             <div class="col-lg-6 text-center p-5" id="login-panel-right">
                 <img src="../images/avatar.svg" class="mx-auto" />
-                <h2 class="pt-4"><strong>SIGN IN</strong></h2>
+                <h2 class="pt-4"><strong>RESET PASSWORD</strong></h2>
+                <p class="px-5">
+                    Enter your email address below and we'll send you an email to reset your password.
+                </p>
 
-                <form method="post" class="form" id="login-form" autocomplete="off" novalidate>
-                    <div class="form-row mx-1 pt-5">
-                        <input type="text" class="form-control" id="login-username" name="login-username" required />
-                        <label class="form-ph" for="login-username">Username</label>
-                        <i class="fas fa-user"></i>
+                <form method="post" class="form" id="reset-password-form" autocomplete="off" novalidate>
+                    <div class="form-row mx-1 pt-4">
+                        <input type="text" class="form-control" id="register-email" name="register-email" required />
+                        <label class="form-ph" for="register-email">Email Address</label>
+                        <i class="fas fa-envelope"></i>
                     </div>
-
-                    <div class="form-row mx-1 pt-5">
-                        <input type="password" class="form-control" id="login-pwd" name="login-pwd" required />
-                        <label class="form-ph" for="login-pwd">Password</label>
-                        <span class="fas fa-lock"></span>
-                    </div>
-
-                    <small class="float-right pt-2 mr-1">
-                        <a href="reset-password.php">Forgot Password?</a>
-                    </small>
 
                     <button type="submit" class="btn mt-4 mt-lg-3" id="login-button">
-                        SIGN IN
+                        REQUEST PASSWORD RESET
                     </button>
                 </form>
             </div>
         </div>
     </div>
 
-    <div class="container-fluid h-100 w-100 form-submit d-none" id="loader">
-        <div class="row h-100">
-            <div class="m-auto col-9 col-md-7 col-lg-5 justify-content-center align-items-center h-75 text-dark d-flex flex-column">
-                <div class="response text-center text-white" id="loading-icon">
-                    <i class="fas fa-spinner fa-pulse fa-4x"></i>
-                    <h2 class="pt-4">Loading</h2>
-                </div>
-
-                <div class="response alert-danger text-center d-none" id="error-response">
-                    <div class="mr-2 mt-1">
-                        <button type="button" class="close close-loader" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-
-                    <svg class="error mt-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
-                        <circle class="error-circle" cx="26" cy="26" r="25" fill="none" />
-                        <line class="error-cross" x1="15" y1="15" x2="37" y2="37" stroke="white" stroke-width="2" />
-                        <line class="error-cross" x1="37" y1="15" x2="15" y2="37" stroke="white" stroke-width="2" />
-                    </svg>
-
-                    <div class="mt-4 mx-4">
-                        <h2>Error</h2>
-                        <p id="error-message"></p>
-                    </div>
-
-                    <div class="mb-3">
-                        <button type="button" class="btn btn-danger close-loader" aria-label="Close">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Script files(jQuery library, Popper JS, Latest Compiled Bootstrap JS, FontAwesome JS)-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -123,5 +83,3 @@ if (isset($_SESSION['logged-in']) == true) {
     <script src="https://kit.fontawesome.com/6cc49d804e.js" crossorigin="anonymous"></script>
     <script type="module" src="../scripts/main.js"></script>
 </body>
-
-</html>
