@@ -1,5 +1,5 @@
 <?php
-ini_set("session.save_path", "/home/vol10_2/epizy.com/epiz_26587846/htdocs/sessionData");
+//ini_set("session.save_path", "/home/unn_w16010421/sessionData");
 session_start();
 
 if (isset($_SESSION['logged-in']) == true) {
@@ -47,7 +47,7 @@ if (isset($_SESSION['logged-in']) == true) {
                         </a>
                     </div>
 
-                    <div class="col-md-6 col-lg-12 my-auto px-lg-5 pt-lg-5 d-none d-md-block">
+                    <div class="col-md-6 col-lg-12 my-auto px-lg-5 pt-lg-4 d-none d-md-block">
                         <img src="../images/Sign-In.svg" class="img-fluid px-lg-5" />
                     </div>
                 </div>
@@ -57,7 +57,7 @@ if (isset($_SESSION['logged-in']) == true) {
                 <img src="../images/avatar.svg" class="mx-auto" />
                 <h2 class="pt-4"><strong>SIGN IN</strong></h2>
 
-                <form method="post" id="login-form" autocomplete="off" novalidate>
+                <form method="post" class="form" id="login-form" autocomplete="off" novalidate>
                     <div class="form-row mx-1 pt-5">
                         <input type="text" class="form-control" id="login-username" name="login-username" required />
                         <label class="form-ph" for="login-username">Username</label>
@@ -71,7 +71,7 @@ if (isset($_SESSION['logged-in']) == true) {
                     </div>
 
                     <small class="float-right pt-2 mr-1">
-                        <a href="#">Forgot Password?</a>
+                        <a href="reset-password.php">Forgot Password?</a>
                     </small>
 
                     <button type="submit" class="btn mt-4 mt-lg-3" id="login-button">
