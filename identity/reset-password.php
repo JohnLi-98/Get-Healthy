@@ -54,20 +54,25 @@ if (isset($_SESSION['logged-in']) == true) {
             </div>
 
             <div class="col-lg-6 text-center p-5" id="login-panel-right">
-                <img src="../images/avatar.svg" class="mx-auto" />
-                <h2 class="pt-4"><strong>RESET PASSWORD</strong></h2>
-                <p class="px-5">
+                <img src="../images/avatar.svg" class="mx-auto" id="reset-pwd-image" />
+                <h2 class="pt-4" id="reset-pwd-heading"><strong>RESET PASSWORD</strong></h2>
+                <p class="px-5" id="reset-pwd-text">
                     Enter your email address below and we'll send you an email to reset your password.
                 </p>
 
-                <form method="post" class="form" id="reset-password-form" autocomplete="off" novalidate>
+                <form method="post" class="form" id="reset-pwd-form" autocomplete="off" novalidate>
                     <div class="form-row mx-1 pt-4">
-                        <input type="text" class="form-control" id="register-email" name="register-email" required />
-                        <label class="form-ph" for="register-email">Email Address</label>
+                        <input type="text" class="form-control" id="reset-pwd-email" name="reset-pwd-email" required />
+                        <label class="form-ph" for="reset-pwd-email">Email Address</label>
                         <i class="fas fa-envelope"></i>
                     </div>
 
-                    <button type="submit" class="btn mt-4 mt-lg-3" id="login-button">
+                    <small class="form-text text-muted text-left px-2">
+                        <small class="invisible">hidden</small>
+                        <span id="reset-pwd-email-check" class="float-right"></span>
+                    </small>
+
+                    <button type="submit" class="btn mt-4 mt-lg-3" id="reset-button">
                         REQUEST PASSWORD RESET
                     </button>
                 </form>

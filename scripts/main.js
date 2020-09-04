@@ -14,11 +14,16 @@ register.passwordKeyup();
 register.registerSubmit();
 register.closeLoader();
 
-// Login JS function imported and calls the functions that use jQuery's event listeners.
+// Login JS functions imported and calls the functions that use jQuery's event listeners.
 import * as login from "../scripts/login.js";
 login.usernameFocusout();
 login.passwordFocusout();
 login.loginSubmit();
+
+// Reset Password JS functions imported and calls the finction that use jQuery's event listeners.
+import * as reset from "../scripts/reset-password.js";
+reset.emailFocusout();
+reset.resetPwdSubmit();
 
 // Logout process JS functions imported and calls the function that use jQuery's event listeners.
 import * as logout from "../scripts/logout.js";

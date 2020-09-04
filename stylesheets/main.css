@@ -538,6 +538,23 @@ p {
 
 /*
 
+    ------------------------------
+
+    Reset Password Page (Identity)
+
+    ------------------------------
+
+*/
+
+#reset-button {
+  background-color: #21d192;
+  color: white;
+  border-radius: 40px;
+  width: 100%;
+}
+
+/*
+
     ----------------------------
 
     Registration Page (Identity)
