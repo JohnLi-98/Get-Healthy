@@ -1,5 +1,5 @@
 <?php
-//ini_set("session.save_path", "/home/unn_w16010421/sessionData");
+ini_set("session.save_path", "/home/vol10_2/epizy.com/epiz_26587846/htdocs/sessionData");
 session_start();
 
 if (isset($_SESSION['logged-in']) == true) {
@@ -72,7 +72,7 @@ if (isset($_SESSION['logged-in']) == true) {
                         <span id="reset-pwd-email-check" class="float-right"></span>
                     </small>
 
-                    <button type="submit" class="btn mt-4 mt-lg-3" id="reset-button">
+                    <button type="submit" class="btn mt-4 mt-lg-3 form-button">
                         REQUEST PASSWORD RESET
                     </button>
                 </form>
@@ -88,3 +88,5 @@ if (isset($_SESSION['logged-in']) == true) {
     <script src="https://kit.fontawesome.com/6cc49d804e.js" crossorigin="anonymous"></script>
     <script type="module" src="../scripts/main.js"></script>
 </body>
+
+</html>

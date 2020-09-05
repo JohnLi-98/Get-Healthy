@@ -32,7 +32,7 @@ if (isset($_SESSION['logged-in']) == true) {
                 <h2><strong>SIGN UP</strong></h2>
                 <p class="pt-1">Fill in all fields below to create an account with us.</p>
 
-                <form method="post" id="register-form" autocomplete="off" novalidate>
+                <form method="post" class="form" id="register-form" autocomplete="off" novalidate>
                     <div class="form-row mx-1 pt-4">
                         <input type="text" class="form-control" id="register-email" name="register-email" required />
                         <label class="form-ph" for="register-email">Email Address</label>
@@ -76,7 +76,7 @@ if (isset($_SESSION['logged-in']) == true) {
                         <span id="password-check" class="float-right"></span>
                     </small>
 
-                    <button type="submit" class="btn mt-4" id="register-button">
+                    <button type="submit" class="btn mt-4 form-button">
                         SIGN UP
                     </button>
                 </form>

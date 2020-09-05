@@ -1,7 +1,7 @@
 <?php
 //ini_set("session.save_path", "/home/unn_w16010421/sessionData");
 session_start();
-
+ini_set("session.save_path", "/home/vol10_2/epizy.com/epiz_26587846/htdocs/sessionData");
 if (isset($_SESSION['logged-in']) == true) {
     header("Location: ../index.php");
     exit;
@@ -74,7 +74,7 @@ if (isset($_SESSION['logged-in']) == true) {
                         <a href="reset-password.php">Forgot Password?</a>
                     </small>
 
-                    <button type="submit" class="btn mt-4 mt-lg-3" id="login-button">
+                    <button type="submit" class="btn mt-4 mt-lg-3 form-button">
                         SIGN IN
                     </button>
                 </form>

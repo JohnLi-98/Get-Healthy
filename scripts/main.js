@@ -20,6 +20,11 @@ login.usernameFocusout();
 login.passwordFocusout();
 login.loginSubmit();
 
+// Reset Password JS functions imported and calls the function that use jQuery's event listeners.
+import * as reset from "../scripts/reset-password.js";
+reset.emailFocusout();
+reset.resetPwdSubmit();
+
 // Logout process JS functions imported and calls the function that use jQuery's event listeners.
 import * as logout from "../scripts/logout.js";
 logout.logoutClick();
