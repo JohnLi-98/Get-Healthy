@@ -56,7 +56,7 @@ if (isset($_SESSION['logged-in']) == true) {
             <div class="col-lg-6 text-center p-5" id="login-panel-right">
                 <img src="../images/avatar.svg" class="mx-auto" id="reset-pwd-image" />
                 <h2 class="pt-4" id="reset-pwd-heading"><strong>RESET PASSWORD</strong></h2>
-                <p class="px-5" id="reset-pwd-text">
+                <p class="px-lg-3" id="reset-pwd-text">
                     Enter your email address below and we'll send you an email to reset your password.
                 </p>
 

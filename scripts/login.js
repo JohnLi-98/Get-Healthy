@@ -24,7 +24,7 @@ export function usernameFocusout() {
  * Function to change login-pwd styling when the input loses focus. Invalidates the field if it is left empty
  * when out of focus, otherwise if a value is entered, the invalid styling is removedd.
  */
-export function passwordFocusout() {
+export function pwdFocusout() {
   $("#login-pwd").on("focusout", function () {
     const pwdVal = $("#login-pwd").val();
     const fieldId = $("#login-pwd").attr("id");

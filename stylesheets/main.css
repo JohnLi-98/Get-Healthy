@@ -349,7 +349,7 @@ p {
 /* top, transparent black, faked with gradient on background image */
 #index-jumbotron {
   position: relative;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.3)),
     url(../images/Home-Image.jpg) no-repeat 50% 50%;
   background-size: cover;
 }
@@ -446,6 +446,7 @@ p {
 .identity-btn {
   border: 1px solid white;
   color: white;
+  background-color: #21d192;
   border-radius: 40px;
 }
 
@@ -523,6 +524,10 @@ p {
   color: white;
   border-radius: 40px;
   width: 100%;
+}
+
+.form-button:hover {
+  color: white;
 }
 
 @media only screen and (min-width: 768px) {

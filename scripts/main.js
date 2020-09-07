@@ -10,20 +10,24 @@ navbar.windowResize();
 import * as register from "../scripts/register.js";
 register.emailFocusout();
 register.usernameFocusout();
-register.passwordKeyup();
+register.pwdKeyup();
 register.registerSubmit();
 register.closeLoader();
 
 // Login JS function imported and calls the functions that use jQuery's event listeners.
 import * as login from "../scripts/login.js";
 login.usernameFocusout();
-login.passwordFocusout();
+login.pwdFocusout();
 login.loginSubmit();
 
 // Reset Password JS functions imported and calls the function that use jQuery's event listeners.
 import * as reset from "../scripts/reset-password.js";
 reset.emailFocusout();
 reset.resetPwdSubmit();
+
+import * as createPwd from "../scripts/create-password.js";
+createPwd.pwdKeyup();
+createPwd.createPwdSubmit();
 
 // Logout process JS functions imported and calls the function that use jQuery's event listeners.
 import * as logout from "../scripts/logout.js";

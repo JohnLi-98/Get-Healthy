@@ -1,7 +1,7 @@
 <?php
-//ini_set("session.save_path", "/home/unn_w16010421/sessionData");
-session_start();
 ini_set("session.save_path", "/home/vol10_2/epizy.com/epiz_26587846/htdocs/sessionData");
+session_start();
+
 if (isset($_SESSION['logged-in']) == true) {
     header("Location: ../index.php");
     exit;

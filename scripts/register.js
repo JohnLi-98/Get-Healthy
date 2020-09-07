@@ -167,7 +167,7 @@ export function usernameFocusout() {
 /**
  * Function to run checkPwdMatch function when the register-pwd or register-pwdC input fields have a key entered.
  */
-export function passwordKeyup() {
+export function pwdKeyup() {
   $("#register-pwd, #register-pwdC").keyup(checkPwdMatch);
 }
 

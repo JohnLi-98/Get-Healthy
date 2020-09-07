@@ -14,33 +14,38 @@ if (isset($_POST["email"]) && !empty($_POST['email'])) {
     $email = filter_has_var(INPUT_POST, 'email') ? $_POST['email'] : null;
     $email = trim($email);
 } else {
-    echo "An email address must be entered.<br/>";
+    http_response_code(400);
+    die("An email address must be entered.<br/>");
 }
 
-if (isset($_POST["email"]) && !empty($_POST['username'])) {
+if (isset($_POST["username"]) && !empty($_POST['username'])) {
     $username = filter_has_var(INPUT_POST, 'username') ? $_POST['username'] : null;
     $username = trim($username);
 } else {
-    echo "A username must be entered.<br/>";
+    http_response_code(400);
+    die("A username must be entered.<br/>");
 }
 
-if (isset($_POST["email"]) && !empty($_POST['password'])) {
+if (isset($_POST["password"]) && !empty($_POST['password'])) {
     $password = filter_has_var(INPUT_POST, 'password') ? $_POST['password'] : null;
 } else {
-    echo "A password must be entered.<br/>";
+    http_response_code(400);
+    die("A password must be entered.<br/>");
 }
 
-if (isset($_POST["email"]) && !empty($_POST['passwordConfirm'])) {
+if (isset($_POST["passwordConfirm"]) && !empty($_POST['passwordConfirm'])) {
     $passwordConfirm = filter_has_var(INPUT_POST, 'passwordConfirm') ? $_POST['passwordConfirm'] : null;
 } else {
-    echo "A password must be entered that matches the previous one.<br/>";
+    http_response_code(400);
+    die("A password must be entered that matches the previous one.<br/>");
 }
 
 // Checks to see if both passwords entered match, to set the passwordHash variable.
 if (isset($password) == isset($passwordConfirm)) {
     $passwordHash = password_hash($password, PASSWORD_DEFAULT);
 } else {
-    echo "The passwords entered don't match, please try again.<br/>";
+    http_response_code(400);
+    die("The passwords entered don't match, please try again.<br/>");
 }
 
 // If all the previous steps are valid and variables are set, try to run the SQL query to make new account.
