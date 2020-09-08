@@ -152,7 +152,7 @@ session_start();
             <div class="col-12 col-md-6 my-auto pb-3">
                 <h3 class="card-title"><u>Nutrition</u></h3>
                 <p class="card-text">
-                    Many people often underestimate the importance of the right food and nutrition has on
+                    Many people often underestimate the importance that the right foods and nutrition has on
                     our health. There are multiple benefits that eating an abundance of different
                     nutrients has on your body. Swapping high carbohydrates, sugars and fatty foods for whole
                     nutritious foods will have a significant effect on your body, health and mood. A lot of

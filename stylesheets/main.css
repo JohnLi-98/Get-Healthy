@@ -875,3 +875,44 @@ p {
   padding: 400px 0;
   background-color: grey;
 }
+
+/*
+
+    ----------------------
+
+    About Us Page (footer)
+
+    ----------------------
+
+*/
+
+#about-us-jumbotron {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(33, 209, 146, 0.8)),
+    url(../images/About-Us-Image.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  overflow: hidden;
+}
+
+#about-us-join {
+  background-color: #21d192;
+  color: white;
+}
+
+#about-us-contact {
+  background-color: #007e8e;
+  color: white;
+}
+
+#about-us-btn {
+  border: 1px solid white;
+  color: white;
+  background-color: #007e8e;
+  border-radius: 40px;
+}
+
+#about-us-btn:hover {
+  border-color: #007e8e;
+  color: #007e8e;
+  background-color: white;
+}
