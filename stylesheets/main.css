@@ -916,3 +916,21 @@ p {
   color: #007e8e;
   background-color: white;
 }
+
+/*
+
+    -------------------
+
+    Legal Page (footer)
+
+    -------------------
+
+*/
+
+#legal-jumbotron {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(33, 209, 146, 0.8)),
+    url(../images/Legal-Image.png) no-repeat 50% 50%;
+  background-size: cover;
+  overflow: hidden;
+}
