@@ -37,3 +37,11 @@ logout.logoutClick();
 import * as nutrition from "../scripts/nutrition.js";
 nutrition.mealsLetterSearch();
 nutrition.mealsFormSearch();
+
+import * as contact from "../scripts/contact-us.js";
+contact.firstnameFocusout();
+contact.surnameFocusout();
+contact.emailFocusout();
+contact.subjectFocusout();
+contact.messageFocusout();
+contact.contactFormSubmit();

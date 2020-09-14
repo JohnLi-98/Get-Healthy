@@ -1,6 +1,9 @@
 // import fieldInputInvalid function from general.js file
-import { fieldInputInvalid, createElement } from "../scripts/general.js";
-import { validateEmail } from "../scripts/register.js";
+import {
+  fieldInputInvalid,
+  validateEmail,
+  createElement,
+} from "../scripts/general.js";
 
 /**
  * Function to change login-username styling when the input loses focus. Invalidates the field if it is left empty

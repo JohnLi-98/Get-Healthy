@@ -1,5 +1,9 @@
 // import fieldInputInvalid and fieldInputValid function from general.js file
-import { fieldInputInvalid, fieldInputValid } from "../scripts/general.js";
+import {
+  fieldInputInvalid,
+  fieldInputValid,
+  validateEmail,
+} from "../scripts/general.js";
 
 /**
  * Function to check that the email entered is valid. First checks whether the value entered returns true from
@@ -31,14 +35,6 @@ export function checkEmailValid() {
     fieldInputInvalid(fieldId);
     $("#email-check").html("Enter a Valid Email").css("color", "red");
   }
-}
-
-/**
- * Function that takes the emailAddress parameter and checks it with a regular expression for a valid email.
- */
-export function validateEmail(emailAddress) {
-  const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  return re.test(String(emailAddress).toLowerCase());
 }
 
 /**

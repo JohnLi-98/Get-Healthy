@@ -8,6 +8,9 @@ export function fieldInputValid(inputField) {
   $("#" + inputField)
     .siblings(".fas")
     .attr("style", "color: #21d192");
+  $("#" + inputField)
+    .next()
+    .attr("style", "color: #21d192");
 }
 
 /**
@@ -20,6 +23,17 @@ export function fieldInputInvalid(inputField) {
   $("#" + inputField)
     .siblings(".fas")
     .attr("style", "color: #ff0000");
+  $("#" + inputField)
+    .next()
+    .attr("style", "color: red");
+}
+
+/**
+ * Function that takes the emailAddress parameter and checks it with a regular expression for a valid email.
+ */
+export function validateEmail(emailAddress) {
+  const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(String(emailAddress).toLowerCase());
 }
 
 // Function to create an element and setting the attributes for it
