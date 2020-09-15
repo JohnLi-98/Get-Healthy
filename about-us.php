@@ -80,7 +80,7 @@ session_start();
         <h2 class="pt-2">Ready to start your fitness journey?</h2>
         <div class="row justify-content-center">
             <div class="col-6 col-md-4 col-lg-3">
-                <a href="contact-us.php" class="btn btn-block identity-btn mr-2 mt-4 mb-2 py-2" role="button">
+                <a href="identity/register.php" class="btn btn-block identity-btn mr-2 mt-4 mb-2 py-2" role="button">
                     <strong>Become a member</strong>
                 </a>
             </div>
