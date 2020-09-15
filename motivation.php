@@ -55,8 +55,8 @@ session_start();
                     the ability to do something, when all it takes is that first step of trying or participating.
                     The results of that first step may be a gateway to a newfound passion which encourages you to
                     continue on that path. And if not, at least you were able to find the courage to attempt it and
-                    figure out firsthand that it wasn't for you. This applies to all walks of life, therefore, GET
-                    HEALTHY has collected a list of inspirational quotes to help you take that first step. If others can
+                    figure out firsthand that it wasn't for you. This applies to all walks of life, therefore, Get
+                    Healthy has collected a list of inspirational quotes to help you take that first step. If others can
                     do it, why can't you?
                 </p>
             </div>
