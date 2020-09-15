@@ -5,6 +5,7 @@ navbar.windowScroll();
 navbar.navCollapseShow();
 navbar.navCollapseHide();
 navbar.windowResize();
+navbar.pageLoad();
 
 // Register JS functions imported and calls the functions that use jQuery's event listeners.
 import * as register from "../scripts/register.js";

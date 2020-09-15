@@ -2,12 +2,12 @@
 
 // Check to see if config file exists. If not, throw 503 status code and response text with die(). Otherwise, store
 // getConnection() into $dbConn variable.
-if (!file_exists("../../config/config.php")) {
+if (!file_exists("../config/config.php")) {
     http_response_code(503);
     die("<b>Server Error.</b><br /> This service is currently unavailable. Please try again at a later time.");
 }
 
-require_once("../../config/config.php");
+require_once("../config/config.php");
 $emailPwd = getEmailPwd();
 
 // Form validation for POST method to check fields are not empty
@@ -56,13 +56,14 @@ use PHPMailer\PHPMailer\Exception;
 
 require '../vendor/autoload.php';
 
-$emailBody = '<h5>You have received a query from the Get Healthy Contact Form by ' . $email . '.</h5>';
+$emailBody = '<h3>You have received a query from the Get Healthy Contact Form by ' . $email . '.</h3>';
+$emailBody .= '<p>Name: ' . $firstname . ' ' . $surname . '</p>';
 $emailBody .= '<p>Subject: ' . $subject . '</p>';
 $emailBody .= '<p>Message: ' . $message . '</p>';
 
 try {
     $mail = new PHPMailer(TRUE);
-    $mail->addReplyTo($email, $firstname + ' ' + $surname);
+    $mail->addReplyTo($email, $firstname . ' ' . $surname);
     $mail->setFrom('gethealthyhelp@gmail.com', 'Get Healthy Contact Form');
     $mail->addAddress('gethealthyhelp@gmail.com', 'Get Healthy Help');
     $mail->Subject = 'Contact Form Email';

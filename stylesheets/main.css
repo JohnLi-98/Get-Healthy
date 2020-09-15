@@ -948,7 +948,7 @@ p {
   overflow: hidden;
 }
 
-#contact-form {
+#contact-form-col {
   border: 2px solid #21d192;
 }
 
@@ -1003,4 +1003,8 @@ textarea::-webkit-scrollbar-thumb {
 
 .is-invalid {
   background-position-y: center !important;
+}
+
+.form-response {
+  padding: 175px 0;
 }

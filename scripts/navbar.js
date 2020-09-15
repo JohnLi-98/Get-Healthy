@@ -77,3 +77,11 @@ export function windowResize() {
     }
   });
 }
+
+export function pageLoad() {
+  $(document).ready(function () {
+    if ($(window).scrollTop() > 150) {
+      $("#nav").addClass("nav-hide");
+    }
+  });
+}

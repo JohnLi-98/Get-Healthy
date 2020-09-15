@@ -2,6 +2,7 @@ import {
   fieldInputInvalid,
   fieldInputValid,
   validateEmail,
+  createElement,
 } from "../scripts/general.js";
 
 export function firstnameFocusout() {
@@ -128,7 +129,7 @@ export function sendContactEmail() {
 
   $.ajax({
     type: "post",
-    url: "../ajax/send-contact-email.php",
+    url: "ajax/send-contact-email.php",
     data: {
       firstname: firstname,
       surname: surname,
@@ -136,11 +137,40 @@ export function sendContactEmail() {
       subject: subject,
       message: message,
     },
-    success: function () {
-      alert("great success");
+    success: function (res) {
+      showSuccessMessage();
     },
-    error: function () {
-      alert("failure");
+    error: function (res) {
+      showErrorMessage();
     },
   });
+}
+
+export function showSuccessMessage() {
+  const responseText =
+    "Thank you for your query. It was successfully received by our team. We will be in touch soon - via email";
+  $("#contact-form").hide();
+  $("#contact-form-response").toggleClass("d-none");
+  $("#response-heading").text("Received!");
+  $("#response-text").text(responseText);
+}
+
+export function showErrorMessage() {
+  const responseText =
+    "We were unable to send your query to the team at this current time. Please try again.";
+  $("#contact-form").hide();
+  $("#contact-form-response").toggleClass("d-none");
+  $("#response-heading").text("Error!");
+  $("#response-text").text(responseText);
+
+  const retryButton = createElement("button", {
+    class: "btn btn-light border border-dark w-50 mt-5",
+    type: "button",
+  });
+  retryButton.innerHTML = "RETRY".bold();
+  $(retryButton).click(function () {
+    $("#contact-form-response").toggleClass("d-none");
+    $("#contact-form").show();
+  });
+  $("#response-button").html(retryButton);
 }

@@ -47,7 +47,7 @@ session_start();
     </div>
 
     <div class="container-fluid page-content">
-        <div class="row py-lg-4">
+        <div class="row py-lg-4 px-2">
             <div class="col-12 col-lg-6 text-left">
                 <h2 class="font-weight-bold pb-2">Our Office</h2>
 
@@ -69,7 +69,7 @@ session_start();
                 </p>
             </div>
 
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-lg-6" id="contact-form-col">
                 <form method="post" class="px-4 py-5" id="contact-form" autocomplete="none" novalidate>
                     <div class="form-row pt-4">
                         <div class="col-6">
@@ -118,6 +118,12 @@ session_start();
                         SEND
                     </button>
                 </form>
+
+                <div class="d-none form-response text-center" id="contact-form-response">
+                    <h3 id="response-heading"></h3>
+                    <p id="response-text"></p>
+                    <div id="response-button"></div>
+                </div>
 
             </div>
         </div>
