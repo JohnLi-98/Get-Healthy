@@ -57,7 +57,7 @@ export function getQuotes() {
     "inspiration",
     "wisdom",
   ];
-  //let quotesArray = [];
+  let quotesArray = [];
 
   $.getJSON(quotesJSONData, {
     format: JSON,
@@ -69,20 +69,40 @@ export function getQuotes() {
           .filter(function (key, value) {
             return categoriesArray.indexOf(value.Category) > -1;
           })
-          .slice(0, 10),
+          .slice(0, 30),
         function (key, val) {
           const quote = val.Quote;
           const author = val.Author;
           const category = val.Category;
 
+          const quoteObj = { Quote: quote, Author: author, Category: category };
+          quotesArray.push(quoteObj);
+
           //quotesArray.push(quote);
-          createQuoteCard(quote, author, category);
+          //createQuoteCard(quote, author, category);
         }
       );
+      console.log(quotesArray);
+      paginateQuotes(quotesArray);
     })
     .fail(function (jqxhr, textStatus) {
       alert(jqxhr + ": " + textStatus);
     });
+}
+
+export function paginateQuotes(quotesArray) {
+  let quoteCards = [];
+  $("#card-list").pagination({
+    dataSource: quotesArray,
+    pageSize: 10,
+    callback: function (data, pagination) {
+      $("#card-list").empty();
+      $.each(data, function (key, val) {
+        const card = createQuoteCard(val.Quote, val.Author, val.Category);
+        $("#card-list").append(card);
+      });
+    },
+  });
 }
 
 export function createQuoteCard(quoteText, quoteAuthor, quoteCategory) {
@@ -125,7 +145,8 @@ export function createQuoteCard(quoteText, quoteAuthor, quoteCategory) {
   $(cardFooter).append(authorNamePrefix);
   $(cardFooter).append(quoteAuthor);
   $(card).append(cardFooter);
-  $("#card-list").append(card);
+  //$("#card-list").append(card);
+  return card;
 }
 
 export function capitaliseFirstLetter(string) {
