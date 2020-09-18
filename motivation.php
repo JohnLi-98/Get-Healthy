@@ -64,12 +64,20 @@ session_start();
 
         <hr class="line-divider mx-md-2 mx-lg-5">
 
-        <div class="row justify-content-center px-md-2">
-            <h4 class="py-4">Quote Collection</h4>
+        <div class="row justify-content-center px-md-2" id="quotes">
+            <h4 class="pt-4">Quote Collection</h4>
             <section class="col-12 p-4 d-flex" id="card-list">
                 <div class="card">
                     <div class="card-header">
-                        <p id="category">Inspiration</p>
+                        <div id="category" class="text-center">
+                            <span>
+                                <p><u>Inspiration</u></p>
+                            </span>
+                            <img src="images/inspiration-quote.jfif" />
+                        </div>
+                    </div>
+
+                    <div class="card-body">
                         <h2>
                             "I'm selfish, impatient and a little insecure. I make mistakes, I am
                             out of control and at times hard to handle. But if you can't handle
@@ -77,175 +85,9 @@ session_start();
                         </h2>
                     </div>
 
-                    <div class="card-author">
-                        <div class="author-name">
-                            <div class="author-name-prefix">Author</div>
-                            Martin Luther King Jr., A Testament of Hope: The Essential Writings and Speeches
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-header">
-                        <p id="category">Life</p>
-                        <h2>
-                            "Don't cry because it's over, smile because it happened."
-                        </h2>
-                    </div>
-
-                    <div class="card-author">
-                        <div class="author-name">
-                            <div class="author-name-prefix">Author</div>
-                            Dr. Seuss
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-header">
-                        <p id="category">Happiness</p>
-                        <h2>
-                            "Don't cry because it's over, smile because it happened."
-                        </h2>
-                    </div>
-
-                    <div class="card-author">
-                        <div class="author-name">
-                            <div class="author-name-prefix">Author</div>
-                            Dr. Seuss
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-header">
-                        <p id="category">Inspiration</p>
-                        <h2>
-                            "You've gotta dance like there's nobody watching,Love like you'll never be hurt,Sing
-                            like there's nobody listening,And live like it's heaven on earth."
-                        </h2>
-                    </div>
-
-                    <div class="card-author">
-                        <div class="author-name">
-                            <div class="author-name-prefix">Author</div>
-                            William W. Purkey
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-header">
-                        <p id="category">Inspiration</p>
-                        <h2>
-                            "I'm selfish, impatient and a little insecure. I make mistakes, I am
-                            out of control and at times hard to handle. But if you can't handle
-                            me at my worst, then you sure as hell don't deserve me at my best."
-                        </h2>
-                    </div>
-
-                    <div class="card-author">
-                        <div class="author-name">
-                            <div class="author-name-prefix">Author</div>
-                            Marilyn Monroe
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-header">
-                        <p id="category">Life</p>
-                        <h2>
-                            "You've gotta dance like there's nobody watching,Love like you'll never be hurt,Sing
-                            like there's nobody listening,And live like it's heaven on earth."
-                        </h2>
-                    </div>
-
-                    <div class="card-author">
-                        <div class="author-name">
-                            <div class="author-name-prefix">Author</div>
-                            William W. Purkey
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-header">
-                        <p id="category">Inspiration</p>
-                        <h2>
-                            "Be yourself; everyone else is already taken."
-                        </h2>
-                    </div>
-
-                    <div class="card-author">
-                        <div class="author-name">
-                            <div class="author-name-prefix">Author</div>
-                            Oscar Wilde
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-header">
-                        <p id="category">Life</p>
-                        <h2>
-                            "You only live once, but if you do it right, once is enough."
-                        </h2>
-                    </div>
-
-                    <div class="card-author">
-                        <div class="author-name">
-                            <div class="author-name-prefix">Author</div>
-                            Mae West
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-header">
-                        <p id="category">Inspiration</p>
-                        <h2>
-                            "Be the change that you wish to see in the world."
-                        </h2>
-                    </div>
-
-                    <div class="card-author">
-                        <div class="author-name">
-                            <div class="author-name-prefix">Author</div>
-                            Mahatma Gandhi
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-header">
-                        <p id="category">Wisdom</p>
-                        <h2>
-                            "No one can make you feel inferior without your consent."
-                        </h2>
-                    </div>
-
-                    <div class="card-author">
-                        <div class="author-name">
-                            <div class="author-name-prefix">Author</div>
-                            Eleanor Roosevelt, This is My Story
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-header">
-                        <p id="category">Inspiration</p>
-                        <h2>
-                            "We accept the love we think we deserve."
-                        </h2>
-                    </div>
-
-                    <div class="card-author">
-                        <div class="author-name">
-                            <div class="author-name-prefix">Author</div>
-                            Stephen Chbosky, The Perks of Being a Wallflower
-                        </div>
+                    <div class="card-footer">
+                        <div class="author-name-prefix">Author</div>
+                        Martin Luther King Jr., A Testament of Hope: The Essential Writings and Speeches
                     </div>
                 </div>
             </section>
@@ -265,6 +107,7 @@ session_start();
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/6cc49d804e.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.5/pagination.min.js"></script>
     <script type="module" src="scripts/main.js"></script>
 </body>
 

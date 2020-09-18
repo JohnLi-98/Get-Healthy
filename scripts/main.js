@@ -28,3 +28,6 @@ logout.logoutClick();
 import * as nutrition from "../scripts/nutrition.js";
 nutrition.mealsLetterSearch();
 nutrition.mealsFormSearch();
+
+import * as motivation from "../scripts/motivation.js";
+motivation.motivationPageReady();
