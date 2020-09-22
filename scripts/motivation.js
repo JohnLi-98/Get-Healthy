@@ -69,7 +69,7 @@ export function getQuotes() {
           .filter(function (key, value) {
             return categoriesArray.indexOf(value.Category) > -1;
           })
-          .slice(0, 30),
+          .slice(0, 200),
         function (key, val) {
           const quote = val.Quote;
           const author = val.Author;
@@ -82,7 +82,6 @@ export function getQuotes() {
           //createQuoteCard(quote, author, category);
         }
       );
-      console.log(quotesArray);
       paginateQuotes(quotesArray);
     })
     .fail(function (jqxhr, textStatus) {
@@ -90,11 +89,24 @@ export function getQuotes() {
     });
 }
 
-export function paginateQuotes(quotesArray) {
+export function paginateQuotes(quotes) {
   let quoteCards = [];
   $("#card-list").pagination({
-    dataSource: quotesArray,
+    dataSource: quotes,
     pageSize: 10,
+    showGoInput: true,
+    showGoButton: true,
+    showNavigator: true,
+    showFirstOnEllipsisShow: false,
+    showLastOnEllipsisShow: false,
+    autoHidePrevious: true,
+    autoHideNext: true,
+    afterRender: function () {
+      if ($("#card-list div.paginationjs").length == 1) {
+        $("#card-list div.paginationjs").insertAfter("#card-list");
+        $(".paginationjs").addClass("paginationjs-big pt-5");
+      }
+    },
     callback: function (data, pagination) {
       $("#card-list").empty();
       $.each(data, function (key, val) {
@@ -173,4 +185,31 @@ export function getCardImage(category) {
       break;
   }
   return imageSrc;
+}
+
+export function galleryImageClick() {
+  $(".image").click(function () {
+    const imageSrc = $(this).children().attr("src");
+    console.log(imageSrc);
+    openCarouselModal(imageSrc);
+  });
+}
+
+export function openCarouselModal(src) {
+  $("#gallery-modal").addClass("d-flex");
+  $("#gallery-close").click(function () {
+    closeCarouselModal();
+  });
+  $(".carousel-inner img").each(function () {
+    if ($(this).attr("src") === src) {
+      $(this).parent().addClass("active");
+    }
+  });
+}
+
+export function closeCarouselModal() {
+  $("#gallery-modal").removeClass("d-flex");
+  $(".carousel-item").each(function () {
+    $(this).removeClass("active");
+  });
 }

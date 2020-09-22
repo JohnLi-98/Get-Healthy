@@ -31,3 +31,4 @@ nutrition.mealsFormSearch();
 
 import * as motivation from "../scripts/motivation.js";
 motivation.motivationPageReady();
+motivation.galleryImageClick();

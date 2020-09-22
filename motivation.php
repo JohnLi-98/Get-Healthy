@@ -66,8 +66,8 @@ session_start();
         <hr class="line-divider mx-md-2 mx-lg-5">
 
         <div class="row justify-content-center px-md-2" id="quotes">
-            <h4 class="pt-4">Quote Collection</h4>
-            <section class="col-12 p-4 d-flex" id="card-list">
+            <h4 class="py-4">Quote Collection</h4>
+            <section class="col-12 px-4 py-2 d-flex" id="card-list">
                 <div class="card">
                     <div class="card-header">
                         <div id="category" class="text-center">
@@ -95,8 +95,118 @@ session_start();
         </div>
     </div>
 
-    <div class="container-fluid" id="test">
+    <div class="container-fluid d-flex parallax" id="gallery-parallax">
+        <div class="row align-items-center mx-auto">
+            <div class="col text-center">
+                <h1><strong>Gallery</strong></h1>
+                <p>Explore our collection of images for inspiration</p>
+            </div>
+        </div>
+    </div>
 
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6 col-md-4 px-0">
+                <div class="image">
+                    <img class="img-fluid" src="images/Gallery-Pic-10.jpg" />
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 px-0">
+                <div class="image">
+                    <img class="img-fluid" src="images/Gallery-Pic-4.jpg" />
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 px-0">
+                <div class="image">
+                    <img class="img-fluid" src="images/Gallery-Pic-7.jpg" />
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 px-0">
+                <div class="image">
+                    <img class="img-fluid" src="images/Gallery-Pic-2.jpg" />
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 px-0">
+                <div class="image">
+                    <img class="img-fluid" src="images/Gallery-Pic-6.jpg" />
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 px-0">
+                <div class="image">
+                    <img class="img-fluid" src="images/Gallery-Pic-12.jpg" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="justify-content-center align-items-center" id="gallery-modal">
+        <span id="gallery-image-indicator">1/12</span>
+        <span id="gallery-close">&times;</span>
+        <div class="carousel slide d-flex align-items-center" data-interval="false" id="gallery-carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/Gallery-Pic-1.jpg" />
+                </div>
+
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/Gallery-Pic-2.jpg" />
+                </div>
+
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/Gallery-Pic-3.jpg" />
+                </div>
+
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/Gallery-Pic-4.jpg" />
+                </div>
+
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/Gallery-Pic-5.jpg" />
+                </div>
+
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/Gallery-Pic-6.jpg" />
+                </div>
+
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/Gallery-Pic-7.jpg" />
+                </div>
+
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/Gallery-Pic-8.jpg" />
+                </div>
+
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/Gallery-Pic-9.jpg" />
+                </div>
+
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/Gallery-Pic-10.jpg" />
+                </div>
+
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/Gallery-Pic-11.jpg" />
+                </div>
+
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/Gallery-Pic-12.jpg" />
+                </div>
+
+                <a class="carousel-control-prev" href="#gallery-carousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#gallery-carousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
     </div>
 
     <?php
@@ -109,7 +219,6 @@ session_start();
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/6cc49d804e.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.5/pagination.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.5/pagination.js"></script>
     <script type="module" src="scripts/main.js"></script>
 </body>
 
