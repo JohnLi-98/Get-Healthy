@@ -826,6 +826,222 @@ p {
   overflow: hidden;
 }
 
+#card-list {
+  overflow-x: scroll;
+  color: white;
+}
+
+#card-list::-webkit-scrollbar {
+  width: 10px;
+  height: 15px;
+}
+#card-list::-webkit-scrollbar-thumb {
+  background: #21d192;
+  border-radius: 10px;
+  box-shadow: black, black;
+}
+
+#card-list::-webkit-scrollbar-track {
+  background: white;
+}
+
+#card-list li {
+  float: left;
+}
+
+.card {
+  height: 400px;
+  width: 450px;
+  min-width: 300px;
+  padding: 0.5rem;
+  border-radius: 16px;
+  background: #21d192;
+  box-shadow: -1rem 0 3rem white;
+  display: flex;
+  flex-direction: column;
+  transition: 0.2s;
+  margin: 0;
+  scroll-snap-align: start;
+  clear: both;
+  position: relative;
+}
+
+.card:focus-within ~ .card,
+.card:hover ~ .card {
+  transform: translateX(130px);
+}
+
+.card:hover {
+  transform: translateY(-1rem);
+}
+
+.card:not(:first-child) {
+  margin-left: -130px;
+}
+
+.card-header {
+  margin-bottom: auto;
+}
+
+#category {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+  justify-content: space-between;
+}
+
+#category p {
+  margin: 0 0 0.5rem;
+  color: black;
+}
+
+#category img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 20px;
+  vertical-align: middle;
+}
+
+.card-body h2 {
+  font-size: 15px;
+  text-decoration: none;
+  color: inherit;
+  border: 0;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.card-body h2:hover {
+  background: linear-gradient(90deg, #ff8a00, #e52e71);
+  text-shadow: none;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.card-footer {
+  font-size: 14px;
+}
+
+.author-name-prefix {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #404040;
+}
+
+.paginationjs li.active a {
+  background-color: #21d192 !important;
+}
+
+#gallery-parallax {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/Motivation-Parallax.jpg);
+}
+
+.image {
+  position: relative;
+  cursor: pointer;
+}
+
+.image:after {
+  content: "\A";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.4);
+  opacity: 0;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+.image:hover:after {
+  opacity: 1;
+}
+
+#gallery-modal {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100vh; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.95); /* Black background with opacity */
+  z-index: 10000; /* Specify a stack order in case you're using a different order for other elements */
+}
+
+#gallery-img-indicator {
+  position: absolute;
+  top: 15px;
+  left: 30px;
+  color: #f1f1f1;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#gallery-close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+#gallery-close:hover,
+#gallery-close:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#gallery-carousel {
+  width: 100%;
+}
+
+#gallery-carousel img {
+  height: 70vh;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background: none;
+}
+
+.carousel-control-prev:hover {
+  background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+}
+
+.carousel-control-next:hover {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+}
+
+@media only screen and (min-width: 768px) {
+  #gallery-carousel {
+    width: 80%;
+  }
+
+  #gallery-carousel img {
+    height: 80vh;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #gallery-carousel {
+    width: 60%;
+  }
+
+  #gallery-carousel img {
+    height: 80vh;
+  }
+}
+
 /*
 
     --------------

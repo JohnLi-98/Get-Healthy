@@ -25,7 +25,7 @@ export function getQuotes() {
     format: JSON,
   })
     .done(function (result) {
-      //shuffle(result);
+      shuffle(result);
       $.each(
         $(result)
           .filter(function (key, value) {
@@ -39,9 +39,6 @@ export function getQuotes() {
 
           const quoteObj = { Quote: quote, Author: author, Category: category };
           quotesArray.push(quoteObj);
-
-          //quotesArray.push(quote);
-          //createQuoteCard(quote, author, category);
         }
       );
       paginateQuotes(quotesArray);
@@ -49,6 +46,17 @@ export function getQuotes() {
     .fail(function (jqxhr, textStatus) {
       alert(jqxhr + ": " + textStatus);
     });
+}
+
+export function shuffle(quotesArray) {
+  for (var i = 0; i < quotesArray.length - 1; i++) {
+    var j = i + Math.floor(Math.random() * (quotesArray.length - i));
+
+    var temp = quotesArray[j];
+    quotesArray[j] = quotesArray[i];
+    quotesArray[i] = temp;
+  }
+  return quotesArray;
 }
 
 export function paginateQuotes(quotes) {
