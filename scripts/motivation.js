@@ -2,7 +2,7 @@ import { createElement } from "../scripts/general.js";
 
 export function motivationPageReady() {
   $(document).ready(function () {
-    const quotesDiv = $("#quotes");
+    const quotesDiv = document.getElementById("quotes");
 
     if (quotesDiv) {
       getQuotes();
