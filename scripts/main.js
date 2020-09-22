@@ -34,6 +34,11 @@ createPwd.createPwdSubmit();
 import * as logout from "../scripts/logout.js";
 logout.logoutClick();
 
+import * as motivation from "../scripts/motivation.js";
+motivation.motivationPageReady();
+motivation.galleryImageClick();
+motivation.changeImgIndicator();
+
 // Nutrition JS function imported and calls the function that use jQuery's event listeners.
 import * as nutrition from "../scripts/nutrition.js";
 nutrition.mealsLetterSearch();

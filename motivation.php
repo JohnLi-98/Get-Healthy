@@ -1,5 +1,5 @@
 <?php
-ini_set("session.save_path", "/home/vol10_2/epizy.com/epiz_26587846/htdocs/sessionData");
+//ini_set("session.save_path", "/home/vol10_2/epizy.com/epiz_26587846/htdocs/sessionData");
 session_start();
 ?>
 
@@ -14,6 +14,7 @@ session_start();
     <!-- Stylesheets files (Latest compiled and minified Bootstrap 4 CSS, Google Fonts CSS, Index CSS) -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.5/pagination.css">
     <link rel="stylesheet" href="stylesheets/main.css">
 
     <title>Motivation</title>
@@ -63,10 +64,126 @@ session_start();
         </div>
 
         <hr class="line-divider mx-md-2 mx-lg-5">
+
+        <div class="row justify-content-center px-md-2" id="quotes">
+            <h4 class="py-4">Quote Collection</h4>
+            <section class="col-12 px-4 py-3 d-flex" id="card-list">
+            </section>
+        </div>
     </div>
 
-    <div class="container-fluid" id="test">
+    <div class="container-fluid d-flex parallax" id="gallery-parallax">
+        <div class="row align-items-center mx-auto">
+            <div class="col text-center">
+                <h1><strong>Gallery</strong></h1>
+                <p>Explore our collection of images for inspiration</p>
+            </div>
+        </div>
+    </div>
 
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6 col-md-4 px-0">
+                <div class="image">
+                    <img class="img-fluid" src="images/Gallery-Pic-10.jpg" />
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 px-0">
+                <div class="image">
+                    <img class="img-fluid" src="images/Gallery-Pic-4.jpg" />
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 px-0">
+                <div class="image">
+                    <img class="img-fluid" src="images/Gallery-Pic-7.jpg" />
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 px-0">
+                <div class="image">
+                    <img class="img-fluid" src="images/Gallery-Pic-2.jpg" />
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 px-0">
+                <div class="image">
+                    <img class="img-fluid" src="images/Gallery-Pic-6.jpg" />
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 px-0">
+                <div class="image">
+                    <img class="img-fluid" src="images/Gallery-Pic-12.jpg" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="justify-content-center align-items-center" id="gallery-modal">
+        <span id="gallery-img-indicator">1/12</span>
+        <span id="gallery-close">&times;</span>
+        <div class="carousel slide d-flex align-items-center" data-interval="false" id="gallery-carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/Gallery-Pic-1.jpg" data-img="1" />
+                </div>
+
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/Gallery-Pic-2.jpg" data-img="2" />
+                </div>
+
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/Gallery-Pic-3.jpg" data-img="3" />
+                </div>
+
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/Gallery-Pic-4.jpg" data-img="4" />
+                </div>
+
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/Gallery-Pic-5.jpg" data-img="5" />
+                </div>
+
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/Gallery-Pic-6.jpg" data-img="6" />
+                </div>
+
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/Gallery-Pic-7.jpg" data-img="7" />
+                </div>
+
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/Gallery-Pic-8.jpg" data-img="8" />
+                </div>
+
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/Gallery-Pic-9.jpg" data-img="9" />
+                </div>
+
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/Gallery-Pic-10.jpg" data-img="10" />
+                </div>
+
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/Gallery-Pic-11.jpg" data-img="11" />
+                </div>
+
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/Gallery-Pic-12.jpg" data-img="12" />
+                </div>
+
+                <a class="carousel-control-prev" href="#gallery-carousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#gallery-carousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
     </div>
 
     <?php
@@ -78,6 +195,7 @@ session_start();
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/6cc49d804e.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.5/pagination.min.js"></script>
     <script type="module" src="scripts/main.js"></script>
 </body>
 
