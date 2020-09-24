@@ -483,111 +483,82 @@
     ]
   },
   {
-    "Name": "",
-    "Equipment": [],
-    "Variation": [],
-    "TargetMuscles": [],
-    "Description": "",
-    "TrainingProgram": [],
-    "Instructions": []
+    "Name": "Seated Leg Extension",
+    "Equipment": ["Leg Extension Machine"],
+    "Variation": ["Machine"],
+    "TargetMuscles": ["Quads"],
+    "Description": "The seated leg extension is an isolation exercise and one used to target the muscles of the quads. This exercise can be particularly hard on the knees. So, for those with prior knee issues, it may be beneficial to stick with other movements, preferably compound, to target your quads. The leg extension is a great exercise for quad development and may be beneficial to include in your workout routines if your goals are more aesthetics-driven.",
+    "TrainingProgram": ["Legs", "Lower Body"],
+    "Instructions": [
+      "Select the desired resistance on the weight stack and insert the pin.",
+      "Adjust the seat so that the knees are directly in line with the axis of the machine.",
+      "Sit down and position your shins behind the pad at the base of the machine.",
+      "Take a deep breath and extend your legs as you flex your quadriceps.",
+      "As you lock out the knees, exhale to complete the repetition.",
+      "Slowly lower your feet back to the starting position and repeat for the desired number of repetitions."
+    ]
   },
   {
-    "Name": "",
-    "Equipment": [],
-    "Variation": [],
-    "TargetMuscles": [],
-    "Description": "",
-    "TrainingProgram": [],
-    "Instructions": []
+    "Name": "Prone Leg Curl",
+    "Equipment": ["Leg Curl Machine"],
+    "Variation": ["Machine"],
+    "TargetMuscles": ["Hamstrings", "Calves"],
+    "Description": "The lying leg curl is a popular machine-based exercise for the legs, particularly the hamstrings. It is similar to the seated leg curl, but the open hip angle in the lying leg curl may incorporate more glute and calf activation",
+    "TrainingProgram": ["Legs", "Lower Body"],
+    "Instructions": [
+      "Set up for the leg curl by selecting the weight you want to use on the stack and adjusting the padding to suit your leg length.",
+      "Lay face down on the machine. The padding should be positioned just above the back of your ankles. If it's higher than that, adjust the length.",
+      "Tense up the hamstrings by taking the weight slightly off the stack. This is the starting position for the exercise.",
+      "Squeeze the hamstrings and curl the weight up as far as possible.",
+      "Squeeze the hamstring hard, and then slowly lower the weight back to the starting position.",
+      "Repeat for desired reps."
+    ]
   },
   {
-    "Name": "",
-    "Equipment": [],
-    "Variation": [],
-    "TargetMuscles": [],
-    "Description": "",
-    "TrainingProgram": [],
-    "Instructions": []
+    "Name": "Standing Calf Raises",
+    "Equipment": ["Standing Calf Raises Machine"],
+    "Variation": ["Machine"],
+    "TargetMuscles": ["Calves"],
+    "Description": "The standing machine calf raise is an excellent exercise to use if you are interested in isolating the calves. In particular, the standing machine calf raise targets the gastrocnemius muscle. The gastrocnemius is better known as the “show” muscle of the calf.",
+    "TrainingProgram": ["Legs", "Lower Body"],
+    "Instructions": [
+      "Adjust the shoulder pad corresponding to your height.",
+      "Step underneath the pad and place the balls of your feet on the platform with your toes pointed straight ahead - your heels will naturally hang off.",
+      "Extend the hips and knees in order to raise the shoulder pad.",
+      "Lower the heels by dorsiflexing the ankles until the calves are fully stretched.",
+      "Extend the ankles and exhale as you flex the calves.",
+      "Repeat for the desired number of repetitions."
+    ]
   },
   {
-    "Name": "",
-    "Equipment": [],
-    "Variation": [],
-    "TargetMuscles": [],
-    "Description": "",
-    "TrainingProgram": [],
-    "Instructions": []
+    "Name": "Incline Calf Raises",
+    "Equipment": ["Incline Calf Raises Machine"],
+    "Variation": ["Machine"],
+    "TargetMuscles": ["Calves"],
+    "Description": "Incline calf raises strengthen your calf muscles, which power your spring for jumping and running movements. With a low back pad and handles, it allows the user to perform calf raises with no direct resistance loading on the spine.",
+    "TrainingProgram": ["Legs", "Lower Body"],
+    "Instructions": [
+      "Sit on the inclined calf raise machine. Grasp the handles for support.",
+      "Select the desired resistance on the weight stack and insert the pin.",
+      "Place the balls of your feet on the platform.",
+      "Slowly raise your heels by pressing on the balls of your feet, and contract the calves.",
+      "Hold for 2 seconds, then slowly lower the heels until you feel a stretch in the calves."
+    ]
   },
   {
-    "Name": "",
-    "Equipment": [],
-    "Variation": [],
-    "TargetMuscles": [],
-    "Description": "",
-    "TrainingProgram": [],
-    "Instructions": []
-  },
-  {
-    "Name": "",
-    "Equipment": [],
-    "Variation": [],
-    "TargetMuscles": [],
-    "Description": "",
-    "TrainingProgram": [],
-    "Instructions": []
-  },
-  {
-    "Name": "",
-    "Equipment": [],
-    "Variation": [],
-    "TargetMuscles": [],
-    "Description": "",
-    "TrainingProgram": [],
-    "Instructions": []
-  },
-  {
-    "Name": "",
-    "Equipment": [],
-    "Variation": [],
-    "TargetMuscles": [],
-    "Description": "",
-    "TrainingProgram": [],
-    "Instructions": []
-  },
-  {
-    "Name": "",
-    "Equipment": [],
-    "Variation": [],
-    "TargetMuscles": [],
-    "Description": "",
-    "TrainingProgram": [],
-    "Instructions": []
-  },
-  {
-    "Name": "",
-    "Equipment": [],
-    "Variation": [],
-    "TargetMuscles": [],
-    "Description": "",
-    "TrainingProgram": [],
-    "Instructions": []
-  },
-  {
-    "Name": "",
-    "Equipment": [],
-    "Variation": [],
-    "TargetMuscles": [],
-    "Description": "",
-    "TrainingProgram": [],
-    "Instructions": []
-  },
-  {
-    "Name": "",
-    "Equipment": [],
-    "Variation": [],
-    "TargetMuscles": [],
-    "Description": "",
-    "TrainingProgram": [],
-    "Instructions": []
+    "Name": "Leg Press",
+    "Equipment": ["Leg Press Machine"],
+    "Variation": ["Machine"],
+    "TargetMuscles": ["Quads", "Hamstrings", "Glutes", "Calves", "Lower Back"],
+    "Description": "The leg press is a variation of the squat and an exercise used to target the muscles of the leg. One can utilize the leg press to target both the quads and the hamstring muscles, depending on which portion of the foot they push through. The leg press is best used as an accessory movement to the squat, or as a primary movement in gyms which lack the necessary equipment to train the squat movement pattern.",
+    "TrainingProgram": ["Legs", "Lower Body"],
+    "Instructions": [
+      "Load the machine with the desired weight and take a seat.",
+      "Sit down and position your feet on the sled with a shoulder width stance.",
+      "Take a deep breath, extend your legs, and unlock the safeties.",
+      "Lower the weight under control until the legs are roughly 45 degrees or slightly below",
+      "Drive the weight back to the starting position by extending the knees but don’t forcefully lockout.",
+      "Repeat for the desired number of repetitions."
+    ]
   }
 ]
