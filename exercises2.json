@@ -1,0 +1,98 @@
+[
+  {
+    "Name": "Bench Press",
+    "Equipment": ["Barbell", "Dumbbells", "Smith Machine"],
+    "Variation": ["Incline", "Flat", "Decline", "Narrow Grip", "Close Grip"],
+    "TargetMuscles": ["Chest", "Front Delts", "Triceps"],
+    "Description": "A great compound exercise for strength training and overall muscle development. Depending on the variation at which you perform this exercise, it will target the pectoralis major of the chest, the anterior deltoids of the shoulder, and the triceps brachii of the upper arm.",
+    "TrainingProgram": ["Chest", "Push", "Strength Training", "Upper Body"],
+    "Instructions": [
+      "If using dumbbells, you should start by sitting on the bench with your weights in a position that is comfortable (resting on your legs).",
+      "Lay on the bench with your feet flat on the floor and relatively wide apart. Slightly arch the back by popping your chest out.",
+      "Start by locking your elbows out and having the weight above you, maintaining control. Lower the weight if any of the steps so far were difficult.",
+      "Slowly lower the weight(s) to the nipple line of the chest, while taking a breathe.",
+      "Push the weight(s) upwards, while breathing out to slightly lower than the starting position for one rep.",
+      "Repeat this for the desired number of reps before safely racking the bar or dropping your dumbbells.",
+      "The weight(s) should always follow a straight path and under control. We highly recommend you lower the weight if this is not the case."
+    ]
+  },
+  {
+    "Name": "Push Ups",
+    "Equipment": ["Floor"],
+    "Variation": [
+      "Traditional",
+      "Wide Grip",
+      "Close Grip",
+      "Clap",
+      "Dead-stop",
+      "Incline",
+      "Decline"
+    ],
+    "TargetMuscles": ["Chest", "Front Delts", "Triceps", "Abs"],
+    "Description": "Perfect exercise for building the upper body and core strength. It is a compound exercise that can be done for any workout program and adjustable to any level with different variations.",
+    "TrainingProgram": ["Chest", "Push", "Strength Training", "Upper Body"],
+    "Instructions": [
+      "Get on the floor on all fours, positioning your hands slightly wider than your shoulders.",
+      "Extend your legs back so that you are balanced on your hands and toes. Keep your body in a straight line from head to toe without sagging in the middle or arching your back. You can position your feet to be close together or a bit wider depending on what is most comfortable for you.",
+      "Before you begin any movement, contract your abs and tighten your core by pulling your belly button toward your spine. Keep a tight core throughout the entire pushup.",
+      "Inhale as you slowly bend your elbows and lower yourself until your elbows are at a 90-degree angle.",
+      "Exhale as you begin contracting your chest muscles and pushing back up through your hands to the start position. Don't lock out the elbows; keep them slightly bent.",
+      "Repeat for as many reps as your workout program requires."
+    ]
+  },
+  {
+    "Name": "Chest Flys",
+    "Equipment": ["Dumbbells", "Cables", "Machine"],
+    "Variation": ["Dumbbells", "Cables", "Machine"],
+    "TargetMuscles": [],
+    "Description": "",
+    "TrainingProgram": [],
+    "Instructions": []
+  },
+  {
+    "Name": "",
+    "Equipment": [],
+    "Variation": [],
+    "TargetMuscles": [],
+    "Description": "",
+    "TrainingProgram": [],
+    "Instructions": []
+  },
+  {
+    "Name": "Deadlift",
+    "Equipment": ["Barbell", "Dumbbells", "Trap Bar"],
+    "Variation": ["Straight Leg", "Conventional", "Sumo", "Deficit", "Block"],
+    "TargetMuscles": ["Lower Back", "Glutes", "Hamstrings", "Quads"],
+    "Description": "Compound exercise that mainly targets the lower back and legs. Great for building strength for the lower body. An exercise where a loaded barbell or dumbbells is lifted from the floor to the hip, before placing back onto the floor.",
+    "TrainingProgram": ["Back", "Pull", "Lower Body", "Strength Training"],
+    "Instructions": [
+      "With the weight on the ground, position yourself behind it and your feet apart around shoulders width.",
+      "Bend over and grab the dumbbells or bar with a shoulders-width grip.",
+      "Bend your knees and make sure the weight is close to your feet, if using dumbbells or your shins, if using a bar.",
+      "Lift your chest up and straighten the lower back.",
+      "Take a deep breath, grip tightly and push off the ground with your legs before straightening the back in one smooth motion.",
+      "Lower the weight back to the floor, while exhaling for a completed rep.",
+      "Repeat this for the desired number of reps.",
+      "The back should never be in an arched or rounded position when performing this lift, or injuries may occur."
+    ]
+  },
+  {
+    "Name": "Squat",
+    "Equipment": ["Barbell", "Dumbbells", "Body Weight", "Smith Machine"],
+    "Variation": ["Back Squat", "Front Squat"],
+    "TargetMuscles": ["Glutes", "Hamstrings", "Quads", "Abs", "Calves"],
+    "Description": "Compound exercise that mainly targets the legs, as well as your abdominal muscles. Great for building strength for the lower body. An exercise where you lower your hips from a standing position and then stand back up.",
+    "TrainingProgram": ["Legs", "Lower Body", "Strength Training"],
+    "Instructions": [
+      "With the weight on the ground, position yourself behind it and your feet apart around shoulders width.",
+      "Bend over and grab the dumbbells or bar with a shoulders-width grip.",
+      "Bend your knees and make sure the weight is close to your feet, if using dumbbells or your shins, if using a bar.",
+      "Lift your chest up and straighten the lower back.",
+      "Take a deep breath, grip tightly and push off the ground with your legs before straightening the back in one smooth motion.",
+      "Lower the weight back to the floor, while exhaling for a completed rep.",
+      "Repeat this for the desired number of reps.",
+      "The back should never be in an arched or rounded position when performing this lift, or injuries may occur."
+    ]
+  },
+  {}
+]

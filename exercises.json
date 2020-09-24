@@ -1,0 +1,593 @@
+[
+  {
+    "Name": "Barbell Bench Press",
+    "Equipment": ["Barbell", "Smith Machine", "Bench"],
+    "Variation": ["Flat", "Incline", "Decline", "Close Grip"],
+    "TargetMuscles": ["Chest", "Shoulders", "Front Delts", "Triceps"],
+    "Description": "A great compound exercise for strength training and overall muscle development. Depending on the variation at which you perform this exercise, it will target the pectoralis major of the chest, the anterior deltoids of the shoulder, and the triceps brachii of the upper arm.",
+    "TrainingProgram": ["Chest", "Push", "Strength Training", "Upper Body"],
+    "Instructions": [
+      "Lay on the bench with your feet flat on the floor and relatively wide apart. Slightly arch the back by popping your chest out.",
+      "Grab the bar with your desired grip and unrack it, making sure to straighten your arms and lock out your elbows. ",
+      "While maintaining control, slowly lower the bar to the nipple line of the chest and breathe in during this movement.",
+      "Press the  bar back up to the starting position, while breathing out for one rep.",
+      "Repeat this for the desired number of reps before safely racking the bar.",
+      "The bar should always follow a straight path and under control. We highly recommend you lower the weight if this is not the case."
+    ]
+  },
+  {
+    "Name": "Dumbbell Bench Press",
+    "Equipment": ["Dumbbells", "Bench"],
+    "Variation": ["Flat", "Incline", "Decline"],
+    "TargetMuscles": ["Chest", "Shoulders", "Front Delts", "Triceps"],
+    "Description": "Similar to barbell bench press but with dumbbells instead. A compound exercise that targets the chest, front delts and triceps.",
+    "TrainingProgram": ["Chest", "Push", "Strength Training", "Upper Body"],
+    "Instructions": [
+      "Start by sitting on the bench and placing the dumbbells on your knees to get ready to get into the starting position.",
+      "Get into the starting position by laying back onto the bench, with the dumbbells just to the side of your shoulders and press the weights above your chest by extending your elbows until your arms are straight.",
+      "While breathing in, slowly bring the weights back down to the lower position then press the weight back up, while breathing out to complete a rep.",
+      "Repeat this for the desired number of reps before safely droppping the weights."
+    ]
+  },
+  {
+    "Name": "Push Ups",
+    "Equipment": ["Floor"],
+    "Variation": [
+      "Traditional",
+      "Wide Grip",
+      "Close Grip",
+      "Clap",
+      "Dead-stop",
+      "Incline",
+      "Decline"
+    ],
+    "TargetMuscles": ["Chest", "Front Delts", "Triceps", "Abs"],
+    "Description": "Perfect exercise for building the upper body and core strength. It is a compound exercise that can be done for any workout program and adjustable to any level with different variations.",
+    "TrainingProgram": ["Chest", "Push", "Strength Training", "Upper Body"],
+    "Instructions": [
+      "Get on the floor on all fours, positioning your hands slightly wider than your shoulders.",
+      "Extend your legs back so that you are balanced on your hands and toes. Keep your body in a straight line from head to toe without sagging in the middle or arching your back. You can position your feet to be close together or a bit wider depending on what is most comfortable for you.",
+      "Before you begin any movement, contract your abs and tighten your core by pulling your belly button toward your spine. Keep a tight core throughout the entire pushup.",
+      "Inhale as you slowly bend your elbows and lower yourself until your elbows are at a 90-degree angle.",
+      "Exhale as you begin contracting your chest muscles and pushing back up through your hands to the start position. Don't lock out the elbows; keep them slightly bent.",
+      "Repeat for as many reps as your workout program requires."
+    ]
+  },
+  {
+    "Name": "Dumbbell Flys",
+    "Equipment": ["Dumbbells", "Bench"],
+    "Variation": ["Incline", "Flat", "Decline"],
+    "TargetMuscles": ["Chest", "Shoulders"],
+    "Description": "Dumbbell Flys is a great isolation exercise for the chest. Usually performed after a compound lift and considered to be a perfect finisher to focus on chest development.",
+    "TrainingProgram": ["Chest", "Push", "Upper Body"],
+    "Instructions": [
+      "Sit down on a flat bench with a dumbbell in each hand resting on your thighs. (The palms of your hands should be facing each other).",
+      "Lower yourself down until you’re lying flat. The dumbbell should remain close to your chest.",
+      "Once you’re lying flat, press the dumbbells up above your chest. This is your starting position.",
+      "With a slight bend in your elbows, lower your arms laterally until you feel a stretch in your chest. The dumbbells should be level with your chest at both sides.",
+      "Return your arms to the starting position and squeeze your pecs together. Remember to keep your arms steady throughout the movement.",
+      "Don’t let the dumbbells touch as they meet at the top, holding for a second in the contracted position. Repeat the movement for the amount of reps you need."
+    ]
+  },
+  {
+    "Name": "Machine Fly",
+    "Equipment": ["Pec Deck Machine"],
+    "Variation": ["Neutral Grip", "High Grip"],
+    "TargetMuscles": ["Chest", "Shoulders"],
+    "Description": "The machine fly is a great way for both beginners and those with experience to target the chest muscles without worrying about the balance required when using a bench or standing. It's also very useful for those with a lower-body injury and need to avoid standing.",
+    "TrainingProgram": ["Chest", "Push", "Upper Body"],
+    "Instructions": [
+      "Adjust the seat height so that when you sit down, the handles are at chest height and the back pad is supporting your spine.",
+      "Make sure your wrists and elbows are level with your shoulders, when you grab the handles.",
+      "Sit up tall and relax your neck and shoulders. Your feet should be flat on the floor.",
+      "Grab the handles so that your palms are facing forward.",
+      "Press your arms together in front of your chest with a slow, controlled movement. Keep a slight, soft bend in the elbows with wrists relaxed.",
+      "Pause for one second once your arms are fully 'closed' in front of your chest.",
+      "Bring your arms slowly back to the starting position, opening your chest and keeping posture strong and upright.",
+      "Repeat for as many reps as your workout program requires."
+    ]
+  },
+  {
+    "Name": "Cable Flys",
+    "Equipment": ["Cable Machine"],
+    "Variation": ["Neutral Grip", "Low-High", "High-Low"],
+    "TargetMuscles": ["Chest", "shoulders", "Triceps"],
+    "Description": "An exercise used to strengthen the pushing muscles of the body including the chest, shoulders and triceps. It is a tough exercise to overload, so it's best used as an accessory movement to increase chest muscle mass.",
+    "TrainingProgram": ["Chest", "Push", "Upper Body"],
+    "Instructions": [
+      "Set both pulleys directly at (or slightly above) shoulder height and select the desired weight.",
+      "Grasp both handles with a neutral grip and take a step forward to split the stance.",
+      "Press the handles to lockout while flexing the pecs and extending the elbows.",
+      "Keep a slight bend in the elbows, move entirely at the shoulder joint, and slowly allow the arms to open while the pecs stretch.",
+      "Return to the starting position by flexing your pecs and bringing the handles together at chest height.",
+      "Slowly lower back to the starting position and repeat for the desired number of repetitions."
+    ]
+  },
+  {
+    "Name": "Dips",
+    "Equipment": ["Dip Station"],
+    "Variation": ["Body Weight", "Assisted", "Weighted"],
+    "TargetMuscles": ["Triceps", "Chest", "Shoulders"],
+    "Description": "Dips are a versatile compound exercise that can be included in any workout.",
+    "TrainingProgram": ["Chest", "Push", "Upper Body", "Strength Training"],
+    "Instructions": [
+      "Grab the parallel bars and hoist yourself up. Look straight ahead and contract your abs.",
+      "Bend your knees if you like, but keep your head up.",
+      "Keeping your elbows at your sides, lower yourself until your triceps are parallel to the floor.",
+      "Once parallel, explode back up but don't lock your elbows.",
+      "Repeat for the desired number of repetitions."
+    ]
+  },
+  {
+    "Name": "Seated Dumbbell Press",
+    "Equipment": ["Dumbbells", "Bench"],
+    "Variation": ["Standard", "Arnie"],
+    "TargetMuscles": ["Front Delts", "Lateral Delts"],
+    "Description": "The seated dumbbell press is a foundational movement for establishing strength and development of the shoulders.",
+    "TrainingProgram": ["Shoulders", "Push", "Upper Body", "Strength Training"],
+    "Instructions": [
+      "Set up an adjustable angle bench to 90 degrees and select the desired weight from the rack.",
+      "Pick up the dumbbells from the floor using a neutral grip (palms facing in). Position the end of the dumbbells on your knees and sit down on the bench.",
+      "Using a safe and controlled motion, kick your knees up one at a time in order to get each dumbbell into place.",
+      "Once the dumbbells are in place, rotate your palms so they are facing forward.",
+      "Take a deep breath then press the dumbbells overhead by extending the elbows and contracting the deltoids.",
+      "Slowly lower the dumbbells back to the starting position (the arms should be roughly 90 degrees or slightly lower depending upon limb lengths).",
+      "Repeat for the desired number of repetitions."
+    ]
+  },
+  {
+    "Name": "Standing Dumbbell Press",
+    "Equipment": ["Dumbbells"],
+    "Variation": ["Standard", "Arnie"],
+    "TargetMuscles": ["Front Delts", "Lateral Delts", "Abs"],
+    "Description": "The dumbbell overhead press increases strength throughout the shoulders. This exercise differs from the seated version as it engages the core for stability",
+    "TrainingProgram": ["Shoulders", "Push", "Upper Body", "Strength Training"],
+    "Instructions": [
+      "Stand upright and keep the back straight.",
+      "Hold a dumbbell in each hand at the shoulders with an overhand grip. Thumbs should be on the inside and knuckles facing up.",
+      "Raise the weights above the head in a controlled motion while exhaling. Pause at the top of the motion.",
+      "Return the dumbbells to the shoulders while inhaling.",
+      "Repeat for the desired number of repetitions."
+    ]
+  },
+  {
+    "Name": "Seated Barbell Press",
+    "Equipment": ["Barbell", "Smith Machine", "Bench"],
+    "Variation": ["Standard", "Behind Neck"],
+    "TargetMuscles": ["Front Delts", "Lateral Delts"],
+    "Description": "The seated barbell shoulder press is a variation of the overhead press and an exercise used to build shoulder strength and muscle. This vertical press is a crucial movement pattern to train and should be incorporated into any workout.",
+    "TrainingProgram": ["Shoulders", "Push", "Upper Body", "Strength Training"],
+    "Instructions": [
+      "Adjust the barbell to just below shoulder height while standing then load the desired weight onto the bar.",
+      "Place an adjustable bench beneath the bar in an upright position.",
+      "Sit down on the bench and unrack the bar using a pronated grip.",
+      "Inhale, brace, tuck the chin, then lower the bar to the top of your chest.",
+      "Exhale and press the bar back to lockout.",
+      "Repeat for the desired number of repetitions."
+    ]
+  },
+  {
+    "Name": "Standing Barbell Press",
+    "Equipment": ["Barbell"],
+    "Variation": ["Standard", "Behind Neck"],
+    "TargetMuscles": ["Front Delts", "Lateral Delts", "Abs"],
+    "Description": "The standing barbell press is a compound movement used to build size and strength in the shoulders. The press can be trained as a strength lift or in traditional muscle-building rep ranges as part of full-body, shoulder-focused, or upper-body training.",
+    "TrainingProgram": ["Shoulders", "Push", "Upper Body", "Strength Training"],
+    "Instructions": [
+      "Adjust the barbell to just below shoulder height then load the desired weight onto the bar.",
+      "Assume a shoulder width stance and place your hands at (or just outside of) shoulder width with a pronated grip on the bar.",
+      "Step underneath the bar and unrack it while keeping the spine in a neutral position.",
+      "Take two steps back, inhale, brace, tuck the chin, then press the bar to lockout overhead.",
+      "Exhale once the bar gets to lockout and reverse the movement slowly while controlling the bar back to your chest.",
+      "Repeat for the desired number of repetitions."
+    ]
+  },
+  {
+    "Name": "Front Raise",
+    "Equipment": ["Dumbbells", "Cable Machine", "Plate"],
+    "Variation": ["Dumbbells", "Cables", "Plate"],
+    "TargetMuscles": ["Front Delts"],
+    "Description": "An essential shoulder exercise that will build strength and stability in the tops of your arms. This move targets your front deltoids and will create major definition in your upper body.",
+    "TrainingProgram": ["Shoulders", "Pull"],
+    "Instructions": [
+      "Stand with feet about shoulder-width apart. Keep the back straight and feet planted flat on the floor. Your arms holding weights or handle (palms facing backwards) should be in a low position, by your side if possible.",
+      "Ensure you have a firm grip and brace your core.",
+      "Lift the weights upward, inhaling, with arms out in front and palms facing down. Keep a slight bend in the elbows to reduce the stress on the joints. Pause when the arms are approximately horizontal to the floor and feel the contraction in the shoulders.",
+      "Return the dumbbells to the starting position at the thighs with a slow and controlled motion while exhaling.",
+      "Repeat the exercise for the number of sets and repetitions in your program."
+    ]
+  },
+  {
+    "Name": "Lateral Raise",
+    "Equipment": ["Dumbbells", "Cable Machine"],
+    "Variation": ["Dumbbells", "Cables"],
+    "TargetMuscles": ["Lateral Delts", "Front Delts"],
+    "Description": "The side lateral raise is an effective shoulder-strengthening movement designed to isolate the lateral head of the deltoid muscle. Performed regularly, this can help you develop stronger, broader shoulders. All you need is a pair of light dumbbells and enough shoulder flexibility to abduct your arms (lifting the weights out and away from your body) until they form a 'T' shape at your shoulders.",
+    "TrainingProgram": ["Shoulders", "Pull", "Upper Body"],
+    "Instructions": [
+      "Grab your weights and stand straight up with the dumbbells or handle at your sides.",
+      "Your palms should be facing your body. You should be holding the weight slightly off your body, as this keeps the tension on the side delts. This is your starting position for the exercise.",
+      "To execute, slowly raise the dumbbells up to around shoulder height. It's important that you do not let your wrists go above your elbows while raising the weight, as this will take the work off the side delts and put it on the front delts.",
+      "Pause at the top of the movement, and then slowly lower the weight back to the starting position.",
+      "Do not let the dumbbells touch your body, and then raise them for the next rep."
+    ]
+  },
+  {
+    "Name": "Rear Delt Reverse Fly",
+    "Equipment": ["Dumbbells", "Pec Deck Machine"],
+    "Variation": ["Dumbbells", "Machine"],
+    "TargetMuscles": ["Rear Delts"],
+    "Description": "This is a great exercise to assist you in building a complete set of shoulders. Many lifters utilize the bent over reverse fly to target the rear delts, an often lagging muscle for many lifters alike. Strengthening the rear delts by using the rear delt fly can lead to improved posture and a greater level of strength on other lifts.",
+    "TrainingProgram": ["Shoulders", "Pull"],
+    "Instructions": [
+      "Select the desired weight from the rack then take a few steps back into an open area.",
+      "Hinge from the hips until your body is almost parallel to the floor and allow the arms to hang straight down from the shoulders with a neutral grip.",
+      "Take a deep breath and pull the dumbbells towards the ceiling using the rear deltoids.",
+      "Slowly lower the dumbbells back to the starting position under control.",
+      "Repeat for the desired number of repetitions."
+    ]
+  },
+  {
+    "Name": "Tricep Pushdown",
+    "Equipment": ["Cable Machine", "Pushdown Machine"],
+    "Variation": ["Rope", "V Bar", "Straight Bar", "Pushdown Machine"],
+    "TargetMuscles": ["Triceps"],
+    "Description": "A simple isolation move that is as effective an exercise as anything else out there for targeting your triceps and building muscle on the back of your upper arms.",
+    "TrainingProgram": ["Arms", "Upper Body", "Push"],
+    "Instructions": [
+      "Whilst keeping your elbows close to your stomach and shoulders pinned back, grip the bar with a pronated grip (palms facing downwards) shoulder width apart. Your feet should be positioned relatively close whilst your knees are allowed a slight bend also.",
+      "Leaning slightly forwards, exhale your breath and push the bar down using only your triceps until the bar hits your hip/upper thigh region. At this point, the arms should be fully extended and there should be considerable stress or tension placed on the triceps muscle.",
+      "Throughout the movement, your shoulders and arms should be still and the forearms should be the only muscle group moving.",
+      "Squeeze the triceps for 1 to 2 seconds and allow the muscles to sufficiently contract.",
+      "Then, as you inhale your breath, slowly release the bar back to the starting position.",
+      "Repeat the exercise again for the designated number of repetitions."
+    ]
+  },
+  {
+    "Name": "Skullcrushers",
+    "Equipment": ["EZ Bar", "Barbell", "Bench"],
+    "Variation": ["EZ Bar", "Barbell"],
+    "TargetMuscles": ["Triceps"],
+    "Description": "An exercise used to strengthen the muscles of the triceps and an effective way to target the long head of the tricep. Having bigger and stronger triceps are not only important from an aesthetic standpoint but can also help contribute to better performance on pressing exercises.",
+    "TrainingProgram": ["Arms", "Push", "Upper Body"],
+    "Instructions": [
+      "Select your desired weight and sit on the edge of a flat bench.",
+      "To get into position, lay back and keep the bar close to your chest. Once you are ready, press the weight to lockout.",
+      "Lower the weights towards your head by unlocking the elbows and allowing the ez bar to drop toward your forehead or just above.",
+      "Once your forearms reach parallel or just below, reverse the movement by extending the elbows while flexing the triceps to lockout the weight.",
+      "Repeat for the desired number of repetitions."
+    ]
+  },
+  {
+    "Name": "Overhead Tricep Extensions",
+    "Equipment": ["Cable Machine"],
+    "Variation": ["Rope", "V Bar", "Straight Bar"],
+    "TargetMuscles": ["Triceps"],
+    "Description": "Overhead tricep extension variations are especially good at targetting the long head of the triceps. The denser your long head muscle is, the overall larger the triceps appear. Well-built triceps also have a lot of positive carryover into your pressing movements such as bench press variations and shoulder press variations.",
+    "TrainingProgram": ["Arms", "Upper Body", "Push"],
+    "Instructions": [
+      "Put the attachment to a cable stack as high as possible and assume a standing position.",
+      "Utilize a split stance, grasp the attachment overhead with a neutral grip (palms facing), and lean forward by hinging at the hips.",
+      "Initiate the movement by extending the elbows and flexing the triceps.",
+      "Pull the attachment downward until the elbows are almost locked out and then slowly lower under control back to the starting position.",
+      "Repeat for the desired number of repetitions."
+    ]
+  },
+  {
+    "Name": "Pull Ups",
+    "Equipment": ["Pull Up Bar"],
+    "Variation": ["Standard Grip", "Close Grip", "Wide Grip", "Hammer Grip"],
+    "TargetMuscles": ["Upper Back", "Lats", "Rear Delts", "Biceps", "Core"],
+    "Description": "An exercise used to target the upper back. The pull up is a foundational movement that should be included in any workout routine, as mastering it will benefit you from a strength and aesthetic standpoint.",
+    "TrainingProgram": ["Back", "Pull", "Upper Body", "Strength Training"],
+    "Instructions": [
+      "Using a pronated grip, grasp the pull bar with your desired grip.",
+      "Take a deep breath, squeeze your glutes and brace your abs. Depress the shoulder blades and then drive the elbows straight down to the floor while activating the lats.",
+      "Pull your chin towards the bar until the lats are fully contracted, then slowly lower yourself back to the start position and repeat for the assigned number of repetitions."
+    ]
+  },
+  {
+    "Name": "Chin Ups",
+    "Equipment": ["Chin Up Bar"],
+    "Variation": ["Standard Grip", "Close Grip", "Wide Grip"],
+    "TargetMuscles": ["Lats", "Biceps", "Upper Back"],
+    "Description": "An exercise used to build the muscles of the back - particularly the lats. The chin up differs from the pull up in that the chin up allows for a greater degree of bicep involvement during the pulling movement. A critical exercise to have in your routine to build well balanced and strong physique.",
+    "TrainingProgram": ["Back", "Upper Body", "Pull", "Strength Training"],
+    "Instructions": [
+      "Using a supinated grip, grasp the bar with your desired grip.",
+      "Take a deep breath, squeeze your glutes and brace your abs. Depress the shoulder blades and then drive the elbows straight down to the floor while activating the lats.",
+      "Pull your chin towards the bar until the lats are fully contracted, then slowly lower yourself back to the start position and repeat for the assigned number of repetitions."
+    ]
+  },
+  {
+    "Name": "Deadlifts",
+    "Equipment": ["Barbell"],
+    "Variation": ["Standard", "Straight Leg", "Sumo", "Deficit", "Block"],
+    "TargetMuscles": ["Lower Back", "Glutes", "Hamstrings", "Quads"],
+    "Description": "Compound exercise that mainly targets the lower back and legs. Great for building strength for the lower body. An exercise where a loaded barbell or dumbbells is lifted from the floor to the hip, before placing back onto the floor.",
+    "TrainingProgram": ["Back", "Pull", "Lower Body", "Strength Training"],
+    "Instructions": [
+      "With the weight on the ground, position yourself behind it and your feet apart around shoulders width.",
+      "Bend over and grab the bar with a shoulders-width grip.",
+      "Bend your knees and make sure the weight is close to your shins. Lift your chest up and straighten the lower back.",
+      "Take a deep breath, grip tightly and push off the ground with your legs before straightening the back in one smooth motion.",
+      "Lower the weight back to the floor, while exhaling for a completed rep.",
+      "Repeat this for the desired number of reps.",
+      "The back should never be in an arched or rounded position when performing this lift, or injuries may occur."
+    ]
+  },
+  {
+    "Name": "Lat Pulldowns",
+    "Equipment": ["Lat Pulldown Machine"],
+    "Variation": [
+      "Standard Grip",
+      "Wide Grip",
+      "Hammer Grip",
+      "Behind Neck",
+      "Underhand Grip"
+    ],
+    "TargetMuscles": ["Lats", "Upper Back", "Biceps"],
+    "Description": "The lat pull down is an exercise used to build the muscles of the back. While the exercise will primarily target the lats, you will also notice a fair amount of bicep and middle back activation. The back is a muscle group that requires a fair amount of variation. So, experiment with several different angles and hand positions to maximize your back muscle growth.",
+    "TrainingProgram": ["Back", "Pull", "Upper Body"],
+    "Instructions": [
+      "Attach a wide grip handle to the lat pulldown machine and assume a seated position.",
+      "Grasp the handle with your desired grip and initiate the movement by depressing the shoulder blade and then flexing the elbow while extending the shoulder.",
+      "Pull the handle towards your body until the elbows are in line with your torso and then slowly lower the handle back to the starting position under control.",
+      "Repeat for the desired number of repetitions."
+    ]
+  },
+  {
+    "Name": "Face Pull",
+    "Equipment": ["Cable Machine", "Rope Attachment"],
+    "Variation": [
+      "Normal Grip",
+      "Palms-down Grip",
+      "Dual Ropes",
+      "Seated",
+      "Kneeling"
+    ],
+    "TargetMuscles": ["Rear Delts", "Upper Back", "Traps"],
+    "Description": "The face pull is a great shoulder exercise that can be used to target the rear deltoids. Not many exercises can effectively target the rear delts like the face pull can. The rear delt is often a lagging muscle group for many lifters and weak rear delts can result in poor posture, thus performing the face pull (or other rear delt exercises) is highly recommended.",
+    "TrainingProgram": ["Back", "Shoulders", "Pull", "Upper Body"],
+    "Instructions": [
+      "Assume a split stance with the arms straight out in front of you utilizing a pronated grip.",
+      "Inhale and pull the rope towards your face with the elbows high.",
+      "Slowly lower the rope back to the starting position and repeat for the desired number of repetitions on both sides."
+    ]
+  },
+  {
+    "Name": "Shrugs",
+    "Equipment": ["Dumbbells", "Barbell", "Smith Machine"],
+    "Variation": ["Dumbbells", "Barbell"],
+    "TargetMuscles": ["Traps", "Upper Back", "Rear Delts"],
+    "Description": "Shrugs are an exercise used to build trap muscle size. Traps, being a stubborn muscle group for many, can be trained with a fairly high frequency during the week. When doing so, be sure to mix up the volume, intensity, and implements you use to train the traps.",
+    "TrainingProgram": ["Shoulders", "Back", "Upper Body", "Pull"],
+    "Instructions": [
+      "Assume a standing position with the weights on both sides of your body.",
+      "Hinge forward, inhale, and grab the weights with a neutral grip.",
+      "Stand up tall and ensure your spine remains neutral.",
+      "Contract the traps to elevate the shoulders. Squeeze hard at the top and slowly lower the weights back to the starting position.",
+      "Repeat for the desired number of repetitions."
+    ]
+  },
+  {
+    "Name": "Bent Over Row",
+    "Equipment": ["Barbell"],
+    "Variation": ["Overhand Grip", "Underhand Grip"],
+    "TargetMuscles": ["Upper Back", "Abs", "Biceps", "Rear Delts"],
+    "Description": "The bent over row is a back day staple exercise and is considered one of the best muscle building back building exercises you can do. Sometimes referred to as the barbell row, the bent over row is a staple movement in most muscle building workouts. Those looking to build muscle utilize the bent over row to target their back, bicep and core muscle.",
+    "TrainingProgram": ["Back", "Upper Body", "Pull", "Strength Training"],
+    "Instructions": [
+      "Assume a standing position while holding the bar using a double overhand grip.",
+      "Hinge forward until your torso is roughly parallel with the floor (or slightly above) and then begin the movement by driving the elbows behind the body while retracting the shoulder blades.",
+      "Pull the bar towards your belly button until it touches your body and then slowly lower the bar back to the starting position under control.",
+      "Repeat for the desired number of repetitions."
+    ]
+  },
+  {
+    "Name": "One Arm Dumbbell Row",
+    "Equipment": ["Dumbbells", "Bench"],
+    "Variation": ["Dumbbells"],
+    "TargetMuscles": ["Lats", "Traps", "Upper Back"],
+    "Description": "An isolation exercise that provides full range of motion, while allowing you to strengthen up your weaker side if you have an imbalance issue. Plus, because you’re using the bench for support (by having a knee on it), you don’t have to be as mindful of torso position as with standing rows; you can just focus on pulling heavy weight with minimal lower-back injury risk. ",
+    "TrainingProgram": ["Back", "Pull"],
+    "Instructions": [
+      "Place one bent knee and same-side hand on a bench with the opposite foot on the floor and that hand holding a dumbbell.",
+      "Begin bent over at the waist with your back level with the floor, your head pointed down and the dumbbell hanging straight toward the floor with your arm extended, palm facing in.",
+      "Keeping your chest pointed to the floor, pull the dumbbell up to your waist by contracting your back muscles and bending your elbow.",
+      "When it reaches the top, squeeze your shoulder blades together, then slowly lower the dumbbell to the start position.",
+      "Complete all reps with one arm, then switch arms."
+    ]
+  },
+  {
+    "Name": "Seated Cable Row",
+    "Equipment": ["Cable Machine"],
+    "Variation": ["V Bar", "Lat Pulldown Bar"],
+    "TargetMuscles": ["Upper Back", "Lats", "Rear Delts", "Biceps", "Forearms"],
+    "Description": "The cable row is one of the best cable exercises around and very neatly demonstrates the edge this machine has over free weights, because throughout the row movement you work against the same level of resistance so the muscles enlisted by the exercise are worked evenly.",
+    "TrainingProgram": ["Back", "Pull", "Upper Body"],
+    "Instructions": [
+      "Set the appropriate weight on the weight stack and attach a close grip bar or V-bar to the seated row machine.",
+      "Grasp the bar with a neutral grip (palms facing in).",
+      "Keeping your legs slightly bent and your back straight, pull the weight up slightly off the stack. You should be sitting straight upright with your shoulders back. This is the starting position.",
+      "Keeping your body in position, pull the handle into your stomach.",
+      "Pull your shoulder blades back, squeeze, pause, and then slowly lower the weight back to the starting position.",
+      "Repeat for desired reps."
+    ]
+  },
+  {
+    "Name": "Standing Curls",
+    "Equipment": ["Barbell", "EZ Bar", "Dumbbells"],
+    "Variation": ["Standard Grip", "Hammer", "Reverse Grip", "Zottman"],
+    "TargetMuscles": ["Biceps", "Forearms"],
+    "Description": "Standing curls is the cornerstone of many bicep building routines. The curl is a highly recognizable weight-training exercise that works the muscles of the upper arm, and to a lesser extent, those of the lower arm. It's a great exercise for seeing results in strength and definition.",
+    "TrainingProgram": ["Arms", "Pull"],
+    "Instructions": [
+      "Grasp your weights at around shoulder width apart using your desired grip.",
+      "Stand straight up, feet together (you may be more comfortable putting one foot back for stability), back straight, and with your arms fully extended.",
+      "The weight should not be touching your body.",
+      "Keeping your eyes facing forwards, elbows tucked in at your sides, and your body completely still, slowly curl the weight up.",
+      "Squeeze your biceps hard at the top of the movement, and then slowly lower it back to the starting position.",
+      "Repeat for desired reps."
+    ]
+  },
+  {
+    "Name": "Seated Dumbbell Curls",
+    "Equipment": ["Dumbbells", "Bench"],
+    "Variation": ["Standard Grip", "Hammer", "Reverse Grip", "Zottman"],
+    "TargetMuscles": ["Biceps", "Forearms"],
+    "Description": "The seated dumbbell biceps curl is a popular exercise for building bigger biceps. While curls can effectively be performed standing as well, performing them seated can enforce strict form and perhaps boost the mind-muscle connection.",
+    "TrainingProgram": ["Arms", "Pull"],
+    "Instructions": [
+      "Sit down on the bench. Hold two dumbbells down at your sides with  your desired grip.",
+      "Sit up with your back straight and head lifted tall. Do not arch your back. Hold your abdominals in tight.",
+      "Slowly curl (lift) the dumbbells up just past your chest and toward your shoulders. At the top of the movement, pause for a second to contract (squeeze) your biceps muscles.",
+      "Slowly return to start and repeat for desired number of reps."
+    ]
+  },
+  {
+    "Name": "Preacher Curls",
+    "Equipment": ["EZ Bar", "Dumbbells"],
+    "Variation": ["Standard Grip", "Reverse Grip"],
+    "TargetMuscles": ["Biceps"],
+    "Description": "The EZ-bar preacher curl is a classic exercise for building bigger biceps. This move is all about isolation. With the back of the upper arms against the pad, it’s next to impossible to cheat. Go light, get a great pump, and build that peak!",
+    "TrainingProgram": ["Arms", "Pull"],
+    "Instructions": [
+      "Adjust the seat on the preacher bench so that your upper arms sit comfortably on the padding when seated.",
+      "Load the desired weight on the barbell.",
+      "Sit on the preacher bench and grip the EZ bar with your hands shoulder width apart using an underhand (palms facing up) grip. (note: You can use a wide or narrow grip on this exercise)",
+      "Keeping your back straight and eyes facing forward, take the weight off the rack so that you're supporting it with your arms slightly bent. This is the starting position.",
+      "Slowly bring the weight up until your forearms are at a right angle to the floor.",
+      "Squeeze the bicep at the top of the movement, and then slowly lower it back to the starting position.",
+      "Repeat for desired reps."
+    ]
+  },
+  {
+    "Name": "Squats",
+    "Equipment": ["Barbell", "Smith Machine"],
+    "Variation": ["Back Squat", "Front Squat", "Smith Machine"],
+    "TargetMuscles": ["Quads", "Hamstrings", "Glutes", "Lower Back", "Calves"],
+    "Description": "Compound exercise that mainly targets the legs, as well as your abdominal muscles. Great for building strength for the lower body. An exercise where you lower your hips from a standing position and then stand back up.",
+    "TrainingProgram": ["Legs", "Lower Body", "Strength Training"],
+    "Instructions": [
+      "Set up for the exercise by setting the barbell to just below shoulder height and loading the weight you want to use.",
+      "Stand under the bar with your feet at about shoulder width apart.",
+      "Position the bar so that it is resting on the muscles on the top of your back, not on the back of your neck. The bar should feel comfortable. If it doesn't, try adding some padding to the bar.",
+      "Now take your hands over the back and grip the bar with a wide grip for stability.",
+      "You should now bend at the knees and straighten your back in preparation to take the weight off the rack.",
+      "Keeping your back straight and eyes up, push up through the legs and take the weight off the rack.",
+      "Take a small step back and stabilize yourself.",
+      "Keeping your eyes facing forward slowly lower your body down. Don't lean forward as you come down. Your buttocks should come out and drop straight down.",
+      "Squat down until your thighs are parallel with the floor, and then slowly raise your body back up by pushing through your heels.",
+      "Do not lock the knees out when you stand up, and then repeat the movement for the desired reps."
+    ]
+  },
+  {
+    "Name": "",
+    "Equipment": [],
+    "Variation": [],
+    "TargetMuscles": [],
+    "Description": "",
+    "TrainingProgram": [],
+    "Instructions": []
+  },
+  {
+    "Name": "",
+    "Equipment": [],
+    "Variation": [],
+    "TargetMuscles": [],
+    "Description": "",
+    "TrainingProgram": [],
+    "Instructions": []
+  },
+  {
+    "Name": "",
+    "Equipment": [],
+    "Variation": [],
+    "TargetMuscles": [],
+    "Description": "",
+    "TrainingProgram": [],
+    "Instructions": []
+  },
+  {
+    "Name": "",
+    "Equipment": [],
+    "Variation": [],
+    "TargetMuscles": [],
+    "Description": "",
+    "TrainingProgram": [],
+    "Instructions": []
+  },
+  {
+    "Name": "",
+    "Equipment": [],
+    "Variation": [],
+    "TargetMuscles": [],
+    "Description": "",
+    "TrainingProgram": [],
+    "Instructions": []
+  },
+  {
+    "Name": "",
+    "Equipment": [],
+    "Variation": [],
+    "TargetMuscles": [],
+    "Description": "",
+    "TrainingProgram": [],
+    "Instructions": []
+  },
+  {
+    "Name": "",
+    "Equipment": [],
+    "Variation": [],
+    "TargetMuscles": [],
+    "Description": "",
+    "TrainingProgram": [],
+    "Instructions": []
+  },
+  {
+    "Name": "",
+    "Equipment": [],
+    "Variation": [],
+    "TargetMuscles": [],
+    "Description": "",
+    "TrainingProgram": [],
+    "Instructions": []
+  },
+  {
+    "Name": "",
+    "Equipment": [],
+    "Variation": [],
+    "TargetMuscles": [],
+    "Description": "",
+    "TrainingProgram": [],
+    "Instructions": []
+  },
+  {
+    "Name": "",
+    "Equipment": [],
+    "Variation": [],
+    "TargetMuscles": [],
+    "Description": "",
+    "TrainingProgram": [],
+    "Instructions": []
+  },
+  {
+    "Name": "",
+    "Equipment": [],
+    "Variation": [],
+    "TargetMuscles": [],
+    "Description": "",
+    "TrainingProgram": [],
+    "Instructions": []
+  },
+  {
+    "Name": "",
+    "Equipment": [],
+    "Variation": [],
+    "TargetMuscles": [],
+    "Description": "",
+    "TrainingProgram": [],
+    "Instructions": []
+  }
+]

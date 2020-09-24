@@ -803,3 +803,21 @@ p {
   padding: 400px 0;
   background-color: grey;
 }
+
+/*
+
+    -------------
+
+    Exercise Page
+
+    -------------
+
+*/
+
+#exercise-jumbotron {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(33, 209, 146, 0.8)),
+    url(../images/Exercise-Image.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  overflow: hidden;
+}
