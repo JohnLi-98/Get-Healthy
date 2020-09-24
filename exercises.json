@@ -3,7 +3,8 @@
     "Name": "Barbell Bench Press",
     "Equipment": ["Barbell", "Smith Machine", "Bench"],
     "Variation": ["Flat", "Incline", "Decline", "Close Grip"],
-    "TargetMuscles": ["Chest", "Shoulders", "Front Delts", "Triceps"],
+    "MainMuscleGroup": ["Chest"],
+    "SecondaryMuscles": ["Front Delts", "Triceps"],
     "Description": "A great compound exercise for strength training and overall muscle development. Depending on the variation at which you perform this exercise, it will target the pectoralis major of the chest, the anterior deltoids of the shoulder, and the triceps brachii of the upper arm.",
     "TrainingProgram": ["Chest", "Push", "Strength Training", "Upper Body"],
     "Instructions": [
@@ -19,7 +20,8 @@
     "Name": "Dumbbell Bench Press",
     "Equipment": ["Dumbbells", "Bench"],
     "Variation": ["Flat", "Incline", "Decline"],
-    "TargetMuscles": ["Chest", "Shoulders", "Front Delts", "Triceps"],
+    "MainMuscleGroup": ["Chest"],
+    "SecondaryMuscles": ["Front Delts", "Triceps"],
     "Description": "Similar to barbell bench press but with dumbbells instead. A compound exercise that targets the chest, front delts and triceps.",
     "TrainingProgram": ["Chest", "Push", "Strength Training", "Upper Body"],
     "Instructions": [
@@ -41,7 +43,8 @@
       "Incline",
       "Decline"
     ],
-    "TargetMuscles": ["Chest", "Front Delts", "Triceps", "Abs"],
+    "MainMuscleGroup": ["Chest"],
+    "SecondaryMuscles": ["Front Delts", "Triceps", "Abs"],
     "Description": "Perfect exercise for building the upper body and core strength. It is a compound exercise that can be done for any workout program and adjustable to any level with different variations.",
     "TrainingProgram": ["Chest", "Push", "Strength Training", "Upper Body"],
     "Instructions": [
@@ -57,7 +60,8 @@
     "Name": "Dumbbell Flys",
     "Equipment": ["Dumbbells", "Bench"],
     "Variation": ["Incline", "Flat", "Decline"],
-    "TargetMuscles": ["Chest", "Shoulders"],
+    "MainMuscleGroup": ["Chest"],
+    "SecondaryMuscles": ["Front Delts", "Triceps"],
     "Description": "Dumbbell Flys is a great isolation exercise for the chest. Usually performed after a compound lift and considered to be a perfect finisher to focus on chest development.",
     "TrainingProgram": ["Chest", "Push", "Upper Body"],
     "Instructions": [
@@ -73,7 +77,8 @@
     "Name": "Machine Fly",
     "Equipment": ["Pec Deck Machine"],
     "Variation": ["Neutral Grip", "High Grip"],
-    "TargetMuscles": ["Chest", "Shoulders"],
+    "MainMuscleGroup": ["Chest"],
+    "SecondaryMuscles": ["Front Delts"],
     "Description": "The machine fly is a great way for both beginners and those with experience to target the chest muscles without worrying about the balance required when using a bench or standing. It's also very useful for those with a lower-body injury and need to avoid standing.",
     "TrainingProgram": ["Chest", "Push", "Upper Body"],
     "Instructions": [
@@ -91,7 +96,8 @@
     "Name": "Cable Flys",
     "Equipment": ["Cable Machine"],
     "Variation": ["Neutral Grip", "Low-High", "High-Low"],
-    "TargetMuscles": ["Chest", "shoulders", "Triceps"],
+    "MainMuscleGroup": ["Chest"],
+    "SecondaryMuscles": ["Front Delts", "Triceps"],
     "Description": "An exercise used to strengthen the pushing muscles of the body including the chest, shoulders and triceps. It is a tough exercise to overload, so it's best used as an accessory movement to increase chest muscle mass.",
     "TrainingProgram": ["Chest", "Push", "Upper Body"],
     "Instructions": [
@@ -107,7 +113,8 @@
     "Name": "Dips",
     "Equipment": ["Dip Station"],
     "Variation": ["Body Weight", "Assisted", "Weighted"],
-    "TargetMuscles": ["Triceps", "Chest", "Shoulders"],
+    "MainMuscleGroup": ["Triceps", "Chest"],
+    "SecondaryMuscles": ["Front Delts", "Abs"],
     "Description": "Dips are a versatile compound exercise that can be included in any workout.",
     "TrainingProgram": ["Chest", "Push", "Upper Body", "Strength Training"],
     "Instructions": [
@@ -122,7 +129,8 @@
     "Name": "Seated Dumbbell Press",
     "Equipment": ["Dumbbells", "Bench"],
     "Variation": ["Standard", "Arnie"],
-    "TargetMuscles": ["Front Delts", "Lateral Delts"],
+    "MainMuscleGroup": ["Front Delts", "Lateral Delts"],
+    "SecondaryMuscles": ["Traps", "Triceps"],
     "Description": "The seated dumbbell press is a foundational movement for establishing strength and development of the shoulders.",
     "TrainingProgram": ["Shoulders", "Push", "Upper Body", "Strength Training"],
     "Instructions": [
@@ -139,7 +147,8 @@
     "Name": "Standing Dumbbell Press",
     "Equipment": ["Dumbbells"],
     "Variation": ["Standard", "Arnie"],
-    "TargetMuscles": ["Front Delts", "Lateral Delts", "Abs"],
+    "MainMuscleGroup": ["Front Delts", "Lateral Delts"],
+    "SecondaryMuscles": ["Triceps"],
     "Description": "The dumbbell overhead press increases strength throughout the shoulders. This exercise differs from the seated version as it engages the core for stability",
     "TrainingProgram": ["Shoulders", "Push", "Upper Body", "Strength Training"],
     "Instructions": [
@@ -154,7 +163,8 @@
     "Name": "Seated Barbell Press",
     "Equipment": ["Barbell", "Smith Machine", "Bench"],
     "Variation": ["Standard", "Behind Neck"],
-    "TargetMuscles": ["Front Delts", "Lateral Delts"],
+    "MainMuscleGroup": ["Front Delts", "Lateral Delts"],
+    "SecondaryMuscles": [],
     "Description": "The seated barbell shoulder press is a variation of the overhead press and an exercise used to build shoulder strength and muscle. This vertical press is a crucial movement pattern to train and should be incorporated into any workout.",
     "TrainingProgram": ["Shoulders", "Push", "Upper Body", "Strength Training"],
     "Instructions": [
@@ -170,7 +180,8 @@
     "Name": "Standing Barbell Press",
     "Equipment": ["Barbell"],
     "Variation": ["Standard", "Behind Neck"],
-    "TargetMuscles": ["Front Delts", "Lateral Delts", "Abs"],
+    "MainMuscleGroup": ["Front Delts", "Lateral Delts"],
+    "SecondaryMuscles": ["Traps", "Triceps"],
     "Description": "The standing barbell press is a compound movement used to build size and strength in the shoulders. The press can be trained as a strength lift or in traditional muscle-building rep ranges as part of full-body, shoulder-focused, or upper-body training.",
     "TrainingProgram": ["Shoulders", "Push", "Upper Body", "Strength Training"],
     "Instructions": [
@@ -186,7 +197,8 @@
     "Name": "Front Raise",
     "Equipment": ["Dumbbells", "Cable Machine", "Plate"],
     "Variation": ["Dumbbells", "Cables", "Plate"],
-    "TargetMuscles": ["Front Delts"],
+    "MainMuscleGroup": ["Front Delts"],
+    "SecondaryMuscles": ["Lateral Delts"],
     "Description": "An essential shoulder exercise that will build strength and stability in the tops of your arms. This move targets your front deltoids and will create major definition in your upper body.",
     "TrainingProgram": ["Shoulders", "Pull"],
     "Instructions": [
@@ -201,7 +213,8 @@
     "Name": "Lateral Raise",
     "Equipment": ["Dumbbells", "Cable Machine"],
     "Variation": ["Dumbbells", "Cables"],
-    "TargetMuscles": ["Lateral Delts", "Front Delts"],
+    "MainMuscleGroup": ["Lateral Delts"],
+    "SecondaryMuscles": ["Front Delts"],
     "Description": "The side lateral raise is an effective shoulder-strengthening movement designed to isolate the lateral head of the deltoid muscle. Performed regularly, this can help you develop stronger, broader shoulders. All you need is a pair of light dumbbells and enough shoulder flexibility to abduct your arms (lifting the weights out and away from your body) until they form a 'T' shape at your shoulders.",
     "TrainingProgram": ["Shoulders", "Pull", "Upper Body"],
     "Instructions": [
@@ -216,7 +229,8 @@
     "Name": "Rear Delt Reverse Fly",
     "Equipment": ["Dumbbells", "Pec Deck Machine"],
     "Variation": ["Dumbbells", "Machine"],
-    "TargetMuscles": ["Rear Delts"],
+    "MainMuscleGroup": ["Rear Delts"],
+    "SecondaryMuscles": ["Traps"],
     "Description": "This is a great exercise to assist you in building a complete set of shoulders. Many lifters utilize the bent over reverse fly to target the rear delts, an often lagging muscle for many lifters alike. Strengthening the rear delts by using the rear delt fly can lead to improved posture and a greater level of strength on other lifts.",
     "TrainingProgram": ["Shoulders", "Pull"],
     "Instructions": [
@@ -231,7 +245,8 @@
     "Name": "Tricep Pushdown",
     "Equipment": ["Cable Machine", "Pushdown Machine"],
     "Variation": ["Rope", "V Bar", "Straight Bar", "Pushdown Machine"],
-    "TargetMuscles": ["Triceps"],
+    "MainMuscleGroup": ["Triceps"],
+    "SecondaryMuscles": [],
     "Description": "A simple isolation move that is as effective an exercise as anything else out there for targeting your triceps and building muscle on the back of your upper arms.",
     "TrainingProgram": ["Arms", "Upper Body", "Push"],
     "Instructions": [
@@ -247,7 +262,8 @@
     "Name": "Skullcrushers",
     "Equipment": ["EZ Bar", "Barbell", "Bench"],
     "Variation": ["EZ Bar", "Barbell"],
-    "TargetMuscles": ["Triceps"],
+    "MainMuscleGroup": ["Triceps"],
+    "SecondaryMuscles": [],
     "Description": "An exercise used to strengthen the muscles of the triceps and an effective way to target the long head of the tricep. Having bigger and stronger triceps are not only important from an aesthetic standpoint but can also help contribute to better performance on pressing exercises.",
     "TrainingProgram": ["Arms", "Push", "Upper Body"],
     "Instructions": [
@@ -262,7 +278,8 @@
     "Name": "Overhead Tricep Extensions",
     "Equipment": ["Cable Machine"],
     "Variation": ["Rope", "V Bar", "Straight Bar"],
-    "TargetMuscles": ["Triceps"],
+    "MainMuscleGroup": ["Triceps"],
+    "SecondaryMuscles": [],
     "Description": "Overhead tricep extension variations are especially good at targetting the long head of the triceps. The denser your long head muscle is, the overall larger the triceps appear. Well-built triceps also have a lot of positive carryover into your pressing movements such as bench press variations and shoulder press variations.",
     "TrainingProgram": ["Arms", "Upper Body", "Push"],
     "Instructions": [
@@ -277,7 +294,8 @@
     "Name": "Pull Ups",
     "Equipment": ["Pull Up Bar"],
     "Variation": ["Standard Grip", "Close Grip", "Wide Grip", "Hammer Grip"],
-    "TargetMuscles": ["Upper Back", "Lats", "Rear Delts", "Biceps", "Core"],
+    "MainMuscleGroup": ["Lats"],
+    "SecondaryMuscles": ["Upper Back", "Rear Delts", "Biceps", "Abs"],
     "Description": "An exercise used to target the upper back. The pull up is a foundational movement that should be included in any workout routine, as mastering it will benefit you from a strength and aesthetic standpoint.",
     "TrainingProgram": ["Back", "Pull", "Upper Body", "Strength Training"],
     "Instructions": [
@@ -290,7 +308,8 @@
     "Name": "Chin Ups",
     "Equipment": ["Chin Up Bar"],
     "Variation": ["Standard Grip", "Close Grip", "Wide Grip"],
-    "TargetMuscles": ["Lats", "Biceps", "Upper Back"],
+    "MainMuscleGroup": ["Lats"],
+    "SecondaryMuscles": ["Biceps", "Upper Back", "Rear Delts"],
     "Description": "An exercise used to build the muscles of the back - particularly the lats. The chin up differs from the pull up in that the chin up allows for a greater degree of bicep involvement during the pulling movement. A critical exercise to have in your routine to build well balanced and strong physique.",
     "TrainingProgram": ["Back", "Upper Body", "Pull", "Strength Training"],
     "Instructions": [
@@ -303,7 +322,8 @@
     "Name": "Deadlifts",
     "Equipment": ["Barbell"],
     "Variation": ["Standard", "Straight Leg", "Sumo", "Deficit", "Block"],
-    "TargetMuscles": ["Lower Back", "Glutes", "Hamstrings", "Quads"],
+    "MainMuscleGroup": ["Lower Back", "Glutes"],
+    "SecondaryMuscles": ["Hamstrings", "Quads"],
     "Description": "Compound exercise that mainly targets the lower back and legs. Great for building strength for the lower body. An exercise where a loaded barbell or dumbbells is lifted from the floor to the hip, before placing back onto the floor.",
     "TrainingProgram": ["Back", "Pull", "Lower Body", "Strength Training"],
     "Instructions": [
@@ -326,7 +346,8 @@
       "Behind Neck",
       "Underhand Grip"
     ],
-    "TargetMuscles": ["Lats", "Upper Back", "Biceps"],
+    "MainMuscleGroup": ["Lats"],
+    "SecondaryMuscles": ["Upper Back", "Biceps", "Forearms"],
     "Description": "The lat pull down is an exercise used to build the muscles of the back. While the exercise will primarily target the lats, you will also notice a fair amount of bicep and middle back activation. The back is a muscle group that requires a fair amount of variation. So, experiment with several different angles and hand positions to maximize your back muscle growth.",
     "TrainingProgram": ["Back", "Pull", "Upper Body"],
     "Instructions": [
@@ -346,7 +367,8 @@
       "Seated",
       "Kneeling"
     ],
-    "TargetMuscles": ["Rear Delts", "Upper Back", "Traps"],
+    "MainMuscleGroup": ["Rear Delts"],
+    "SecondaryMuscles": ["Upper Back", "Traps"],
     "Description": "The face pull is a great shoulder exercise that can be used to target the rear deltoids. Not many exercises can effectively target the rear delts like the face pull can. The rear delt is often a lagging muscle group for many lifters and weak rear delts can result in poor posture, thus performing the face pull (or other rear delt exercises) is highly recommended.",
     "TrainingProgram": ["Back", "Shoulders", "Pull", "Upper Body"],
     "Instructions": [
@@ -359,7 +381,8 @@
     "Name": "Shrugs",
     "Equipment": ["Dumbbells", "Barbell", "Smith Machine"],
     "Variation": ["Dumbbells", "Barbell"],
-    "TargetMuscles": ["Traps", "Upper Back", "Rear Delts"],
+    "MainMuscleGroup": ["Traps"],
+    "SecondaryMuscles": ["Upper Back", "Rear Delts"],
     "Description": "Shrugs are an exercise used to build trap muscle size. Traps, being a stubborn muscle group for many, can be trained with a fairly high frequency during the week. When doing so, be sure to mix up the volume, intensity, and implements you use to train the traps.",
     "TrainingProgram": ["Shoulders", "Back", "Upper Body", "Pull"],
     "Instructions": [
@@ -374,7 +397,8 @@
     "Name": "Bent Over Row",
     "Equipment": ["Barbell"],
     "Variation": ["Overhand Grip", "Underhand Grip"],
-    "TargetMuscles": ["Upper Back", "Abs", "Biceps", "Rear Delts"],
+    "MainMuscleGroup": ["Upper Back"],
+    "SecondaryMuscles": ["Rear Delts", "Lower Back", "Abs", "Biceps"],
     "Description": "The bent over row is a back day staple exercise and is considered one of the best muscle building back building exercises you can do. Sometimes referred to as the barbell row, the bent over row is a staple movement in most muscle building workouts. Those looking to build muscle utilize the bent over row to target their back, bicep and core muscle.",
     "TrainingProgram": ["Back", "Upper Body", "Pull", "Strength Training"],
     "Instructions": [
@@ -388,7 +412,8 @@
     "Name": "One Arm Dumbbell Row",
     "Equipment": ["Dumbbells", "Bench"],
     "Variation": ["Dumbbells"],
-    "TargetMuscles": ["Lats", "Traps", "Upper Back"],
+    "MainMuscleGroup": ["Lats"],
+    "SecondaryMuscles": ["Traps", "Upper Back"],
     "Description": "An isolation exercise that provides full range of motion, while allowing you to strengthen up your weaker side if you have an imbalance issue. Plus, because you’re using the bench for support (by having a knee on it), you don’t have to be as mindful of torso position as with standing rows; you can just focus on pulling heavy weight with minimal lower-back injury risk. ",
     "TrainingProgram": ["Back", "Pull"],
     "Instructions": [
@@ -403,7 +428,8 @@
     "Name": "Seated Cable Row",
     "Equipment": ["Cable Machine"],
     "Variation": ["V Bar", "Lat Pulldown Bar"],
-    "TargetMuscles": ["Upper Back", "Lats", "Rear Delts", "Biceps", "Forearms"],
+    "MainMuscleGroup": ["Upper Back"],
+    "SecondaryMuscles": ["Lats", "Rear Delts", "Biceps", "Forearms"],
     "Description": "The cable row is one of the best cable exercises around and very neatly demonstrates the edge this machine has over free weights, because throughout the row movement you work against the same level of resistance so the muscles enlisted by the exercise are worked evenly.",
     "TrainingProgram": ["Back", "Pull", "Upper Body"],
     "Instructions": [
@@ -419,7 +445,8 @@
     "Name": "Standing Curls",
     "Equipment": ["Barbell", "EZ Bar", "Dumbbells"],
     "Variation": ["Standard Grip", "Hammer", "Reverse Grip", "Zottman"],
-    "TargetMuscles": ["Biceps", "Forearms"],
+    "MainMuscleGroup": ["Biceps"],
+    "SecondaryMuscles": ["Forearms"],
     "Description": "Standing curls is the cornerstone of many bicep building routines. The curl is a highly recognizable weight-training exercise that works the muscles of the upper arm, and to a lesser extent, those of the lower arm. It's a great exercise for seeing results in strength and definition.",
     "TrainingProgram": ["Arms", "Pull"],
     "Instructions": [
@@ -435,7 +462,8 @@
     "Name": "Seated Dumbbell Curls",
     "Equipment": ["Dumbbells", "Bench"],
     "Variation": ["Standard Grip", "Hammer", "Reverse Grip", "Zottman"],
-    "TargetMuscles": ["Biceps", "Forearms"],
+    "MainMuscleGroup": ["Biceps"],
+    "SecondaryMuscles": ["Forearms"],
     "Description": "The seated dumbbell biceps curl is a popular exercise for building bigger biceps. While curls can effectively be performed standing as well, performing them seated can enforce strict form and perhaps boost the mind-muscle connection.",
     "TrainingProgram": ["Arms", "Pull"],
     "Instructions": [
@@ -449,7 +477,8 @@
     "Name": "Preacher Curls",
     "Equipment": ["EZ Bar", "Dumbbells"],
     "Variation": ["Standard Grip", "Reverse Grip"],
-    "TargetMuscles": ["Biceps"],
+    "MainMuscleGroup": ["Biceps"],
+    "SecondaryMuscles": [],
     "Description": "The EZ-bar preacher curl is a classic exercise for building bigger biceps. This move is all about isolation. With the back of the upper arms against the pad, it’s next to impossible to cheat. Go light, get a great pump, and build that peak!",
     "TrainingProgram": ["Arms", "Pull"],
     "Instructions": [
@@ -466,7 +495,8 @@
     "Name": "Squats",
     "Equipment": ["Barbell", "Smith Machine"],
     "Variation": ["Back Squat", "Front Squat", "Smith Machine"],
-    "TargetMuscles": ["Quads", "Hamstrings", "Glutes", "Lower Back", "Calves"],
+    "MainMuscleGroup": ["Quads"],
+    "SecondaryMuscles": ["Hamstrings", "Glutes", "Lower Back", "Calves"],
     "Description": "Compound exercise that mainly targets the legs, as well as your abdominal muscles. Great for building strength for the lower body. An exercise where you lower your hips from a standing position and then stand back up.",
     "TrainingProgram": ["Legs", "Lower Body", "Strength Training"],
     "Instructions": [
@@ -486,7 +516,8 @@
     "Name": "Seated Leg Extension",
     "Equipment": ["Leg Extension Machine"],
     "Variation": ["Machine"],
-    "TargetMuscles": ["Quads"],
+    "MainMuscleGroup": ["Quads"],
+    "SecondaryMuscles": [],
     "Description": "The seated leg extension is an isolation exercise and one used to target the muscles of the quads. This exercise can be particularly hard on the knees. So, for those with prior knee issues, it may be beneficial to stick with other movements, preferably compound, to target your quads. The leg extension is a great exercise for quad development and may be beneficial to include in your workout routines if your goals are more aesthetics-driven.",
     "TrainingProgram": ["Legs", "Lower Body"],
     "Instructions": [
@@ -502,7 +533,8 @@
     "Name": "Prone Leg Curl",
     "Equipment": ["Leg Curl Machine"],
     "Variation": ["Machine"],
-    "TargetMuscles": ["Hamstrings", "Calves"],
+    "MainMuscleGroup": ["Hamstrings"],
+    "SecondaryMuscles": ["Calves"],
     "Description": "The lying leg curl is a popular machine-based exercise for the legs, particularly the hamstrings. It is similar to the seated leg curl, but the open hip angle in the lying leg curl may incorporate more glute and calf activation",
     "TrainingProgram": ["Legs", "Lower Body"],
     "Instructions": [
@@ -518,7 +550,8 @@
     "Name": "Standing Calf Raises",
     "Equipment": ["Standing Calf Raises Machine"],
     "Variation": ["Machine"],
-    "TargetMuscles": ["Calves"],
+    "MainMuscleGroup": ["Calves"],
+    "SecondaryMuscles": [],
     "Description": "The standing machine calf raise is an excellent exercise to use if you are interested in isolating the calves. In particular, the standing machine calf raise targets the gastrocnemius muscle. The gastrocnemius is better known as the “show” muscle of the calf.",
     "TrainingProgram": ["Legs", "Lower Body"],
     "Instructions": [
@@ -534,7 +567,8 @@
     "Name": "Incline Calf Raises",
     "Equipment": ["Incline Calf Raises Machine"],
     "Variation": ["Machine"],
-    "TargetMuscles": ["Calves"],
+    "MainMuscleGroup": ["Calves"],
+    "SecondaryMuscles": [],
     "Description": "Incline calf raises strengthen your calf muscles, which power your spring for jumping and running movements. With a low back pad and handles, it allows the user to perform calf raises with no direct resistance loading on the spine.",
     "TrainingProgram": ["Legs", "Lower Body"],
     "Instructions": [
@@ -549,7 +583,8 @@
     "Name": "Leg Press",
     "Equipment": ["Leg Press Machine"],
     "Variation": ["Machine"],
-    "TargetMuscles": ["Quads", "Hamstrings", "Glutes", "Calves", "Lower Back"],
+    "MainMuscleGroup": ["Quads"],
+    "SecondaryMuscles": ["Hamstrings", "Glutes", "Calves", "Lower Back"],
     "Description": "The leg press is a variation of the squat and an exercise used to target the muscles of the leg. One can utilize the leg press to target both the quads and the hamstring muscles, depending on which portion of the foot they push through. The leg press is best used as an accessory movement to the squat, or as a primary movement in gyms which lack the necessary equipment to train the squat movement pattern.",
     "TrainingProgram": ["Legs", "Lower Body"],
     "Instructions": [
