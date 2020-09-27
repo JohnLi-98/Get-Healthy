@@ -146,6 +146,10 @@ session_start();
         </div>
     </div>
 
+    <div class="container-fluid" id="exercises">
+
+    </div>
+
     <?php
     include "common/footer.html";
     ?>
