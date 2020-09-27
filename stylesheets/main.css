@@ -821,3 +821,35 @@ p {
   background-size: cover;
   overflow: hidden;
 }
+
+#exercise-filters {
+  background-color: #bdbfc1;
+}
+
+#exercise-filters button {
+  background-color: white;
+  border-top: solid 5px transparent;
+}
+
+.filter-applied {
+  border-color: #21d192 !important;
+}
+
+.dropdown-menu {
+  height: auto;
+  max-height: 200px;
+  overflow-x: hidden;
+}
+
+.dropdown-menu li {
+  cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+  background-color: #21d192;
+  color: white;
+}
+
+.dropdown-menu .active {
+  background-color: #21d192;
+}

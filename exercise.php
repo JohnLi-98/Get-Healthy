@@ -64,15 +64,86 @@ session_start();
 
         <div class="row justify-content-center text-center px-md-5">
             <h4 class="pt-4">Exercise Collection</h4>
-            <p class="px-md-1 px-lg-5">
-                Have a look through our selection of exercises for an exercise you like or find interesting, to
-                learn how to properly perform it.
+            <p class="px-1 px-lg-5">
+                Have a look through our selection of exercises for one you like or find interesting, to
+                learn how to properly perform it. You can also use the filter controls below to get specific exercises.
             </p>
         </div>
     </div>
 
-    <div class="container-fluid bg-primary py-5">
-        <p> Hi this is a test</p>
+    <div class="container-fluid px-lg-5 py-4" id="exercise-filters">
+        <div class="row justify-content-center">
+            <div class="col-6 col-md-4 col-lg-3">
+                <button class="btn btn-block" data-toggle="dropdown">
+                    <div class="d-flex">
+                        <span class="mr-auto">
+                            Sort
+                        </span>
+                        <span class="ml-auto dropdown-toggle"></span>
+                    </div>
+                </button>
+
+                <div class="dropdown-menu w-100" id="sort-filter" aria-labelledby="dropdownMenuButton">
+                    <li class="dropdown-item">Alphabetically (A - Z)</li>
+                    <li class="dropdown-item">Alphabetically (Z - A)</li>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <button class="btn btn-block btn-light" data-toggle="dropdown">
+                    <div class="d-flex">
+                        <span class="mr-auto">
+                            Muscle Group
+                        </span>
+                        <span class="ml-auto dropdown-toggle"></span>
+                    </div>
+                </button>
+
+                <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                    <li class="dropdown-item">Abs</li>
+                    <li class="dropdown-item">Biceps</li>
+                    <li class="dropdown-item">Calves</li>
+                    <li class="dropdown-item">Chest</li>
+                    <li class="dropdown-item">Forearms</li>
+                    <li class="dropdown-item">Front Delts</li>
+                    <li class="dropdown-item">Glutes</li>
+                    <li class="dropdown-item">Hamstrings</li>
+                    <li class="dropdown-item">Lateral Delts</li>
+                    <li class="dropdown-item">Lats</li>
+                    <li class="dropdown-item">Lower Back</li>
+                    <li class="dropdown-item">Quads</li>
+                    <li class="dropdown-item">Rear Delts</li>
+                    <li class="dropdown-item">Traps</li>
+                    <li class="dropdown-item">Triceps</li>
+                    <li class="dropdown-item">Upper Back</li>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 pt-4 pt-md-0">
+                <button class="btn btn-block btn-light" data-toggle="dropdown">
+                    <div class="d-flex">
+                        <span class="mr-auto">
+                            Training Program
+                        </span>
+                        <span class="ml-auto dropdown-toggle"></span>
+                    </div>
+                </button>
+
+                <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                    <li class="dropdown-item">Arms</li>
+                    <li class="dropdown-item">Back</li>
+                    <li class="dropdown-item">Chest</li>
+                    <li class="dropdown-item">Legs</li>
+                    <li class="dropdown-item">Lower Body</li>
+                    <li class="dropdown-item">Pull</li>
+                    <li class="dropdown-item">Push</li>
+                    <li class="dropdown-item">Shoulders</li>
+                    <li class="dropdown-item">Strength Training</li>
+                    <li class="dropdown-item">Upper Body</li>
+                </div>
+            </div>
+
+        </div>
     </div>
 
     <?php

@@ -1,8 +1,5 @@
 import { createElement } from "../scripts/general.js";
 
-/**
- *
- */
 export function mealsLetterSearch() {
   $("#meal-letters a").click(function () {
     const letter = $(this).text();
