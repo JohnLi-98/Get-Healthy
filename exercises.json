@@ -14,7 +14,8 @@
       "Press the  bar back up to the starting position, while breathing out for one rep.",
       "Repeat this for the desired number of reps before safely racking the bar.",
       "The bar should always follow a straight path and under control. We highly recommend you lower the weight if this is not the case."
-    ]
+    ],
+    "ImageURL": "images/Exercise/barbell-bench-press.jpg"
   },
   {
     "Name": "Dumbbell Bench Press",
@@ -29,7 +30,8 @@
       "Get into the starting position by laying back onto the bench, with the dumbbells just to the side of your shoulders and press the weights above your chest by extending your elbows until your arms are straight.",
       "While breathing in, slowly bring the weights back down to the lower position then press the weight back up, while breathing out to complete a rep.",
       "Repeat this for the desired number of reps before safely droppping the weights."
-    ]
+    ],
+    "ImageURL": "images/Exercise/dumbbell-bench-press.jpg"
   },
   {
     "Name": "Push Ups",
@@ -54,7 +56,8 @@
       "Inhale as you slowly bend your elbows and lower yourself until your elbows are at a 90-degree angle.",
       "Exhale as you begin contracting your chest muscles and pushing back up through your hands to the start position. Don't lock out the elbows; keep them slightly bent.",
       "Repeat for as many reps as your workout program requires."
-    ]
+    ],
+    "ImageURL": "images/Exercise/push-ups.jpg"
   },
   {
     "Name": "Dumbbell Flys",
@@ -71,10 +74,11 @@
       "With a slight bend in your elbows, lower your arms laterally until you feel a stretch in your chest. The dumbbells should be level with your chest at both sides.",
       "Return your arms to the starting position and squeeze your pecs together. Remember to keep your arms steady throughout the movement.",
       "Don’t let the dumbbells touch as they meet at the top, holding for a second in the contracted position. Repeat the movement for the amount of reps you need."
-    ]
+    ],
+    "ImageURL": "images/Exercise/dumbbell-flys.jpg"
   },
   {
-    "Name": "Machine Fly",
+    "Name": "Machine Flys",
     "Equipment": ["Pec Deck Machine"],
     "Variation": ["Neutral Grip", "High Grip"],
     "MainMuscleGroup": ["Chest"],
@@ -90,7 +94,8 @@
       "Pause for one second once your arms are fully 'closed' in front of your chest.",
       "Bring your arms slowly back to the starting position, opening your chest and keeping posture strong and upright.",
       "Repeat for as many reps as your workout program requires."
-    ]
+    ],
+    "ImageURL": "images/Exercise/machine-flys.jpg"
   },
   {
     "Name": "Cable Flys",
@@ -107,7 +112,8 @@
       "Keep a slight bend in the elbows, move entirely at the shoulder joint, and slowly allow the arms to open while the pecs stretch.",
       "Return to the starting position by flexing your pecs and bringing the handles together at chest height.",
       "Slowly lower back to the starting position and repeat for the desired number of repetitions."
-    ]
+    ],
+    "ImageURL": "images/Exercise/cable-flys.jpg"
   },
   {
     "Name": "Dips",
@@ -123,7 +129,8 @@
       "Keeping your elbows at your sides, lower yourself until your triceps are parallel to the floor.",
       "Once parallel, explode back up but don't lock your elbows.",
       "Repeat for the desired number of repetitions."
-    ]
+    ],
+    "ImageURL": "images/Exercise/dips.jpg"
   },
   {
     "Name": "Seated Dumbbell Press",
@@ -141,7 +148,8 @@
       "Take a deep breath then press the dumbbells overhead by extending the elbows and contracting the deltoids.",
       "Slowly lower the dumbbells back to the starting position (the arms should be roughly 90 degrees or slightly lower depending upon limb lengths).",
       "Repeat for the desired number of repetitions."
-    ]
+    ],
+    "ImageURL": "images/Exercise/seated-dumbbell-press.jpg"
   },
   {
     "Name": "Standing Dumbbell Press",
@@ -157,7 +165,8 @@
       "Raise the weights above the head in a controlled motion while exhaling. Pause at the top of the motion.",
       "Return the dumbbells to the shoulders while inhaling.",
       "Repeat for the desired number of repetitions."
-    ]
+    ],
+    "ImageURL": "images/Exercise/standing-dumbbell-press.jpg"
   },
   {
     "Name": "Seated Barbell Press",
@@ -174,7 +183,8 @@
       "Inhale, brace, tuck the chin, then lower the bar to the top of your chest.",
       "Exhale and press the bar back to lockout.",
       "Repeat for the desired number of repetitions."
-    ]
+    ],
+    "ImageURL": "images/Exercise/seated-barbell-press.jpg"
   },
   {
     "Name": "Standing Barbell Press",
@@ -191,12 +201,13 @@
       "Take two steps back, inhale, brace, tuck the chin, then press the bar to lockout overhead.",
       "Exhale once the bar gets to lockout and reverse the movement slowly while controlling the bar back to your chest.",
       "Repeat for the desired number of repetitions."
-    ]
+    ],
+    "ImageURL": "images/Exercise/standing-barbell-press.jpg"
   },
   {
     "Name": "Front Raise",
-    "Equipment": ["Dumbbells", "Cable Machine", "Plate"],
-    "Variation": ["Dumbbells", "Cables", "Plate"],
+    "Equipment": ["Dumbbells", "Barbell", "Cable Machine", "Plate"],
+    "Variation": ["Dumbbells", "Barbell", "Cables", "Plate"],
     "MainMuscleGroup": ["Front Delts"],
     "SecondaryMuscles": ["Lateral Delts"],
     "Description": "An essential shoulder exercise that will build strength and stability in the tops of your arms. This move targets your front deltoids and will create major definition in your upper body.",
@@ -207,7 +218,8 @@
       "Lift the weights upward, inhaling, with arms out in front and palms facing down. Keep a slight bend in the elbows to reduce the stress on the joints. Pause when the arms are approximately horizontal to the floor and feel the contraction in the shoulders.",
       "Return the dumbbells to the starting position at the thighs with a slow and controlled motion while exhaling.",
       "Repeat the exercise for the number of sets and repetitions in your program."
-    ]
+    ],
+    "ImageURL": "images/Exercise/front-raise.jpg"
   },
   {
     "Name": "Lateral Raise",
@@ -223,10 +235,11 @@
       "To execute, slowly raise the dumbbells up to around shoulder height. It's important that you do not let your wrists go above your elbows while raising the weight, as this will take the work off the side delts and put it on the front delts.",
       "Pause at the top of the movement, and then slowly lower the weight back to the starting position.",
       "Do not let the dumbbells touch your body, and then raise them for the next rep."
-    ]
+    ],
+    "ImageURL": "images/Exercise/lateral-raise.jpg"
   },
   {
-    "Name": "Rear Delt Reverse Fly",
+    "Name": "Rear Delt Raise",
     "Equipment": ["Dumbbells", "Pec Deck Machine"],
     "Variation": ["Dumbbells", "Machine"],
     "MainMuscleGroup": ["Rear Delts"],
@@ -239,7 +252,8 @@
       "Take a deep breath and pull the dumbbells towards the ceiling using the rear deltoids.",
       "Slowly lower the dumbbells back to the starting position under control.",
       "Repeat for the desired number of repetitions."
-    ]
+    ],
+    "ImageURL": "images/Exercise/rear-delt-raise.jpg"
   },
   {
     "Name": "Tricep Pushdown",
@@ -256,7 +270,8 @@
       "Squeeze the triceps for 1 to 2 seconds and allow the muscles to sufficiently contract.",
       "Then, as you inhale your breath, slowly release the bar back to the starting position.",
       "Repeat the exercise again for the designated number of repetitions."
-    ]
+    ],
+    "ImageURL": "images/Exercise/tricep-pushdown.jpg"
   },
   {
     "Name": "Skullcrushers",
@@ -272,7 +287,8 @@
       "Lower the weights towards your head by unlocking the elbows and allowing the ez bar to drop toward your forehead or just above.",
       "Once your forearms reach parallel or just below, reverse the movement by extending the elbows while flexing the triceps to lockout the weight.",
       "Repeat for the desired number of repetitions."
-    ]
+    ],
+    "ImageURL": "images/Exercise/skullcrushers.jpg"
   },
   {
     "Name": "Overhead Tricep Extensions",
@@ -288,7 +304,8 @@
       "Initiate the movement by extending the elbows and flexing the triceps.",
       "Pull the attachment downward until the elbows are almost locked out and then slowly lower under control back to the starting position.",
       "Repeat for the desired number of repetitions."
-    ]
+    ],
+    "ImageURL": "images/Exercise/overhead-tricep-extensions.jpg"
   },
   {
     "Name": "Pull Ups",
@@ -302,7 +319,8 @@
       "Using a pronated grip, grasp the pull bar with your desired grip.",
       "Take a deep breath, squeeze your glutes and brace your abs. Depress the shoulder blades and then drive the elbows straight down to the floor while activating the lats.",
       "Pull your chin towards the bar until the lats are fully contracted, then slowly lower yourself back to the start position and repeat for the assigned number of repetitions."
-    ]
+    ],
+    "ImageURL": "images/Exercise/pull-ups.jpg"
   },
   {
     "Name": "Chin Ups",
@@ -316,7 +334,8 @@
       "Using a supinated grip, grasp the bar with your desired grip.",
       "Take a deep breath, squeeze your glutes and brace your abs. Depress the shoulder blades and then drive the elbows straight down to the floor while activating the lats.",
       "Pull your chin towards the bar until the lats are fully contracted, then slowly lower yourself back to the start position and repeat for the assigned number of repetitions."
-    ]
+    ],
+    "ImageURL": "images/Exercise/chin-ups.jpg"
   },
   {
     "Name": "Deadlifts",
@@ -334,7 +353,8 @@
       "Lower the weight back to the floor, while exhaling for a completed rep.",
       "Repeat this for the desired number of reps.",
       "The back should never be in an arched or rounded position when performing this lift, or injuries may occur."
-    ]
+    ],
+    "ImageURL": "images/Exercise/deadlifts.jpg"
   },
   {
     "Name": "Lat Pulldowns",
@@ -355,10 +375,11 @@
       "Grasp the handle with your desired grip and initiate the movement by depressing the shoulder blade and then flexing the elbow while extending the shoulder.",
       "Pull the handle towards your body until the elbows are in line with your torso and then slowly lower the handle back to the starting position under control.",
       "Repeat for the desired number of repetitions."
-    ]
+    ],
+    "ImageURL": "images/Exercise/lat-pulldowns.jpg"
   },
   {
-    "Name": "Face Pull",
+    "Name": "Face Pulls",
     "Equipment": ["Cable Machine", "Rope Attachment"],
     "Variation": [
       "Normal Grip",
@@ -375,7 +396,8 @@
       "Assume a split stance with the arms straight out in front of you utilizing a pronated grip.",
       "Inhale and pull the rope towards your face with the elbows high.",
       "Slowly lower the rope back to the starting position and repeat for the desired number of repetitions on both sides."
-    ]
+    ],
+    "ImageURL": "images/Exercise/face-pulls.jpg"
   },
   {
     "Name": "Shrugs",
@@ -391,7 +413,8 @@
       "Stand up tall and ensure your spine remains neutral.",
       "Contract the traps to elevate the shoulders. Squeeze hard at the top and slowly lower the weights back to the starting position.",
       "Repeat for the desired number of repetitions."
-    ]
+    ],
+    "ImageURL": "images/Exercise/shrugs.jpg"
   },
   {
     "Name": "Bent Over Row",
@@ -406,7 +429,8 @@
       "Hinge forward until your torso is roughly parallel with the floor (or slightly above) and then begin the movement by driving the elbows behind the body while retracting the shoulder blades.",
       "Pull the bar towards your belly button until it touches your body and then slowly lower the bar back to the starting position under control.",
       "Repeat for the desired number of repetitions."
-    ]
+    ],
+    "ImageURL": "images/Exercise/bent-over-row.jpg"
   },
   {
     "Name": "One Arm Dumbbell Row",
@@ -422,7 +446,8 @@
       "Keeping your chest pointed to the floor, pull the dumbbell up to your waist by contracting your back muscles and bending your elbow.",
       "When it reaches the top, squeeze your shoulder blades together, then slowly lower the dumbbell to the start position.",
       "Complete all reps with one arm, then switch arms."
-    ]
+    ],
+    "ImageURL": "images/Exercise/one-arm-dumbbell-row.jpg"
   },
   {
     "Name": "Seated Cable Row",
@@ -439,7 +464,8 @@
       "Keeping your body in position, pull the handle into your stomach.",
       "Pull your shoulder blades back, squeeze, pause, and then slowly lower the weight back to the starting position.",
       "Repeat for desired reps."
-    ]
+    ],
+    "ImageURL": "images/Exercise/seated-cable-row.jpg"
   },
   {
     "Name": "Standing Curls",
@@ -456,7 +482,8 @@
       "Keeping your eyes facing forwards, elbows tucked in at your sides, and your body completely still, slowly curl the weight up.",
       "Squeeze your biceps hard at the top of the movement, and then slowly lower it back to the starting position.",
       "Repeat for desired reps."
-    ]
+    ],
+    "ImageURL": "images/Exercise/standing-curls.jpg"
   },
   {
     "Name": "Seated Dumbbell Curls",
@@ -471,7 +498,8 @@
       "Sit up with your back straight and head lifted tall. Do not arch your back. Hold your abdominals in tight.",
       "Slowly curl (lift) the dumbbells up just past your chest and toward your shoulders. At the top of the movement, pause for a second to contract (squeeze) your biceps muscles.",
       "Slowly return to start and repeat for desired number of reps."
-    ]
+    ],
+    "ImageURL": "images/Exercise/seated-dumbbell-curls.jpg"
   },
   {
     "Name": "Preacher Curls",
@@ -489,7 +517,8 @@
       "Slowly bring the weight up until your forearms are at a right angle to the floor.",
       "Squeeze the bicep at the top of the movement, and then slowly lower it back to the starting position.",
       "Repeat for desired reps."
-    ]
+    ],
+    "ImageURL": "images/Exercise/preacher-curls.png"
   },
   {
     "Name": "Squats",
@@ -510,10 +539,11 @@
       "Keeping your eyes facing forward slowly lower your body down. Don't lean forward as you come down. Your buttocks should come out and drop straight down.",
       "Squat down until your thighs are parallel with the floor, and then slowly raise your body back up by pushing through your heels.",
       "Do not lock the knees out when you stand up, and then repeat the movement for the desired reps."
-    ]
+    ],
+    "ImageURL": "images/Exercise/squats.jpg"
   },
   {
-    "Name": "Seated Leg Extension",
+    "Name": "Leg Extensions",
     "Equipment": ["Leg Extension Machine"],
     "Variation": ["Machine"],
     "MainMuscleGroup": ["Quads"],
@@ -527,10 +557,11 @@
       "Take a deep breath and extend your legs as you flex your quadriceps.",
       "As you lock out the knees, exhale to complete the repetition.",
       "Slowly lower your feet back to the starting position and repeat for the desired number of repetitions."
-    ]
+    ],
+    "ImageURL": "images/Exercise/leg-extensions.jpg"
   },
   {
-    "Name": "Prone Leg Curl",
+    "Name": "Prone Leg Curls",
     "Equipment": ["Leg Curl Machine"],
     "Variation": ["Machine"],
     "MainMuscleGroup": ["Hamstrings"],
@@ -544,7 +575,8 @@
       "Squeeze the hamstrings and curl the weight up as far as possible.",
       "Squeeze the hamstring hard, and then slowly lower the weight back to the starting position.",
       "Repeat for desired reps."
-    ]
+    ],
+    "ImageURL": "images/Exercise/prone-leg-curls.jpg"
   },
   {
     "Name": "Standing Calf Raises",
@@ -561,7 +593,8 @@
       "Lower the heels by dorsiflexing the ankles until the calves are fully stretched.",
       "Extend the ankles and exhale as you flex the calves.",
       "Repeat for the desired number of repetitions."
-    ]
+    ],
+    "ImageURL": "images/Exercise/standing-calf-raises.jpg"
   },
   {
     "Name": "Incline Calf Raises",
@@ -577,7 +610,8 @@
       "Place the balls of your feet on the platform.",
       "Slowly raise your heels by pressing on the balls of your feet, and contract the calves.",
       "Hold for 2 seconds, then slowly lower the heels until you feel a stretch in the calves."
-    ]
+    ],
+    "ImageURL": "images/Exercise/incline-calf-raises.jpg"
   },
   {
     "Name": "Leg Press",
@@ -594,6 +628,7 @@
       "Lower the weight under control until the legs are roughly 45 degrees or slightly below",
       "Drive the weight back to the starting position by extending the knees but don’t forcefully lockout.",
       "Repeat for the desired number of repetitions."
-    ]
+    ],
+    "ImageURL": "images/Exercise/leg-press.png"
   }
 ]

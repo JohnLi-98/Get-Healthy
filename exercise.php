@@ -71,21 +71,21 @@ session_start();
         </div>
     </div>
 
-    <div class="container-fluid px-lg-5 py-4" id="exercise-filters">
-        <div class="row justify-content-center">
+    <div class="container-fluid px-lg-5 pb-5">
+        <div class="row justify-content-center" id="exercise-filters">
             <div class="col-6 col-md-4 col-lg-3">
                 <button class="btn btn-block" data-toggle="dropdown">
                     <div class="d-flex">
                         <span class="mr-auto">
-                            Sort
+                            Sort By:
                         </span>
                         <span class="ml-auto dropdown-toggle"></span>
                     </div>
                 </button>
 
                 <div class="dropdown-menu w-100" id="sort-filter" aria-labelledby="dropdownMenuButton">
-                    <li class="dropdown-item">Alphabetically (A - Z)</li>
-                    <li class="dropdown-item">Alphabetically (Z - A)</li>
+                    <li class="dropdown-item">Name (A - Z)</li>
+                    <li class="dropdown-item">Name (Z - A)</li>
                 </div>
             </div>
 
@@ -93,7 +93,7 @@ session_start();
                 <button class="btn btn-block btn-light" data-toggle="dropdown">
                     <div class="d-flex">
                         <span class="mr-auto">
-                            Muscle Group
+                            Muscle Group:
                         </span>
                         <span class="ml-auto dropdown-toggle"></span>
                     </div>
@@ -123,7 +123,7 @@ session_start();
                 <button class="btn btn-block btn-light" data-toggle="dropdown">
                     <div class="d-flex">
                         <span class="mr-auto">
-                            Training Program
+                            Training Program:
                         </span>
                         <span class="ml-auto dropdown-toggle"></span>
                     </div>
@@ -143,11 +143,13 @@ session_start();
                 </div>
             </div>
 
+            <div class="col-12 pt-4 text-center">
+                <h6 id="number-of-exercises"></h6>
+            </div>
         </div>
-    </div>
 
-    <div class="container-fluid" id="exercises">
-
+        <div class="row px-2 px-md-5 pt-3" id="exercises">
+        </div>
     </div>
 
     <?php

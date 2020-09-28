@@ -822,13 +822,9 @@ p {
   overflow: hidden;
 }
 
-#exercise-filters {
-  background-color: #bdbfc1;
-}
-
 #exercise-filters button {
   background-color: white;
-  border-top: solid 5px transparent;
+  border: solid 3px #bdbfc1;
 }
 
 .filter-applied {

@@ -30,4 +30,5 @@ nutrition.mealsLetterSearch();
 nutrition.mealsFormSearch();
 
 import * as exercise from "../scripts/exercise.js";
+exercise.exercisePageReady();
 exercise.sortDropdownClick();

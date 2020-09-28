@@ -37,3 +37,14 @@ export function createElement(elemName, elemAttributes) {
   // Return document element
   return elem;
 }
+
+export function shuffle(quotesArray) {
+  for (var i = 0; i < quotesArray.length - 1; i++) {
+    var j = i + Math.floor(Math.random() * (quotesArray.length - i));
+
+    var temp = quotesArray[j];
+    quotesArray[j] = quotesArray[i];
+    quotesArray[i] = temp;
+  }
+  return quotesArray;
+}
