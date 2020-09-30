@@ -94,5 +94,27 @@
       "The back should never be in an arched or rounded position when performing this lift, or injuries may occur."
     ]
   },
-  {}
+
+  {
+    "Name": "Barbell Bench Press",
+    "Equipment": ["Barbell", "Smith Machine", "Bench"],
+    "Variation": ["Flat", "Incline", "Decline", "Close Grip"],
+    "MainMuscleGroup": ["Chest"],
+    "SecondaryMuscles": ["Front Delts", "Triceps"],
+    "Description": "...",
+    "TrainingProgram": ["Chest", "Push", "Strength Training", "Upper Body"],
+    "Instructions": ["...", "...", "...", "..."],
+    "ImageURL": "images/Exercise/barbell-bench-press.jpg"
+  },
+  {
+    "Name": "Deadlifts",
+    "Equipment": ["Barbell"],
+    "Variation": ["Standard", "Straight Leg", "Sumo", "Deficit", "Block"],
+    "MainMuscleGroup": ["Lower Back", "Glutes"],
+    "SecondaryMuscles": ["Hamstrings", "Quads"],
+    "Description": "...",
+    "TrainingProgram": ["Back", "Pull", "Lower Body", "Strength Training"],
+    "Instructions": ["...", "...", "...", "..."],
+    "ImageURL": "images/Exercise/barbell-bench-press.jpg"
+  }
 ]

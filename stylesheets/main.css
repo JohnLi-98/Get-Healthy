@@ -849,3 +849,11 @@ p {
 .dropdown-menu .active {
   background-color: #21d192;
 }
+
+#exercise-modal-instructions {
+  padding: 0 15px;
+}
+
+#exercise-modal-instructions li {
+  padding-top: 10px;
+}

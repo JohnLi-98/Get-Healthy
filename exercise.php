@@ -84,8 +84,8 @@ session_start();
                 </button>
 
                 <div class="dropdown-menu w-100" id="sort-filter" aria-labelledby="dropdownMenuButton">
-                    <li class="dropdown-item">Name (A - Z)</li>
-                    <li class="dropdown-item">Name (Z - A)</li>
+                    <li class="dropdown-item" value="1">Name (A - Z)</li>
+                    <li class="dropdown-item" value="2">Name (Z - A)</li>
                 </div>
             </div>
 
@@ -99,7 +99,7 @@ session_start();
                     </div>
                 </button>
 
-                <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                <div class="dropdown-menu w-100" id="muscle-filter" aria-labelledby="dropdownMenuButton">
                     <li class="dropdown-item">Abs</li>
                     <li class="dropdown-item">Biceps</li>
                     <li class="dropdown-item">Calves</li>
@@ -129,7 +129,7 @@ session_start();
                     </div>
                 </button>
 
-                <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                <div class="dropdown-menu w-100" id="program-filter" aria-labelledby="dropdownMenuButton">
                     <li class="dropdown-item">Arms</li>
                     <li class="dropdown-item">Back</li>
                     <li class="dropdown-item">Chest</li>
@@ -148,7 +148,66 @@ session_start();
             </div>
         </div>
 
-        <div class="row px-2 px-md-5 pt-3" id="exercises">
+        <div class="row px-2 px-md-5" id="exercises">
+        </div>
+    </div>
+
+    <div class="modal fade" id="exercise-modal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="exercise-modal-title">
+                    </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 col-lg-6 mx-auto">
+                                <img class="img-fluid" alt="Exercise-Image" id="exercise-modal-image" />
+                            </div>
+
+                            <div class="col-12 col-lg-6 pt-4 pt-lg-0">
+                                <p id="exercise-modal-desc"></p>
+                                <p>
+                                    <b>Main Muscle: </b> <span id="exercise-modal-main"></span>
+                                </p>
+
+                                <p>
+                                    <b>Secondary Muscles: </b> <span id="exercise-modal-secondary"></span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row pt-1">
+                            <div class="col-12 col-lg-6">
+                                <p>
+                                    <b>Equipment: </b> <span id="exercise-modal-equipment"></span>
+                                </p>
+                            </div>
+
+                            <div class="col-12 col-lg-6">
+                                <p>
+                                    <b>Train on: </b> <span id="exercise-modal-program"></span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 pt-1">
+                                <h5 class="text-center"><u>Instructions</u></h5>
+                                <ol id="exercise-modal-instructions">
+
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
         </div>
     </div>
 
