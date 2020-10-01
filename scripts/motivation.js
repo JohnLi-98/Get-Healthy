@@ -1,4 +1,4 @@
-import { createElement } from "../scripts/general.js";
+import { createElement, shuffle } from "../scripts/general.js";
 
 export function motivationPageReady() {
   $(document).ready(function () {
@@ -46,17 +46,6 @@ export function getQuotes() {
     .fail(function (jqxhr, textStatus) {
       alert(jqxhr + ": " + textStatus);
     });
-}
-
-export function shuffle(quotesArray) {
-  for (var i = 0; i < quotesArray.length - 1; i++) {
-    var j = i + Math.floor(Math.random() * (quotesArray.length - i));
-
-    var temp = quotesArray[j];
-    quotesArray[j] = quotesArray[i];
-    quotesArray[i] = temp;
-  }
-  return quotesArray;
 }
 
 export function paginateQuotes(quotes) {

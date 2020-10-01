@@ -51,3 +51,14 @@ export function createElement(elemName, elemAttributes) {
   // Return document element
   return elem;
 }
+
+export function shuffle(array) {
+  for (var i = 0; i < array.length - 1; i++) {
+    var j = i + Math.floor(Math.random() * (array.length - i));
+
+    var temp = array[j];
+    array[j] = array[i];
+    array[i] = temp;
+  }
+  return array;
+}

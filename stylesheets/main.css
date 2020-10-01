@@ -808,6 +808,62 @@ p {
   overflow: hidden;
 }
 
+#exercise-filters button {
+  background-color: white;
+  border: solid 3px #bdbfc1;
+}
+
+.filter-applied {
+  border-color: #21d192 !important;
+}
+
+.dropdown-menu {
+  height: auto;
+  max-height: 200px;
+  overflow-x: hidden;
+}
+
+.dropdown-menu li {
+  cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+  background-color: #21d192;
+  color: white;
+}
+
+.dropdown-menu .active {
+  background-color: #21d192;
+}
+
+#clear-filters-btn {
+  color: #21d192;
+  border: 2px solid #21d192 !important;
+}
+
+#clear-filters-btn:hover {
+  border-color: white;
+  color: white;
+  background-color: #21d192;
+}
+
+#exercises a {
+  color: black;
+  cursor: pointer;
+}
+
+#exercises a:hover {
+  text-decoration: underline;
+}
+
+#exercise-modal-instructions {
+  padding: 0 15px;
+}
+
+#exercise-modal-instructions li {
+  padding-top: 10px;
+}
+
 /*
 
     ---------------
