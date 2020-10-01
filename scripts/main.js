@@ -38,7 +38,6 @@ import * as exercise from "../scripts/exercise.js";
 exercise.exercisePageReady();
 exercise.filterClick();
 exercise.clearFiltersClick();
-exercise.paginationClick();
 
 import * as motivation from "../scripts/motivation.js";
 motivation.motivationPageReady();

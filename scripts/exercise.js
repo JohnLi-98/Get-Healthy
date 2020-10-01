@@ -88,15 +88,6 @@ export function paginateExercises(exercises) {
   });
 }
 
-export function paginationClick() {
-  $(".paginationjs-pages li").click(function () {
-    console.log("scrolling");
-    $("html,body").animate({
-      scrollTop: $("#exercises").offset().top,
-    });
-  });
-}
-
 export function alphabetically(a, b) {
   if (a.Name < b.Name) {
     return -1;
