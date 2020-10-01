@@ -66,6 +66,8 @@ export function getExercises(filters) {
   });
 }
 
+export function paginateExercises() {}
+
 export function alphabetically(a, b) {
   if (a.Name < b.Name) {
     return -1;
