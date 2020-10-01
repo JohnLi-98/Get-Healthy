@@ -153,7 +153,11 @@ session_start();
             </div>
         </div>
 
-        <div class="row px-2 px-md-5" id="exercises">
+        <div class="row px-2 px-md-2" id="exercises">
+        </div>
+
+        <div class="row justify-content-center">
+            <div id="pagination"></div>
         </div>
     </div>
 

@@ -61,12 +61,42 @@ export function getExercises(filters) {
     }
 
     $("#number-of-exercises").text(filteredArr.length + " Exercises Found");
-    $("#exercises").empty();
-    createExerciseHTML(filteredArr);
+    //createExerciseHTML(filteredArr);
+    paginateExercises(filteredArr);
   });
 }
 
-export function paginateExercises() {}
+export function paginateExercises(exercises) {
+  $("#pagination").empty();
+  $("#exercises").pagination({
+    dataSource: exercises,
+    pageSize: 12,
+    showNavigator: true,
+    showFirstOnEllipsisShow: false,
+    showLastOnEllipsisShow: false,
+    autoHidePrevious: true,
+    autoHideNext: true,
+    afterRender: function () {
+      if ($("#exercises div.paginationjs").length == 1) {
+        $("#pagination").append($("#exercises div.paginationjs"));
+        $(".paginationjs").addClass("paginationjs-big pt-4");
+      }
+    },
+    callback: function (data, pagination) {
+      $("#exercises").empty();
+      createExerciseHTML(data);
+    },
+  });
+}
+
+export function paginationClick() {
+  $(".paginationjs-pages li").click(function () {
+    console.log("scrolling");
+    $("html,body").animate({
+      scrollTop: $("#exercises").offset().top,
+    });
+  });
+}
 
 export function alphabetically(a, b) {
   if (a.Name < b.Name) {
