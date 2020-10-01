@@ -83,7 +83,7 @@ session_start();
                     </div>
                 </button>
 
-                <div class="dropdown-menu w-100" id="sort" aria-labelledby="dropdownMenuButton">
+                <div class="dropdown-menu w-100 filter" id="sort-filter" aria-labelledby="dropdownMenuButton">
                     <li class="dropdown-item" value="1">Name (A - Z)</li>
                     <li class="dropdown-item" value="2">Name (Z - A)</li>
                 </div>

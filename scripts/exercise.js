@@ -16,25 +16,20 @@ export function getExercises(filters) {
   let muscles;
   let programs;
 
-  /*
-  if (filters) {
-      let empty;
-      for (let i = 0; i < filters.length; i++) {
-          if (filters[i])
-      }
-    sort = filters[0];
-    muscles = filters[1];
-    programs = filters[2];
-    }
-    */
-
   $.getJSON(exerciseJSONData, {
     format: JSON,
   }).done(function (result) {
     let filteredArr = [];
-    $.each($(result), function (key, val) {
-      if (filters) {
-        if (muscles.length !== 0 && programs.length === 0) {
+
+    if (filters) {
+      sort = filters[0];
+      muscles = filters[1];
+      programs = filters[2];
+
+      $.each($(result), function (key, val) {
+        if (muscles.length === 0 && programs.length === 0) {
+          filteredArr = result;
+        } else if (muscles.length !== 0 && programs.length === 0) {
           if (muscles.some((item) => val.MainMuscleGroup.indexOf(item) >= 0)) {
             filteredArr.push(this);
           }
@@ -50,10 +45,10 @@ export function getExercises(filters) {
             filteredArr.push(this);
           }
         }
-      } else {
-        filteredArr = result;
-      }
-    });
+      });
+    } else {
+      filteredArr = result;
+    }
 
     if (sort) {
       if (sort === 1) {
@@ -64,6 +59,7 @@ export function getExercises(filters) {
     } else {
       shuffle(filteredArr);
     }
+
     $("#number-of-exercises").text(filteredArr.length + " Exercises Found");
     $("#exercises").empty();
     createExerciseHTML(filteredArr);
@@ -140,44 +136,45 @@ export function replaceExerciseModal(exercise) {
   }
 }
 
-export function sortDropdownClick() {
-  $("#sort .dropdown-item").click(function () {
-    $("#sort .dropdown-item").each(function () {
-      $(this).removeClass("active disabled");
-    });
-    addDropdownActive($(this));
+export function filterClick() {
+  $(".filter .dropdown-item").click(function () {
+    changeFilterStyling($(this));
+    applyFilters();
   });
 }
 
-export function addDropdownActive(dropdownItem) {
+export function changeFilterStyling(dropdownItem) {
+  removeSortActive(dropdownItem);
   if (dropdownItem.hasClass("active")) {
     $(dropdownItem).removeClass("active");
+    if (!dropdownItem.siblings().hasClass("active")) {
+      $(dropdownItem).parent().prev().removeClass("filter-applied");
+    }
   } else {
     $(dropdownItem).addClass("active");
     $(dropdownItem).parent().prev().addClass("filter-applied");
   }
-}
 
-export function filterClick() {
-  $(".filter .dropdown-item").click(function () {
-    addDropdownActive($(this));
-    checkIfActiveFilters();
-  });
-}
-
-export function checkIfActiveFilters() {
   if ($(".filter .dropdown-item").hasClass("active")) {
     $("#clear-filters-col").removeClass("d-none");
     $("#clear-filters-col").addClass("d-flex");
   }
 }
 
-export function filterChange() {
-  $(".dropdown-menu .dropdown-item").click(function () {
-    let filters = [];
-    let muscles = [];
-    let programs = [];
+export function removeSortActive(item) {
+  if (item.parent().attr("id") === "sort-filter") {
+    console.log("this is the sort filter id");
+    item.siblings().removeClass("active");
+  }
+}
+
+export function applyFilters() {
+  let filters = [];
+  let muscles = [];
+  let programs = [];
+  if ($(".dropdown-item.active").length !== 0) {
     const sort = $("#sort-filter .dropdown-item.active").val();
+    console.log(sort);
     $("#muscle-filter .dropdown-item.active").each(function () {
       muscles.push($(this).text());
     });
@@ -185,14 +182,19 @@ export function filterChange() {
       programs.push($(this).text());
     });
     filters.push(sort, muscles, programs);
+    console.log(filters);
     getExercises(filters);
-  });
+  } else {
+    $("#clear-filters-col").removeClass("d-flex");
+    $("#clear-filters-col").addClass("d-none");
+    getExercises();
+  }
 }
 
-export function clearFilters() {
+export function clearFiltersClick() {
   $("#clear-filters-btn").click(function () {
     $(".dropdown-item.active").each(function () {
-      $(this).removeClass("active disabled");
+      $(this).removeClass("active");
     });
 
     $("#exercise-filters button").each(function () {

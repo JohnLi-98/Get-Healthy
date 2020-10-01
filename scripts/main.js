@@ -31,7 +31,5 @@ nutrition.mealsFormSearch();
 
 import * as exercise from "../scripts/exercise.js";
 exercise.exercisePageReady();
-exercise.sortDropdownClick();
 exercise.filterClick();
-exercise.filterChange();
-exercise.clearFilters();
+exercise.clearFiltersClick();
