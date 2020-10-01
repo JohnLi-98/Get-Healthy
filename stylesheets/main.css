@@ -850,6 +850,26 @@ p {
   background-color: #21d192;
 }
 
+#clear-filters-btn {
+  color: #21d192;
+  border: 2px solid #21d192 !important;
+}
+
+#clear-filters-btn:hover {
+  border-color: white;
+  color: white;
+  background-color: #21d192;
+}
+
+#exercises a {
+  color: black;
+  cursor: pointer;
+}
+
+#exercises a:hover {
+  text-decoration: underline;
+}
+
 #exercise-modal-instructions {
   padding: 0 15px;
 }

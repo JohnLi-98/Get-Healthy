@@ -72,7 +72,7 @@ session_start();
     </div>
 
     <div class="container-fluid px-lg-5 pb-5">
-        <div class="row justify-content-center" id="exercise-filters">
+        <div class="row justify-content-center px-md-4" id="exercise-filters">
             <div class="col-6 col-md-4 col-lg-3">
                 <button class="btn btn-block" data-toggle="dropdown">
                     <div class="d-flex">
@@ -83,7 +83,7 @@ session_start();
                     </div>
                 </button>
 
-                <div class="dropdown-menu w-100" id="sort-filter" aria-labelledby="dropdownMenuButton">
+                <div class="dropdown-menu w-100" id="sort" aria-labelledby="dropdownMenuButton">
                     <li class="dropdown-item" value="1">Name (A - Z)</li>
                     <li class="dropdown-item" value="2">Name (Z - A)</li>
                 </div>
@@ -99,7 +99,7 @@ session_start();
                     </div>
                 </button>
 
-                <div class="dropdown-menu w-100" id="muscle-filter" aria-labelledby="dropdownMenuButton">
+                <div class="dropdown-menu w-100 filter" id="muscle-filter" aria-labelledby="dropdownMenuButton">
                     <li class="dropdown-item">Abs</li>
                     <li class="dropdown-item">Biceps</li>
                     <li class="dropdown-item">Calves</li>
@@ -129,7 +129,7 @@ session_start();
                     </div>
                 </button>
 
-                <div class="dropdown-menu w-100" id="program-filter" aria-labelledby="dropdownMenuButton">
+                <div class="dropdown-menu w-100 filter" id="program-filter" aria-labelledby="dropdownMenuButton">
                     <li class="dropdown-item">Arms</li>
                     <li class="dropdown-item">Back</li>
                     <li class="dropdown-item">Chest</li>
@@ -141,6 +141,10 @@ session_start();
                     <li class="dropdown-item">Strength Training</li>
                     <li class="dropdown-item">Upper Body</li>
                 </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 pt-4 pt-lg-0 d-none" id="clear-filters-col">
+                <button type="button" class="btn mx-auto ml-lg-auto" id="clear-filters-btn">Clear Filters</button>
             </div>
 
             <div class="col-12 pt-4 text-center">
