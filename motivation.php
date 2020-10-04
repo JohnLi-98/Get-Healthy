@@ -32,7 +32,7 @@ session_start();
 
     <!-- Jumbotron that fills the height of the screen -->
     <div class="jumbotron jumbotron-fluid p-0" id="motivation-jumbotron">
-        <div class="row align-items-center h-100 mx-5">
+        <div class="row align-items-center h-100 mx-2 mx-lg-5">
             <div class="col">
                 <span><a href="index.php">Home</a>
                     <span class="px-2">
