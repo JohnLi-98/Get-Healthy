@@ -124,7 +124,7 @@ session_start();
                 <button class="btn btn-block btn-light" data-toggle="dropdown">
                     <div class="d-flex">
                         <span class="mr-auto">
-                            Training Program:
+                            Program:
                         </span>
                         <span class="ml-auto dropdown-toggle"></span>
                     </div>
