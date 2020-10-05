@@ -121,7 +121,7 @@ session_start();
         </div>
     </div>
 
-    <div class="justify-content-center align-items-center" id="gallery-modal">
+    <div class="justify-content-center align-items-center d-none" id="gallery-modal">
         <span id="gallery-img-indicator">1/12</span>
         <span id="gallery-close">&times;</span>
         <div class="carousel slide d-flex align-items-center pt-5" data-interval="false" id="gallery-carousel">
@@ -191,7 +191,7 @@ session_start();
     ?>
 
     <!-- Script files(jQuery library, Popper JS, Latest Compiled Bootstrap JS, FontAwesome JS)-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/6cc49d804e.js" crossorigin="anonymous"></script>

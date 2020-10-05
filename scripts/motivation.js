@@ -151,6 +151,7 @@ export function galleryImageClick() {
 }
 
 export function openCarouselModal(src) {
+  $("#gallery-modal").removeClass("d-none");
   $("#gallery-modal").addClass("d-flex");
   $("#gallery-close").click(function () {
     closeCarouselModal();
@@ -166,6 +167,7 @@ export function openCarouselModal(src) {
 
 export function closeCarouselModal() {
   $("#gallery-modal").removeClass("d-flex");
+  $("#gallery-modal").addClass("d-none");
   $(".carousel-item").each(function () {
     $(this).removeClass("active");
   });
