@@ -230,7 +230,7 @@ session_start();
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/6cc49d804e.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.5/pagination.min.js"></script>
-    <script type="module" src="scripts/main.js"></script>
+    <script type="module" src="scripts/main.js" crossorigin="use-credentials"></script>
 </body>
 
 </html>
