@@ -222,8 +222,6 @@ session_start();
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/6cc49d804e.js" crossorigin="anonymous"></script>
     <script type="module" src="scripts/main.js" crossorigin="use-credentials"></script>
-    <!-- in case ES6 modules aren't supported -->
-    <script src="main-fallback.js" defer nomodule></script>
 </body>
 
 </html>
