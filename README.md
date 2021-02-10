@@ -20,6 +20,7 @@ I believe that health and wellness is an important topic that should be consider
 - Responsive Design.
 - Sign up and sign in functionalities.
 - Reset password via email functionality.
+- Asynchronous operations on database values.
 - List of exercises and instructions on how to perform them.
 - Sorting functionality on exercise list.
 - Collection of random assorted quote cards for motivation.
